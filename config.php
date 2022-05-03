@@ -29,9 +29,19 @@ defined('MOODLE_INTERNAL') || die();
 $THEME->name = 'mooveuv';
 $THEME->sheets = [];
 $THEME->editor_sheets = [];
+
+$THEME->scss = function($theme) {
+    return theme_mooveuv_get_main_scss_content($theme);
+};
+
+$THEME->prescsscallback = 'theme_mooveuv_get_pre_scss';
+$THEME->extrascsscallback = 'theme_mooveuv_get_extra_scss';
+
 $THEME->parents = ['moove', 'boost'];
 $THEME->enable_dock = false;
 $THEME->yuicssmodules = array();
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->requiredblocks = '';
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
+
+$THEME->haseditswitch = true;

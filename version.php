@@ -31,5 +31,6 @@ $plugin->release = 'alpha1';
 $plugin->requires = 2022041900;
 $plugin->component = 'theme_mooveuv';
 $plugin->dependencies = [
-    'theme_boost' => 2022041900
+    'theme_boost' => 2022041900,
+    'theme_moove' => 2022041200
 ];

@@ -27,3 +27,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Moove UV';
+$string['pluginname'] = 'Moove UV';
+$string['configtitle'] = 'Moove UV';
+
+// General settings tab.
+$string['generalsettings'] = 'General';
+$string['logo'] = 'Logo';
+$string['logodesc'] = 'Logo dispuesto en el encabezado';
