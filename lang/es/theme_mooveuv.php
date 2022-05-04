@@ -34,3 +34,5 @@ $string['configtitle'] = 'Moove UV';
 $string['generalsettings'] = 'General';
 $string['logo'] = 'Logo';
 $string['logodesc'] = 'Logo dispuesto en el encabezado';
+$string['brandcolor'] = 'Color de la marca';
+$string['brandcolor_desc'] = 'El color principal.';

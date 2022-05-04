@@ -33,4 +33,6 @@ $string['configtitle'] = 'Moove UV';
 $string['generalsettings'] = 'General';
 $string['logo'] = 'Logo';
 $string['logodesc'] = 'The logo is displayed in the header.';
+$string['brandcolor'] = 'Brand colour';
+$string['brandcolor_desc'] = 'The accent colour.';
 

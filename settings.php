@@ -48,6 +48,24 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo', 0, $opts);
     $page->add($setting);
 
+    // Variable $brand-color.
+    // We use an empty default value because the default colour should come from the preset.
+    $name = 'theme_mooveuv/brandcolor';
+    $title = get_string('brandcolor', 'theme_mooveuv');
+    $description = get_string('brandcolor_desc', 'theme_mooveuv');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#0f47ad');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    // Variable $navbar-header-color.
+    // We use an empty default value because the default colour should come from the preset.
+    $name = 'theme_mooveuv/navbarheadercolor';
+    $title = get_string('navbarheadercolor', 'theme_mooveuv');
+    $description = get_string('navbarheadercolor_desc', 'theme_mooveuv');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
     // Must add the page after definiting all the settings!
     $settings->add($page);
 }
