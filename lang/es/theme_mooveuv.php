@@ -1,5 +1,5 @@
 <?php
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -12,22 +12,34 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Language file
+ * * Lang strings 'es'.
  *
  * @package    theme_mooveuv
  * @since      Moodle 4.0
  * @author     Iader E. García Gómez <iadergg@gmail.com>
  * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Moove UV';
 $string['configtitle'] = 'Moove UV';
+$string['choosereadme'] = 'Moove UV es un tema personalizado y creado para el Campus Virtual de la Universidad del Valle. Es un tema hijo basado en su tema padre Moove.';
+
+$string['currentinparentheses'] = '(current)';
+$string['region-side-pre'] = 'Right';
+$string['prev_section'] = 'Previous section';
+$string['next_section'] = 'Next section';
+$string['themedevelopedby'] = 'This theme was developed by';
+$string['access'] = 'Access';
+$string['prev_activity'] = 'Previous activity';
+$string['next_activity'] = 'Next activity';
+$string['donthaveanaccount'] = 'Don\'t have an account?';
+$string['signinwith'] = 'Sign in with';
 
 // General settings tab.
 $string['generalsettings'] = 'General';
@@ -45,6 +57,14 @@ $string['brandcolor'] = 'Color de la marca';
 $string['brandcolor_desc'] = 'Color principal.';
 $string['secondarymenucolor'] = 'Color del menú secundario';
 $string['secondarymenucolor_desc'] = 'Color de fondo del menú secundario';
+$string['navbarbg'] = 'Navbar color';
+$string['navbarbg_desc'] = 'The left navbar color';
+$string['navbarbghover'] = 'Navbar hover color';
+$string['navbarbghover_desc'] = 'The left navbar hover color';
+$string['fontsite'] = 'Site font';
+$string['fontsite_desc'] = 'Default font site. You can try out the fonts on <a href="https://fonts.google.com">Google Fonts site</a>.';
+$string['enablecourseindex'] = 'Enable course index';
+$string['enablecourseindex_desc'] = 'You can show/hide course index navigation';
 
 // Advanced settings tab.
 $string['advancedsettings'] = 'Avanzado';
@@ -57,111 +77,43 @@ $string['googleanalyticsdesc'] = 'Por favor ingresa tu código de Google Analyti
 
 // Frontpage settings tab.
 $string['frontpagesettings'] = 'Portada';
-$string['disablefrontpageloginbox'] = 'Deshabilitar cuadro de inicio de sesión de la portada';
-$string['disablefrontpageloginboxdesc'] = 'Si lo revisas, el cuadro de inicio sesión de la portada estará oculto y el link a la página del login se mostrará en el encabezado de la barra.';
-$string['headerimg'] = 'Imagen del encabezado';
-$string['headerimgdesc'] = 'Carga tu imagen personalizada del encabezado aquí si quieres agregarlo. La imagen funciona mejor si (Tamaño de la imagen debería ser 1500px x 700px)';
-$string['alert'] = 'Alerta de la página de inicio';
-$string['alert_desc'] = 'Este es un mensaje de alerta especial que aparecerá en la portada y en cada panel de usuario.';
-$string['bannerheading'] = 'Banner del heading';
-$string['bannerheadingdesc'] = 'Ingresa el texto del banner del heading';
-$string['bannercontent'] = 'Contenido del banner';
-$string['bannercontentdesc'] = 'Ingresa el texto del contenido del banner';
-$string['displaymarketingbox'] = 'Muestra el cuadro de marketing de la página principal';
-$string['displaymarketingboxdesc'] = 'Muestra o esconde el cuadro de marketing de la página principal';
-$string['marketing1icon'] = 'Icono Marketing1';
-$string['marketing1icondesc'] = 'Carga el icono Marketing1';
-$string['marketing1heading'] = 'Título Marketing1';
-$string['marketing1headingdesc'] = 'Ingresa el título de Marketing1';
-$string['marketing1subheading'] = 'Subtítulo Marketing1';
-$string['marketing1subheadingdesc'] = 'Ingresa el subtítulo de Marketing1';
-$string['marketing1content'] = 'Contenido del Marketing1';
-$string['marketing1contentdesc'] = 'Ingresa el texto del contenido de Marketing1';
-$string['marketing1url'] = 'URL de Marketing1';
-$string['marketing1urldesc'] = 'Ingresa el URL de Marketing1';
-$string['marketing2icon'] = 'Icono de Marketing2';
-$string['marketing2icondesc'] = 'Carga el icono Marketing2';
-$string['marketing2heading'] = 'Título de Marketing2';
-$string['marketing2headingdesc'] = 'Ingresa el título de Marketing2';
-$string['marketing2subheading'] = 'Subtítulo de Marketing2';
-$string['marketing2subheadingdesc'] = 'Ingresa el subtítulo de Marketing2';
-$string['marketing2content'] = 'Contenido de Marketing2';
-$string['marketing2contentdesc'] = 'Ingresa el contenido del texto de Marketing2';
-$string['marketing2url'] = 'URL de Marketing2';
-$string['marketing2urldesc'] = 'Ingresa el URL de Marketing2';
-$string['marketing3icon'] = 'Icono de Marketing3';
-$string['marketing3icondesc'] = 'Carga el icono de Marketing3';
-$string['marketing3heading'] = 'Título de Marketing3';
-$string['marketing3headingdesc'] = 'Ingresa el título de Marketing3';
-$string['marketing3subheading'] = 'Subtítulo de Marketing3';
-$string['marketing3subheadingdesc'] = 'Ingresa el subtítulo de Marketing3';
-$string['marketing3content'] = 'Contenido de Marketing3';
-$string['marketing3contentdesc'] = 'Ingresa el contenido del texto de Marketing3';
-$string['marketing3url'] = 'URL de Marketing3';
-$string['marketing3urldesc'] = 'Ingresa el URL de Enter Marketing3';
-$string['marketing4icon'] = 'Icono de Marketing4';
-$string['marketing4icondesc'] = 'Carga el icono de Marketing4';
-$string['marketing4heading'] = 'Título de Marketing4';
-$string['marketing4headingdesc'] = 'Ingresa el título de Marketing4';
-$string['marketing4subheading'] = 'Subtítulo de Marketing4';
-$string['marketing4subheadingdesc'] = 'Ingresa el subtítulo de Marketing4';
-$string['marketing4content'] = 'Contenido de Marketing4';
-$string['marketing4contentdesc'] = 'Ingresa el contenido del texto de Marketing4';
-$string['marketing4url'] = 'URL de Marketing4';
-$string['marketing4urldesc'] = 'Ingresa el URL de Marketing4';
+$string['displaymarketingboxes'] = 'Show front page marketing boxes';
+$string['displaymarketingboxesdesc'] = 'If you want to see the boxes, select yes <strong>then click SAVE</strong> to load the input fields.';
+$string['marketingsectionheading'] = 'Marketing section heading title';
+$string['marketingsectioncontent'] = 'Marketing section content';
+$string['marketingicon'] = 'Marketing Icon {$a}';
+$string['marketingheading'] = 'Marketing Heading {$a}';
+$string['marketingcontent'] = 'Marketing Content {$a}';
+
 $string['disableteacherspic'] = 'Deshabilita la imagen de profesores';
 $string['disableteacherspicdesc'] = 'Esta configuración oculta las imágenes de profesores de las tarjetas del curso.';
 
-$string['sliderenabled'] = 'Habilitar slider';
-$string['sliderenableddesc'] = 'Habilitar un slider arriba del home page';
-$string['sliderfrontpage'] = 'Muestra diapositivas en la portada';
-$string['sliderfrontpagedesc'] = 'Si está habilitado, las diapositivas serán mostradas en la portada reemplazando la imagen del encabezado.';
-$string['slidercount'] = ' contador de Slider';
+$string['sliderfrontpageloggedin'] = 'Show slideshow in frontpage after login?';
+$string['sliderfrontpageloggedindesc'] = 'If enabled, the slideshow will be showed in the frontpage page replacing the header image.';
+$string['slidercount'] = 'Contador de Slider';
 $string['slidercountdesc'] = 'Selecciona cuantos slides quieres agregar <strong>luego click en GUARDAR</strong> para cargar los campos de entrada.';
 $string['sliderimage'] = 'Imagen del Slider';
 $string['sliderimagedesc'] = 'Agrega una imagen para tu slide. El tamaño recomendado es 1500px x 540px o mayor.';
-$string['slidertitle'] = 'Título del Slide';
-$string['slidertitledesc'] = 'Agrega el título del slide.';
-$string['slidercaption'] = 'Subtítulo del Slider';
-$string['slidercaptiondesc'] = 'Agrega un subtítulo a tu slide';
 
 $string['numbersfrontpage'] = 'Muestra los números del sitio en la portada';
 $string['numbersfrontpagedesc'] = 'Si está habilitado, muestra el número de usuarios activos, cursos y actividades en la portada.';
+$string['numbersfrontpagecontent'] = 'Numbers section content';
+$string['numbersfrontpagecontentdesc'] = 'You can add any text to the left side of the numbers section';
+$string['numbersfrontpagecontentdefault'] = '<h2>Trusted by 25,000+ happy customers.</h2>
+                    <p>With lots of unique blocks, you can easily build <br class="d-none d-sm-block d-md-none d-xl-block">
+                        a page without coding. Build your next website <br class="d-none d-sm-block d-md-none d-xl-block">
+                        within few minutes.</p>';
+$string['numbersusers'] = 'Active users accessing our amazing resources';
+$string['numberscourses'] = 'Courses made for your that you can trust!';
 
-$string['sponsorstitledefault'] = 'Patrocinadores';
-$string['sponsorssubtitledefault'] = 'Compañías e instituciones que creen en nosotros';
-$string['sponsorsfrontpage'] = 'Habilitar fila de patrocinadores';
-$string['sponsorsfrontpagedesc'] = 'Si está habilitado, muestra una fila con los logos de los patrocinadores con sus URL.';
-$string['sponsorstitle'] = 'Título de sponsors';
-$string['sponsorstitledesc'] = 'El encabezado de la fila de patrocinadores.';
-$string['sponsorssubtitle'] = 'Subtítulo de patrocinadores';
-$string['sponsorssubtitledesc'] = 'Subtítulo de la fila de patrocinadores.';
-$string['sponsorscount'] = 'Contador de patrocinadores';
-$string['sponsorscountdesc'] = 'Selecciona cuantos logos de patrocinadores quieres agregar <strong>luego click en GUARDAR</strong> para cargar los campos de entrada.';
-$string['sponsorsimage'] = 'Logo del patrocinador';
-$string['sponsorsimagedesc'] = 'Agrega el logo del patrocinador.';
-$string['sponsorsurl'] = 'URL del patrocinador';
-$string['sponsorsurldesc'] = 'Ingresa el sitio URL del patrocinador';
-
-$string['clientstitledefault'] = 'Nuestros clientes';
-$string['clientssubtitledefault'] = 'Clientes que creen en nosotros';
-$string['clientsfrontpage'] = 'Habilita la fila de clientes';
-$string['clientsfrontpagedesc'] = 'Si está habilitado, muestra una fila con los logos de los clientes con sus URL.';
-$string['clientstitle'] = 'Título de clientes';
-$string['clientstitledesc'] = 'Encabezado de la fila de clientes.';
-$string['clientssubtitle'] = 'Subtítulo de clientes';
-$string['clientssubtitledesc'] = 'Subtítulo de la fila de clientes.';
-$string['clientscount'] = 'Contador de clientes';
-$string['clientscountdesc'] = 'Selecciona cuantos logos de clientes quieres agregar <strong>luego click en GUARDAR</strong> para cargar los campos de entrada.';
-$string['clientsimage'] = 'Logo cliente';
-$string['clientsimagedesc'] = 'Agrega el logo del cliente.';
-$string['clientsurl'] = 'URL del cliente';
-$string['clientsurldesc'] = 'Ingresa el URL del sitio del ciente';
+$string['faq'] = 'FAQ';
+$string['faqcount'] = 'FAQ questions';
+$string['faqcountdesc'] = 'Select how many questions you want to add <strong>then click SAVE</strong> to load the input fields.<br>If you don\'t want a FAQ, just select 0.';
+$string['faqquestion'] = 'FAQ question {$a}';
+$string['faqanswer'] = 'FAQ answer {$a}';
 
 // Footer settings tab.
 $string['footersettings'] = 'Pie de página';
-$string['getintouchcontent'] = 'Contenido para ponerse el contacto';
-$string['getintouchcontentdesc'] = 'Ingresa el contenido del texto para ponerse en contacto';
 $string['website'] = 'URL del sitio web';
 $string['websitedesc'] = 'Sitio web de la compañía principal';
 $string['mobile'] = 'Celular';
@@ -182,7 +134,41 @@ $string['whatsapp'] = 'Número de Whatsapp';
 $string['whatsappdesc'] = 'Ingresa tu número de whatsapp de contacto.';
 $string['telegram'] = 'Telegram';
 $string['telegramdesc'] = 'Ingresa tu contacto de Telegram o link del grupo.';
+$string['contactus'] = 'Contact us';
+$string['followus'] = 'Follow us';
 
-// NEW STRINGS
-$string['fontsite'] = 'Fuente del sitio';
-$string['fontsite_desc'] = 'Fuente predeterminada del sitio. Puedes probar las funetes en <a href="https://fonts.google.com">Google Fonts site</a>.';
+// Mypublic page.
+$string['aboutme'] = 'About me';
+$string['personalinformation'] = 'Personal information';
+$string['addcontact'] = 'Add contact';
+$string['removecontact'] = 'Remove contact';
+
+// Theme settings.
+$string['themesettings:accessibility'] = 'Accessibility';
+$string['themesettings:fonttype'] = 'Font type';
+$string['themesettings:defaultfont'] = 'Default font';
+$string['themesettings:dyslexicfont'] = 'Dyslexic font';
+$string['themesettings:enableaccessibilitytoolbar'] = 'Enable accessibility toolbar';
+$string['themesettingg:successfullysaved'] = 'Accessibility settings successfully saved';
+
+// Accessibility features.
+$string['accessibility:fontsize'] = 'Font size';
+$string['accessibility:decreasefont'] = 'Decrease font size';
+$string['accessibility:resetfont'] = 'Reset font size';
+$string['accessibility:increasefont'] = 'Increase font size';
+$string['accessibility:sitecolor'] = 'Site color';
+$string['accessibility:resetsitecolor'] = 'Reset site color';
+$string['accessibility:sitecolor2'] = 'Low contrast 1';
+$string['accessibility:sitecolor3'] = 'Low contrast 2';
+$string['accessibility:sitecolor4'] = 'High contrast';
+
+// Data privacy.
+$string['privacy:metadata:preference:accessibilitystyles_fontsizeclass'] = 'The user\'s preference for font size.';
+$string['privacy:metadata:preference:accessibilitystyles_sitecolorclass'] = 'The user\'s preference for site color.';
+$string['privacy:metadata:preference:thememoovesettings_fonttype'] = 'The user\'s preference for font type.';
+$string['privacy:metadata:preference:thememoovesettings_enableaccessibilitytoolbar'] = 'The user\'s preference for enable the accessibility toolbar.';
+
+$string['privacy:accessibilitystyles_fontsizeclass'] = 'The current preference for the font size is: {$a}.';
+$string['privacy:accessibilitystyles_sitecolorclass'] = 'The current preference for the site color is: {$a}.';
+$string['privacy:thememoovesettings_fonttype'] = 'The current preference for the font type is: {$a}.';
+$string['privacy:thememoovesettings_enableaccessibilitytoolbar'] = 'The current preference for enable accessibility toolbar is to show it.';
