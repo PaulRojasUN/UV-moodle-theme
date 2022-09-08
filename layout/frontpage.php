@@ -112,14 +112,11 @@ $templatecontext = [
 ];
 
 $themesettings = new \theme_moove\util\settings();
+$themefrontpage = new \theme_mooveuv\util\frontpage();
 
 $templatecontext = array_merge($templatecontext, $themesettings->footer());
 
+// TO-DO: Diff loggin or does not logged.
+$templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_slideshow());
 
-if (isloggedin()) {
-    echo $OUTPUT->render_from_template('theme_moove/drawers', $templatecontext);
-} else {
-    $templatecontext = array_merge($templatecontext, $themesettings->frontpage());
-
-    echo $OUTPUT->render_from_template('theme_mooveuv/frontpage', $templatecontext);
-}
+echo $OUTPUT->render_from_template('theme_mooveuv/frontpage', $templatecontext);

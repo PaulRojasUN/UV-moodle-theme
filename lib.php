@@ -63,7 +63,7 @@ function theme_mooveuv_get_main_scss_content($theme) {
     $mooveuv = file_get_contents($CFG->dirroot . '/theme/mooveuv/scss/default.scss');
 
     // Combine them together.
-    $allscss = $moovevariables . "\n" . $scss . "\n" . $mooveuv . "\n" . $moove;
+    $allscss = $moovevariables . "\n" . $scss . "\n" . $moove . "\n" . $mooveuv;
 
     return $allscss;
 }
