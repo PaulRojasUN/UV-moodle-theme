@@ -1,0 +1,23 @@
+.navbar.fixed-top {
+    border: none;
+    height: 70px;
+    background-color: #cd1f32 !important;
+
+    .primary-navigation {
+        .navigation {
+            height: 70px;
+
+            .nav-link {
+                height: 70px;
+                border: none;
+                border-radius: 0;
+                color: white;
+
+                &.active {
+                    font-weight: 700;
+                    border-bottom: 2px solid #fff;
+                }
+            }
+        }
+    }
+}
