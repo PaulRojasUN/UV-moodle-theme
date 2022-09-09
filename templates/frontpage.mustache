@@ -62,7 +62,7 @@
 
     <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers drag-container bg-white">
 
-
+        <!-- Front page slider -->
         <div id="mooveuvslideshow" class="mooveuv-container-fluid">
             <div id="carouselindicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -85,6 +85,47 @@
                     <span class="sr-only">{{#str}}next{{/str}}</span>
                 </a>
             </div>
+        </div>
+
+        <!-- Information -->
+        <div id="informationsection" class="mooveuv-container-fluid">
+            <div class="row" id="row-sectioninfo-cards">
+                <div class="col-4">
+                    <div class="card sectioninfo-card">
+                        <div class="card-header">
+                          <h2 class="h3">{{#str}} attention_suport_title, theme_mooveuv {{/str}}</h2>
+                        </div>
+                        <div class="card-body">
+
+                          <p><img src="{{{email_icon}}}" width="20" height="20"></img>{{mail}}</p>
+                          <p><img src="{{{phone_icon}}}" width="20" height="20"></img>{{mobile}}</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card sectioninfo-card">
+                        <div class="card-header">
+                          <h2 class="h3">{{#str}} quick_help_title, theme_mooveuv {{/str}}</h2>
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card sectioninfo-card">
+                        <div class="card-header">
+                          <h2 class="h3">{{#str}} topics_of_interest_title, theme_mooveuv {{/str}}</h2>
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
         </div>
 
         <div id="topofscroll">

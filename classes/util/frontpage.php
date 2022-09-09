@@ -18,7 +18,7 @@
  * Theme helper to load front page configuration.
  *
  * @package    theme_mooveuv
- * @copyright  2022 Iader E. Garcia Gomez <iadergg@gmail.com>
+ * @author     2022 Iader E. Garcia Gomez <iadergg@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -30,8 +30,9 @@ use theme_config;
  * Helper to load front page configuration.
  *
  * @package    theme_mooveuv
- * @copyright  2022 Iader E. Garcia Gomez <iadergg@gmail.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @since      Moodle 4.0
+ * @author     2022 Iader E. Garcia Gomez <iadergg@gmail.com>
+ * @copyright  2022 Área de Nuevas Tecnologías - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
  */
 class frontpage {
 
@@ -44,7 +45,7 @@ class frontpage {
     ];
 
     /**
-     * Class constructor
+     * Class constructor.
      */
     public function __construct() {
         $this->theme = theme_config::load('mooveuv');
@@ -54,8 +55,9 @@ class frontpage {
      * Magic method to get theme settings
      *
      * @param string $name
-     *
      * @return false|string|null
+     * @author Iader E. Garcia Gomez <iadergg@gmail.com>
+     * @since  Moodle 4.0
      */
     public function __get(string $name) {
         if (in_array($name, $this->files)) {
@@ -70,9 +72,11 @@ class frontpage {
     }
 
     /**
-     * Returns template context for the front page slider.
+     * Returns template context for the frontpage slider.
      *
-     * @return void
+     * @return array $templatecontext
+     * @author Iader E. Garcia Gomez <iadergg@gmail.com>
+     * @since  Moodle 4.0
      */
     public function frontpage_slideshow() {
 
@@ -88,6 +92,23 @@ class frontpage {
         }
 
         return $templatecontext;
+    }
 
+    /**
+     * Returns template context for the information section of the frontpage.
+     *
+     * @return array $templatecontext
+     * @author Iader E. Garcia Gomez <iadergg@gmail.com>
+     * @since  Moodle 4.0
+     */
+    public function frontpage_infosection() {
+
+        $templatecontext = [];
+
+        $templatecontext['phone_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/phone.png');
+        $templatecontext['email_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/email.png');
+        $templatecontext['clock_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/clock.png');
+
+        return $templatecontext;
     }
 }

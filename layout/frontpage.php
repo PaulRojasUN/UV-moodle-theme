@@ -118,5 +118,6 @@ $templatecontext = array_merge($templatecontext, $themesettings->footer());
 
 // TO-DO: Diff loggin or does not logged.
 $templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_slideshow());
+$templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_infosection());
 
 echo $OUTPUT->render_from_template('theme_mooveuv/frontpage', $templatecontext);
