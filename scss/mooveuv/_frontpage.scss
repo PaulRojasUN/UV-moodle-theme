@@ -1,5 +1,6 @@
 #page-site-index {
 
+    // Slider.
     a.carousel-control-prev,
     a.carousel-control-next {
         width: 4em;
@@ -18,6 +19,7 @@
         height: 1em;;
     }
 
+    // Info section.
     #row-sectioninfo-cards {
         padding-left: 7em;
         padding-right: 7em;
@@ -54,5 +56,15 @@
         border-right: 1px solid gray;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
+    }
+
+    .login > a{
+        color: white;
+    }
+}
+
+.notloggedin {
+    #page-wrapper > nav > div.primary-navigation {
+        display: none;
     }
 }
