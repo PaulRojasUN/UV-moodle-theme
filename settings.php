@@ -226,109 +226,59 @@ if ($ADMIN->fulltree) {
         $page->add($setting);
     }
 
-    $setting = new admin_setting_heading('slidercountseparator', '', '<hr>');
+    // Information section.
+    $name = 'theme_mooveuv/infosection_heading';
+    $heading = get_string('infosection_heading', 'theme_mooveuv');
+    $information = get_string('infosection_heading_desc', 'theme_mooveuv');
+    $setting = new admin_setting_heading($name, $heading, $information);
     $page->add($setting);
 
-    $name = 'theme_mooveuv/displaymarketingbox';
-    $title = get_string('displaymarketingboxes', 'theme_mooveuv');
-    $description = get_string('displaymarketingboxesdesc', 'theme_mooveuv');
-    $default = 1;
-    $choices = array(0 => get_string('no'), 1 => get_string('yes'));
-    $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+    // Attention and support.
+
+    $name = 'theme_mooveuv/monday_office_hours';
+    $title = get_string('office_hours_per_day', 'theme_mooveuv', get_string('monday', 'theme_mooveuv'));
+    $description = get_string('office_hours_per_day_desc', 'theme_mooveuv', get_string('monday', 'theme_mooveuv'));
+    $default = get_string('no_attention', 'theme_mooveuv');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
-    $displaymarketingbox = get_config('theme_mooveuv', 'displaymarketingbox');
-
-    if ($displaymarketingbox) {
-        // Marketingheading.
-        $name = 'theme_mooveuv/marketingheading';
-        $title = get_string('marketingsectionheading', 'theme_mooveuv');
-        $default = 'Awesome App Features';
-        $setting = new admin_setting_configtext($name, $title, '', $default);
-        $page->add($setting);
-
-        // Marketingcontent.
-        $name = 'theme_mooveuv/marketingcontent';
-        $title = get_string('marketingsectioncontent', 'theme_mooveuv');
-        $default = 'Moove is a Moodle template based on Boost with modern and creative design.';
-        $setting = new admin_setting_confightmleditor($name, $title, '', $default);
-        $page->add($setting);
-
-        for ($i = 1; $i < 5; $i++) {
-            $filearea = "marketing{$i}icon";
-            $name = "theme_mooveuv/$filearea";
-            $title = get_string('marketingicon', 'theme_mooveuv', $i . '');
-            $opts = array('accepted_types' => array('.png', '.jpg', '.gif', '.webp', '.tiff', '.svg'));
-            $setting = new admin_setting_configstoredfile($name, $title, '', $filearea, 0, $opts);
-            $page->add($setting);
-
-            $name = "theme_mooveuv/marketing{$i}heading";
-            $title = get_string('marketingheading', 'theme_mooveuv', $i . '');
-            $default = 'Lorem';
-            $setting = new admin_setting_configtext($name, $title, '', $default);
-            $page->add($setting);
-
-            $name = "theme_mooveuv/marketing{$i}content";
-            $title = get_string('marketingcontent', 'theme_mooveuv', $i . '');
-            $default = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.';
-            $setting = new admin_setting_confightmleditor($name, $title, '', $default);
-            $page->add($setting);
-        }
-
-        $setting = new admin_setting_heading('displaymarketingboxseparator', '', '<hr>');
-        $page->add($setting);
-    }
-
-    // Enable or disable Numbers sections settings.
-    $name = 'theme_mooveuv/numbersfrontpage';
-    $title = get_string('numbersfrontpage', 'theme_mooveuv');
-    $description = get_string('numbersfrontpagedesc', 'theme_mooveuv');
-    $default = 1;
-    $choices = array(0 => get_string('no'), 1 => get_string('yes'));
-    $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+    $name = 'theme_mooveuv/tuesday_office_hours';
+    $title = get_string('office_hours_per_day', 'theme_mooveuv', get_string('tuesday', 'theme_mooveuv'));
+    $description = get_string('office_hours_per_day_desc', 'theme_mooveuv', get_string('tuesday', 'theme_mooveuv'));
+    $default = get_string('no_attention', 'theme_mooveuv');;
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
-    $numbersfrontpage = get_config('theme_mooveuv', 'numbersfrontpage');
-
-    if ($numbersfrontpage) {
-        $name = 'theme_mooveuv/numbersfrontpagecontent';
-        $title = get_string('numbersfrontpagecontent', 'theme_mooveuv');
-        $description = get_string('numbersfrontpagecontentdesc', 'theme_mooveuv');
-        $default = get_string('numbersfrontpagecontentdefault', 'theme_mooveuv');
-        $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
-        $page->add($setting);
-    }
-
-    // Enable FAQ.
-    $name = 'theme_mooveuv/faqcount';
-    $title = get_string('faqcount', 'theme_mooveuv');
-    $description = get_string('faqcountdesc', 'theme_mooveuv');
-    $default = 0;
-    $options = array();
-    for ($i = 0; $i < 11; $i++) {
-        $options[$i] = $i;
-    }
-    $setting = new admin_setting_configselect($name, $title, $description, $default, $options);
+    $name = 'theme_mooveuv/wednesday_office_hours';
+    $title = get_string('office_hours_per_day', 'theme_mooveuv', get_string('wednesday', 'theme_mooveuv'));
+    $description = get_string('office_hours_per_day_desc', 'theme_mooveuv', get_string('wednesday', 'theme_mooveuv'));
+    $default = get_string('no_attention', 'theme_mooveuv');;
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
-    $faqcount = get_config('theme_mooveuv', 'faqcount');
+    $name = 'theme_mooveuv/thursday_office_hours';
+    $title = get_string('office_hours_per_day', 'theme_mooveuv', get_string('thursday', 'theme_mooveuv'));
+    $description = get_string('office_hours_per_day_desc', 'theme_mooveuv', get_string('thursday', 'theme_mooveuv'));
+    $default = '10:30 a 11:30 a.m. y 2 a 5 p.m.';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
 
-    if ($faqcount > 0) {
-        for ($i = 1; $i <= $faqcount; $i++) {
-            $name = "theme_mooveuv/faqquestion{$i}";
-            $title = get_string('faqquestion', 'theme_mooveuv', $i . '');
-            $setting = new admin_setting_configtext($name, $title, '', '');
-            $page->add($setting);
+    $name = 'theme_mooveuv/friday_office_hours';
+    $title = get_string('office_hours_per_day', 'theme_mooveuv', get_string('friday', 'theme_mooveuv'));
+    $description = get_string('office_hours_per_day_desc', 'theme_mooveuv', get_string('friday', 'theme_mooveuv'));
+    $default = '8:30 a 11:30 a.m.';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
 
-            $name = "theme_mooveuv/faqanswer{$i}";
-            $title = get_string('faqanswer', 'theme_mooveuv', $i . '');
-            $setting = new admin_setting_confightmleditor($name, $title, '', '');
-            $page->add($setting);
-        }
+    // Quick help.
+    // Topics of interest.
 
-        $setting = new admin_setting_heading('faqseparator', '', '<hr>');
-        $page->add($setting);
-    }
+
 
     $settings->add($page);
 

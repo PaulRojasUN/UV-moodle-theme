@@ -95,22 +95,10 @@ $string['slidercountdesc'] = 'Selecciona cuantos slides quieres agregar <strong>
 $string['sliderimage'] = 'Imagen del Slider';
 $string['sliderimagedesc'] = 'Agrega una imagen para tu slide. El tamaño recomendado es 1500px x 540px o mayor.';
 
-$string['numbersfrontpage'] = 'Muestra los números del sitio en la portada';
-$string['numbersfrontpagedesc'] = 'Si está habilitado, muestra el número de usuarios activos, cursos y actividades en la portada.';
-$string['numbersfrontpagecontent'] = 'Numbers section content';
-$string['numbersfrontpagecontentdesc'] = 'You can add any text to the left side of the numbers section';
-$string['numbersfrontpagecontentdefault'] = '<h2>Trusted by 25,000+ happy customers.</h2>
-                    <p>With lots of unique blocks, you can easily build <br class="d-none d-sm-block d-md-none d-xl-block">
-                        a page without coding. Build your next website <br class="d-none d-sm-block d-md-none d-xl-block">
-                        within few minutes.</p>';
-$string['numbersusers'] = 'Active users accessing our amazing resources';
-$string['numberscourses'] = 'Courses made for your that you can trust!';
-
-$string['faq'] = 'FAQ';
-$string['faqcount'] = 'FAQ questions';
-$string['faqcountdesc'] = 'Select how many questions you want to add <strong>then click SAVE</strong> to load the input fields.<br>If you don\'t want a FAQ, just select 0.';
-$string['faqquestion'] = 'FAQ question {$a}';
-$string['faqanswer'] = 'FAQ answer {$a}';
+$string['infosection_heading'] = 'Sección de información';
+$string['infosection_heading_desc'] = 'Información general sobre el Campus Virtual';
+$string['office_hours_per_day'] = 'Horario {$a}';
+$string['office_hours_per_day_desc'] = 'Horario de atención del {$a}';
 
 // Footer settings tab.
 $string['footersettings'] = 'Pie de página';
@@ -137,11 +125,16 @@ $string['telegramdesc'] = 'Ingresa tu contacto de Telegram o link del grupo.';
 $string['contactus'] = 'Contact us';
 $string['followus'] = 'Follow us';
 
-// Mypublic page.
+// Frontpage.
 $string['aboutme'] = 'About me';
 $string['personalinformation'] = 'Personal information';
 $string['addcontact'] = 'Add contact';
 $string['removecontact'] = 'Remove contact';
+$string['attention_suport_title'] = 'Atención y soporte';
+$string['personalized_attention_schedule'] = 'Horarios de atención personalizado';
+$string['no_attention'] = 'No hay horario de atención.';
+$string['quick_help_title'] = 'Ayudas rápidas';
+$string['topics_of_interest_title'] = 'Artículos de interés';
 
 // Theme settings.
 $string['themesettings:accessibility'] = 'Accessibility';
@@ -172,3 +165,10 @@ $string['privacy:accessibilitystyles_fontsizeclass'] = 'The current preference f
 $string['privacy:accessibilitystyles_sitecolorclass'] = 'The current preference for the site color is: {$a}.';
 $string['privacy:thememoovesettings_fonttype'] = 'The current preference for the font type is: {$a}.';
 $string['privacy:thememoovesettings_enableaccessibilitytoolbar'] = 'The current preference for enable accessibility toolbar is to show it.';
+
+// Days of the week.
+$string['monday'] = 'Lunes';
+$string['tuesday'] = 'Martes';
+$string['wednesday'] = 'Miércoles';
+$string['thursday'] = 'Jueves';
+$string['friday'] = 'Viernes';
