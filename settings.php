@@ -238,7 +238,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_mooveuv/monday_office_hours';
     $title = get_string('office_hours_per_day', 'theme_mooveuv', get_string('monday', 'theme_mooveuv'));
     $description = get_string('office_hours_per_day_desc', 'theme_mooveuv', get_string('monday', 'theme_mooveuv'));
-    $default = '3 - 5 p.m.';
+    $default = get_string('no_attention', 'theme_mooveuv');
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -246,7 +246,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_mooveuv/tuesday_office_hours';
     $title = get_string('office_hours_per_day', 'theme_mooveuv', get_string('tuesday', 'theme_mooveuv'));
     $description = get_string('office_hours_per_day_desc', 'theme_mooveuv', get_string('tuesday', 'theme_mooveuv'));
-    $default = '8:30 a 10:30 a.m. y 2 a 5 p.m.';
+    $default = get_string('no_attention', 'theme_mooveuv');;
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -254,7 +254,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_mooveuv/wednesday_office_hours';
     $title = get_string('office_hours_per_day', 'theme_mooveuv', get_string('wednesday', 'theme_mooveuv'));
     $description = get_string('office_hours_per_day_desc', 'theme_mooveuv', get_string('wednesday', 'theme_mooveuv'));
-    $default = '8:30 a 10:30 a.m. y 2 a 5 p.m.';
+    $default = get_string('no_attention', 'theme_mooveuv');;
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);

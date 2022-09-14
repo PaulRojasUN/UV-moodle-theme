@@ -131,6 +131,8 @@ $string['personalinformation'] = 'Personal information';
 $string['addcontact'] = 'Add contact';
 $string['removecontact'] = 'Remove contact';
 $string['attention_suport_title'] = 'Atención y soporte';
+$string['personalized_attention_schedule'] = 'Horarios de atención personalizado';
+$string['no_attention'] = 'No hay horario de atención.';
 $string['quick_help_title'] = 'Ayudas rápidas';
 $string['topics_of_interest_title'] = 'Artículos de interés';
 

@@ -109,6 +109,12 @@ class frontpage {
         $templatecontext['email_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/email.png');
         $templatecontext['clock_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/clock.png');
 
+        $templatecontext['monday_office_hours'] = $this->monday_office_hours;
+        $templatecontext['tuesday_office_hours'] = $this->tuesday_office_hours;
+        $templatecontext['wednesday_office_hours'] = $this->wednesday_office_hours;
+        $templatecontext['thursday_office_hours'] = $this->thursday_office_hours;
+        $templatecontext['friday_office_hours'] = $this->friday_office_hours;
+
         return $templatecontext;
     }
 }

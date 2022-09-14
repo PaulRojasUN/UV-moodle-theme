@@ -25,6 +25,11 @@
         padding-bottom: 3em;
     }
 
+    #personalized_attention_schedule {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
     .sectioninfo-card {
         border: 1px;
     }
@@ -32,11 +37,22 @@
     .sectioninfo-card .card-header {
         background-color: #E1E4E7;
         padding: 2em;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
     }
 
-    .card-header>h2 {
+    .card-header > h2 {
         text-align: center;
         font-weight: 500;
         color: #2C4252;
+    }
+
+    .sectioninfo-card .card-body {
+        border-top: 0px solid gray;
+        border-left: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
     }
 }
