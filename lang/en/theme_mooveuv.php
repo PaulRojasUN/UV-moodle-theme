@@ -95,10 +95,20 @@ $string['slidercountdesc'] = 'Select how many slides you want to add <strong>the
 $string['sliderimage'] = 'Slider picture';
 $string['sliderimagedesc'] = 'Add an image for your slide. Recommended size is 1500px x 540px or higher.';
 
-$string['infosection_heading'] = 'Sección de información';
-$string['infosection_heading_desc'] = 'Información general sobre el Campus Virtual';
+$string['attention_and_support_heading'] = 'Personalized service hours';
+$string['attention_and_support_heading_desc'] = 'Enter the personalized attention schedules.';
 $string['office_hours_per_day'] = '{$a} office hours';
 $string['office_hours_per_day_desc'] = 'Hours of attention for {$a}';
+$string['quickhelp_heading'] = 'Quick help';
+$string['quickhelp_heading_desc'] = 'Links to quick help.';
+$string['help_counter'] = 'Quick help counter';
+$string['help_counter_desc'] = 'Select the number of help that will be linked on the frontpage.';
+$string['name_quick_help'] = 'Name of quick help {$a}';
+$string['name_quick_help_desc'] = 'Enter the name of the quick help {$a}';
+$string['default_name_quick_help'] = 'Name of quick help {$a}';
+$string['url_quick_help'] = 'URL to quick help {$a}';
+$string['url_quick_help_desc'] = 'Enter the URL to the quick help {$a}';
+$string['default_url_quick_help'] = '#';
 
 // Footer settings tab.
 $string['footersettings'] = 'Footer';

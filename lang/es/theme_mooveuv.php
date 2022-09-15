@@ -95,10 +95,20 @@ $string['slidercountdesc'] = 'Selecciona cuantos slides quieres agregar <strong>
 $string['sliderimage'] = 'Imagen del Slider';
 $string['sliderimagedesc'] = 'Agrega una imagen para tu slide. El tamaño recomendado es 1500px x 540px o mayor.';
 
-$string['infosection_heading'] = 'Sección de información';
-$string['infosection_heading_desc'] = 'Información general sobre el Campus Virtual';
+$string['attention_and_support_heading'] = 'Horario de atención personalizada';
+$string['attention_and_support_heading_desc'] = 'Escriba los horarios para atención al público.';
 $string['office_hours_per_day'] = 'Horario {$a}';
 $string['office_hours_per_day_desc'] = 'Horario de atención del {$a}';
+$string['quickhelp_heading'] = 'Ayudas rápidas ';
+$string['quickhelp_heading_desc'] = 'Enlaces a ayudas rápidas para el uso del Campus Virtual.';
+$string['help_counter'] = 'Contador de ayudas rápidas';
+$string['help_counter_desc'] = 'Seleccione la cantidad de ayudas rápidas a enlazar en la página principal.';
+$string['name_quick_help'] = 'Nombre de la ayuda rápida {$a}';
+$string['name_quick_help_desc'] = 'Ingrese el nombre de la ayuda rápida {$a}';
+$string['default_name_quick_help'] = 'Nombre de la ayuda rápida {$a}';
+$string['url_quick_help'] = 'URL de la ayuda rápida {$a}';
+$string['url_quick_help_desc'] = 'Ingrese la URL de la ayuda rápida {$a}';
+$string['default_url_quick_help'] = '#';
 
 // Footer settings tab.
 $string['footersettings'] = 'Pie de página';

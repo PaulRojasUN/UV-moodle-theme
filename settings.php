@@ -226,14 +226,12 @@ if ($ADMIN->fulltree) {
         $page->add($setting);
     }
 
-    // Information section.
-    $name = 'theme_mooveuv/infosection_heading';
-    $heading = get_string('infosection_heading', 'theme_mooveuv');
-    $information = get_string('infosection_heading_desc', 'theme_mooveuv');
+    // Attention and support.
+    $name = 'theme_mooveuv/attention_and_support_heading';
+    $heading = get_string('attention_and_support_heading', 'theme_mooveuv');
+    $information = get_string('attention_and_support_heading_desc', 'theme_mooveuv');
     $setting = new admin_setting_heading($name, $heading, $information);
     $page->add($setting);
-
-    // Attention and support.
 
     $name = 'theme_mooveuv/monday_office_hours';
     $title = get_string('office_hours_per_day', 'theme_mooveuv', get_string('monday', 'theme_mooveuv'));
@@ -276,6 +274,42 @@ if ($ADMIN->fulltree) {
     $page->add($setting);
 
     // Quick help.
+    $name = 'theme_mooveuv/quickhelp_heading';
+    $heading = get_string('quickhelp_heading', 'theme_mooveuv');
+    $information = get_string('quickhelp_heading_desc', 'theme_mooveuv');
+    $setting = new admin_setting_heading($name, $heading, $information);
+    $page->add($setting);
+
+    $name = 'theme_mooveuv/helpcounter';
+    $title = get_string('help_counter', 'theme_mooveuv');
+    $description = get_string('help_counter_desc', 'theme_mooveuv');
+    $default = 1;
+    $options = array();
+    for ($i = 1; $i <= 20; $i++) {
+        $options[$i] = $i;
+    }
+    $setting = new admin_setting_configselect($name, $title, $description, $default, $options);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $helpcounter = get_config('theme_mooveuv', 'helpcounter');
+
+    for ($i = 1; $i <= $helpcounter; $i++) {
+        $name = 'theme_mooveuv/name_quick_help_' . $i;
+        $title = get_string('name_quick_help', 'theme_mooveuv', $i);
+        $description = get_string('name_quick_help_desc', 'theme_mooveuv', $i);
+        $default = get_string('default_name_quick_help', 'theme_mooveuv', $i);
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $page->add($setting);
+
+        $name = 'theme_mooveuv/url_quick_help_' . $i;
+        $title = get_string('url_quick_help', 'theme_mooveuv', $i);
+        $description = get_string('url_quick_help_desc', 'theme_mooveuv', $i);
+        $default = get_string('default_url_quick_help', 'theme_mooveuv', $i);
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $page->add($setting);
+    }
+
     // Topics of interest.
 
 
