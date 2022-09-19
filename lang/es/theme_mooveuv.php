@@ -95,8 +95,8 @@ $string['slidercountdesc'] = 'Selecciona cuantos slides quieres agregar <strong>
 $string['sliderimage'] = 'Imagen del Slider';
 $string['sliderimagedesc'] = 'Agrega una imagen para tu slide. El tamaño recomendado es 1500px x 540px o mayor.';
 
-$string['attention_and_support_heading'] = 'Horario de atención personalizada';
-$string['attention_and_support_heading_desc'] = 'Escriba los horarios para atención al público.';
+$string['customer_service_heading'] = 'Horario de atención personalizada';
+$string['customer_service_heading_desc'] = 'Escriba los horarios para atención al público.';
 $string['office_hours_per_day'] = 'Horario {$a}';
 $string['office_hours_per_day_desc'] = 'Horario de atención del {$a}';
 $string['quickhelp_heading'] = 'Ayudas rápidas ';
@@ -109,6 +109,16 @@ $string['default_name_quick_help'] = 'Nombre de la ayuda rápida {$a}';
 $string['url_quick_help'] = 'URL de la ayuda rápida {$a}';
 $string['url_quick_help_desc'] = 'Ingrese la URL de la ayuda rápida {$a}';
 $string['default_url_quick_help'] = '#';
+$string['topics_of_interest_heading'] = 'Artículos de interés';
+$string['topics_of_interest_heading_desc'] = 'Enlaces a artículos de interés sobre la DINTEV y el Campus Virtual.';
+$string['topics_of_interest_counter'] = 'Contador de artículos de interés';
+$string['topics_of_interest_counter_desc'] = 'Seleccione la cantidad de artículos de interés a enlazar en la página principal.';
+$string['name_topic_of_interest'] = 'Nombre del artículo de interés {$a}';
+$string['name_topic_of_interest_desc'] = 'Ingrese el nombre del artículo de interes {$a}';
+$string['default_name_topic_of_interest'] = 'Nombre del artículo de interés {$a}';
+$string['url_topic_of_interest'] = 'URL del artículo de interés {$a}';
+$string['url_topic_of_interest_desc'] = 'Ingrese la URL del artículo de interés {$a}';
+$string['default_url_topic_of_interest'] = '#';
 
 // Footer settings tab.
 $string['footersettings'] = 'Pie de página';

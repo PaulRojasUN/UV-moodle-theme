@@ -95,8 +95,8 @@ $string['slidercountdesc'] = 'Select how many slides you want to add <strong>the
 $string['sliderimage'] = 'Slider picture';
 $string['sliderimagedesc'] = 'Add an image for your slide. Recommended size is 1500px x 540px or higher.';
 
-$string['attention_and_support_heading'] = 'Personalized service hours';
-$string['attention_and_support_heading_desc'] = 'Enter the personalized attention schedules.';
+$string['customer_service_heading'] = 'Personalized service hours';
+$string['customer_service_heading_desc'] = 'Enter the personalized attention schedules.';
 $string['office_hours_per_day'] = '{$a} office hours';
 $string['office_hours_per_day_desc'] = 'Hours of attention for {$a}';
 $string['quickhelp_heading'] = 'Quick help';
@@ -109,6 +109,16 @@ $string['default_name_quick_help'] = 'Name of quick help {$a}';
 $string['url_quick_help'] = 'URL to quick help {$a}';
 $string['url_quick_help_desc'] = 'Enter the URL to the quick help {$a}';
 $string['default_url_quick_help'] = '#';
+$string['topics_of_interest_heading'] = 'Topics of interest';
+$string['topics_of_interest_heading_desc'] = 'Links to topics of interest.';
+$string['topics_of_interest_counter'] = 'Topics of interest counter';
+$string['topics_of_interest_counter_desc'] = 'Select the number of topics that will be linked on the frontpage.';
+$string['name_topic_of_interest'] = 'Name of topic of interest {$a}';
+$string['name_topic_of_interest_desc'] = 'Enter the name of the topic of interest {$a}';
+$string['default_name_topic_of_interest'] = 'Name of topic of interest {$a}';
+$string['url_topic_of_interest'] = 'URL to topic of interest {$a}';
+$string['url_topic_of_interest_desc'] = 'Enter the URL to the topic of interest {$a}';
+$string['default_url_topic_of_interest'] = '#';
 
 // Footer settings tab.
 $string['footersettings'] = 'Footer';

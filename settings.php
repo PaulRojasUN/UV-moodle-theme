@@ -227,9 +227,9 @@ if ($ADMIN->fulltree) {
     }
 
     // Attention and support.
-    $name = 'theme_mooveuv/attention_and_support_heading';
-    $heading = get_string('attention_and_support_heading', 'theme_mooveuv');
-    $information = get_string('attention_and_support_heading_desc', 'theme_mooveuv');
+    $name = 'theme_mooveuv/customer_service_heading';
+    $heading = get_string('customer_service_heading', 'theme_mooveuv');
+    $information = get_string('customer_service_heading_desc', 'theme_mooveuv');
     $setting = new admin_setting_heading($name, $heading, $information);
     $page->add($setting);
 
@@ -280,7 +280,7 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_heading($name, $heading, $information);
     $page->add($setting);
 
-    $name = 'theme_mooveuv/helpcounter';
+    $name = 'theme_mooveuv/help_counter';
     $title = get_string('help_counter', 'theme_mooveuv');
     $description = get_string('help_counter_desc', 'theme_mooveuv');
     $default = 1;
@@ -311,8 +311,41 @@ if ($ADMIN->fulltree) {
     }
 
     // Topics of interest.
+    $name = 'theme_mooveuv/topics_of_interest_heading';
+    $heading = get_string('topics_of_interest_heading', 'theme_mooveuv');
+    $information = get_string('topics_of_interest_heading_desc', 'theme_mooveuv');
+    $setting = new admin_setting_heading($name, $heading, $information);
+    $page->add($setting);
 
+    $name = 'theme_mooveuv/topics_of_interest_counter';
+    $title = get_string('topics_of_interest_counter', 'theme_mooveuv');
+    $description = get_string('topics_of_interest_counter_desc', 'theme_mooveuv');
+    $default = 1;
+    $options = array();
+    for ($i = 1; $i <= 20; $i++) {
+        $options[$i] = $i;
+    }
+    $setting = new admin_setting_configselect($name, $title, $description, $default, $options);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
 
+    $topiccounter = get_config('theme_mooveuv', 'topics_of_interest_counter');
+
+    for ($i = 1; $i <= $topiccounter; $i++) {
+        $name = 'theme_mooveuv/name_topic_of_interest_' . $i;
+        $title = get_string('name_topic_of_interest', 'theme_mooveuv', $i);
+        $description = get_string('name_topic_of_interest_desc', 'theme_mooveuv', $i);
+        $default = get_string('default_name_topic_of_interest', 'theme_mooveuv', $i);
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $page->add($setting);
+
+        $name = 'theme_mooveuv/url_topic_of_interest_' . $i;
+        $title = get_string('url_topic_of_interest', 'theme_mooveuv', $i);
+        $description = get_string('url_topic_of_interest_desc', 'theme_mooveuv', $i);
+        $default = get_string('default_url_topic_of_interest', 'theme_mooveuv', $i);
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $page->add($setting);
+    }
 
     $settings->add($page);
 
