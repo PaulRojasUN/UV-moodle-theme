@@ -93,14 +93,16 @@
                 <div class="col-4">
                     <div class="card sectioninfo-card">
                         <div class="card-header">
-                          <h2 class="h3">{{#str}} attention_suport_title, theme_mooveuv {{/str}}</h2>
+                          <h2 class="h3">{{#str}} customer_service_title, theme_mooveuv {{/str}}</h2>
                         </div>
                         <div class="card-body">
+
+                        {{#customer_service}}
 
                           <p><img src="{{{email_icon}}}" width="20" height="20"></img>{{mail}}</p>
                           <p><img src="{{{phone_icon}}}" width="20" height="20"></img>{{mobile}}</p>
 
-                          <p id="personalized_attention_schedule"><img src="{{{clock_icon}}}" width="20" height="20"></img>{{#str}} personalized_attention_schedule, theme_mooveuv {{/str}}</p>
+                          <p id="personalized_attention_schedule"><img src="{{{clock_icon}}}" width="20" height="20"></img>{{#str}} business_hours, theme_mooveuv {{/str}}</p>
 
                           <div class="container">
                             <div class="row">
@@ -145,6 +147,7 @@
                             </div>
                           </div>
 
+                        {{/customer_service}}
                         </div>
                       </div>
                 </div>
@@ -155,7 +158,11 @@
                           <h2 class="h3">{{#str}} quick_help_title, theme_mooveuv {{/str}}</h2>
                         </div>
                         <div class="card-body">
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            {{#quick_help}}
+                            <ul>
+                                <li><a href="{{url}}" target="_blank">{{name}}</a></li>
+                            </ul>
+                            {{/quick_help}}
                         </div>
                       </div>
                 </div>
@@ -166,7 +173,11 @@
                           <h2 class="h3">{{#str}} topics_of_interest_title, theme_mooveuv {{/str}}</h2>
                         </div>
                         <div class="card-body">
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            {{#topics_of_interest}}
+                            <ul>
+                                <li><a href="{{url}}" target="_blank">{{name}}</a></li>
+                            </ul>
+                            {{/topics_of_interest}}
                         </div>
                       </div>
                 </div>

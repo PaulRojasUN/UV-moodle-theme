@@ -105,15 +105,40 @@ class frontpage {
 
         $templatecontext = [];
 
-        $templatecontext['phone_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/phone.png');
-        $templatecontext['email_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/email.png');
-        $templatecontext['clock_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/clock.png');
+        // Customer service.
+        $templatecontext['customer_service'] = array();
+        $templatecontext['customer_service']['phone_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/phone.png');
+        $templatecontext['customer_service']['email_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/email.png');
+        $templatecontext['customer_service']['clock_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/clock.png');
+        $templatecontext['customer_service']['monday_office_hours'] = $this->monday_office_hours;
+        $templatecontext['customer_service']['tuesday_office_hours'] = $this->tuesday_office_hours;
+        $templatecontext['customer_service']['wednesday_office_hours'] = $this->wednesday_office_hours;
+        $templatecontext['customer_service']['thursday_office_hours'] = $this->thursday_office_hours;
+        $templatecontext['customer_service']['friday_office_hours'] = $this->friday_office_hours;
 
-        $templatecontext['monday_office_hours'] = $this->monday_office_hours;
-        $templatecontext['tuesday_office_hours'] = $this->tuesday_office_hours;
-        $templatecontext['wednesday_office_hours'] = $this->wednesday_office_hours;
-        $templatecontext['thursday_office_hours'] = $this->thursday_office_hours;
-        $templatecontext['friday_office_hours'] = $this->friday_office_hours;
+        // Quick help.
+        $helpcounter = $this->help_counter;
+        $templatecontext['quick_help'] = array();
+
+        for ($i = 1; $i <= $helpcounter; $i++) {
+            $quickhelpname = "quick_help_name_{$i}";
+            $quickhelpurl = "quick_help_url_{$i}";
+
+            $templatecontext['quick_help'][$i - 1]['name'] = $this->$quickhelpname;
+            $templatecontext['quick_help'][$i - 1]['url'] = $this->$quickhelpurl;
+        }
+
+        // Topics of interest.
+        $topicofinterestcounter = $this->topics_of_interest_counter;
+        $templatecontext['topics_of_interest'] = array();
+
+        for ($i = 1; $i <= $topicofinterestcounter; $i++) {
+            $topicofinterestname = "topic_of_interest_name_{$i}";
+            $topicofinteresturl = "topic_of_interest_url_{$i}";
+
+            $templatecontext['topics_of_interest'][$i - 1]['name'] = $this->$topicofinterestname;
+            $templatecontext['topics_of_interest'][$i - 1]['url'] = $this->$topicofinteresturl;
+        }
 
         return $templatecontext;
     }

@@ -57,14 +57,14 @@
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
     }
-
-    .login > a{
-        color: white;
-    }
 }
 
 .notloggedin {
     #page-wrapper > nav > div.primary-navigation {
         display: none;
+    }
+
+    .login > a{
+        color: white;
     }
 }
