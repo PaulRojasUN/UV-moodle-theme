@@ -121,8 +121,8 @@ class frontpage {
         $templatecontext['quick_help'] = array();
 
         for ($i = 1; $i <= $helpcounter; $i++) {
-            $quickhelpname = "name_quick_help_{$i}";
-            $quickhelpurl = "url_quick_help_{$i}";
+            $quickhelpname = "quick_help_name_{$i}";
+            $quickhelpurl = "quick_help_url_{$i}";
 
             $templatecontext['quick_help'][$i - 1]['name'] = $this->$quickhelpname;
             $templatecontext['quick_help'][$i - 1]['url'] = $this->$quickhelpurl;
@@ -133,8 +133,8 @@ class frontpage {
         $templatecontext['topics_of_interest'] = array();
 
         for ($i = 1; $i <= $topicofinterestcounter; $i++) {
-            $topicofinterestname = "name_topic_of_interest_{$i}";
-            $topicofinteresturl = "url_topic_of_interest_{$i}";
+            $topicofinterestname = "topic_of_interest_name_{$i}";
+            $topicofinteresturl = "topic_of_interest_url_{$i}";
 
             $templatecontext['topics_of_interest'][$i - 1]['name'] = $this->$topicofinterestname;
             $templatecontext['topics_of_interest'][$i - 1]['url'] = $this->$topicofinteresturl;

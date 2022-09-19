@@ -285,7 +285,7 @@ if ($ADMIN->fulltree) {
     $description = get_string('help_counter_desc', 'theme_mooveuv');
     $default = 1;
     $options = array();
-    for ($i = 1; $i <= 20; $i++) {
+    for ($i = 1; $i <= 10; $i++) {
         $options[$i] = $i;
     }
     $setting = new admin_setting_configselect($name, $title, $description, $default, $options);
@@ -295,17 +295,17 @@ if ($ADMIN->fulltree) {
     $helpcounter = get_config('theme_mooveuv', 'help_counter');
 
     for ($i = 1; $i <= $helpcounter; $i++) {
-        $name = 'theme_mooveuv/name_quick_help_' . $i;
-        $title = get_string('name_quick_help', 'theme_mooveuv', $i);
-        $description = get_string('name_quick_help_desc', 'theme_mooveuv', $i);
-        $default = get_string('default_name_quick_help', 'theme_mooveuv', $i);
+        $name = 'theme_mooveuv/quick_help_name_' . $i;
+        $title = get_string('quick_help_name', 'theme_mooveuv', $i);
+        $description = get_string('quick_help_name_desc', 'theme_mooveuv', $i);
+        $default = get_string('default_quick_help_name', 'theme_mooveuv', $i);
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
 
-        $name = 'theme_mooveuv/url_quick_help_' . $i;
-        $title = get_string('url_quick_help', 'theme_mooveuv', $i);
-        $description = get_string('url_quick_help_desc', 'theme_mooveuv', $i);
-        $default = get_string('default_url_quick_help', 'theme_mooveuv', $i);
+        $name = 'theme_mooveuv/quick_help_url_' . $i;
+        $title = get_string('quick_help_url', 'theme_mooveuv', $i);
+        $description = get_string('quick_help_url_desc', 'theme_mooveuv', $i);
+        $default = get_string('default_quick_help_url', 'theme_mooveuv', $i);
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
     }
@@ -322,7 +322,7 @@ if ($ADMIN->fulltree) {
     $description = get_string('topics_of_interest_counter_desc', 'theme_mooveuv');
     $default = 1;
     $options = array();
-    for ($i = 1; $i <= 20; $i++) {
+    for ($i = 1; $i <= 10; $i++) {
         $options[$i] = $i;
     }
     $setting = new admin_setting_configselect($name, $title, $description, $default, $options);
@@ -332,17 +332,17 @@ if ($ADMIN->fulltree) {
     $topiccounter = get_config('theme_mooveuv', 'topics_of_interest_counter');
 
     for ($i = 1; $i <= $topiccounter; $i++) {
-        $name = 'theme_mooveuv/name_topic_of_interest_' . $i;
-        $title = get_string('name_topic_of_interest', 'theme_mooveuv', $i);
-        $description = get_string('name_topic_of_interest_desc', 'theme_mooveuv', $i);
-        $default = get_string('default_name_topic_of_interest', 'theme_mooveuv', $i);
+        $name = 'theme_mooveuv/topic_of_interest_name_' . $i;
+        $title = get_string('topic_of_interest_name', 'theme_mooveuv', $i);
+        $description = get_string('topic_of_interest_name_desc', 'theme_mooveuv', $i);
+        $default = get_string('default_topic_of_interest_name', 'theme_mooveuv', $i);
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
 
-        $name = 'theme_mooveuv/url_topic_of_interest_' . $i;
-        $title = get_string('url_topic_of_interest', 'theme_mooveuv', $i);
-        $description = get_string('url_topic_of_interest_desc', 'theme_mooveuv', $i);
-        $default = get_string('default_url_topic_of_interest', 'theme_mooveuv', $i);
+        $name = 'theme_mooveuv/topic_of_interest_url_' . $i;
+        $title = get_string('topic_of_interest_url', 'theme_mooveuv', $i);
+        $description = get_string('topic_of_interest_url_desc', 'theme_mooveuv', $i);
+        $default = get_string('default_topic_of_interest_url', 'theme_mooveuv', $i);
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
     }
