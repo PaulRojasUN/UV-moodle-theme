@@ -292,7 +292,7 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
-    $helpcounter = get_config('theme_mooveuv', 'helpcounter');
+    $helpcounter = get_config('theme_mooveuv', 'help_counter');
 
     for ($i = 1; $i <= $helpcounter; $i++) {
         $name = 'theme_mooveuv/name_quick_help_' . $i;
