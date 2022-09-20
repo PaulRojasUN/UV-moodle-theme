@@ -99,6 +99,7 @@ $string['customer_service_heading'] = 'Personalized service hours';
 $string['customer_service_heading_desc'] = 'Enter the personalized attention schedules.';
 $string['office_hours_per_day'] = '{$a} office hours';
 $string['office_hours_per_day_desc'] = 'Hours of attention for {$a}';
+
 $string['quickhelp_heading'] = 'Quick help';
 $string['quickhelp_heading_desc'] = 'Links to quick help.';
 $string['help_counter'] = 'Quick help counter';
@@ -109,6 +110,7 @@ $string['default_quick_help_name'] = 'Name of quick help {$a}';
 $string['quick_help_url'] = 'URL to quick help {$a}';
 $string['quick_help_url_desc'] = 'Enter the URL to the quick help {$a}';
 $string['default_quick_help_url'] = '#';
+
 $string['topics_of_interest_heading'] = 'Topics of interest';
 $string['topics_of_interest_heading_desc'] = 'Links to topics of interest.';
 $string['topics_of_interest_counter'] = 'Topics of interest counter';
@@ -119,6 +121,16 @@ $string['default_topic_of_interest_name'] = 'Name of topic of interest {$a}';
 $string['topic_of_interest_url'] = 'URL to topic of interest {$a}';
 $string['topic_of_interest_url_desc'] = 'Enter the URL to the topic of interest {$a}';
 $string['default_topic_of_interest_url'] = '#';
+
+$string['software_licenses_heading'] = 'Sotware licenses';
+$string['software_licenses_heading_desc'] = 'Links to software licenses.';
+$string['software_licenses_counter'] = 'Software licenses counter';
+$string['software_licenses_counter_desc'] = 'Select the number of software licenses that will be linked on the frontpage.';
+$string['software_license_image'] = 'Software license image';
+$string['software_license_image_desc'] = 'Add software license image.';
+$string['software_license_url'] = 'URL to software license {$a}';
+$string['software_license_url_desc'] = 'Enter the URL to the software license {$a}';
+$string['default_software_license_url'] = '#';
 
 // Footer settings tab.
 $string['footersettings'] = 'Footer';
