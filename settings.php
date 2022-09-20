@@ -305,7 +305,7 @@ if ($ADMIN->fulltree) {
         $name = 'theme_mooveuv/quick_help_url_' . $i;
         $title = get_string('quick_help_url', 'theme_mooveuv', $i);
         $description = get_string('quick_help_url_desc', 'theme_mooveuv', $i);
-        $default = get_string('default_quick_help_url', 'theme_mooveuv', $i);
+        $default = get_string('default_url', 'theme_mooveuv');
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
     }
@@ -335,14 +335,14 @@ if ($ADMIN->fulltree) {
         $name = 'theme_mooveuv/topic_of_interest_name_' . $i;
         $title = get_string('topic_of_interest_name', 'theme_mooveuv', $i);
         $description = get_string('topic_of_interest_name_desc', 'theme_mooveuv', $i);
-        $default = get_string('default_topic_of_interest_name', 'theme_mooveuv');
+        $default = get_string('default_url', 'theme_mooveuv');
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
 
         $name = 'theme_mooveuv/topic_of_interest_url_' . $i;
         $title = get_string('topic_of_interest_url', 'theme_mooveuv', $i);
         $description = get_string('topic_of_interest_url_desc', 'theme_mooveuv', $i);
-        $default = get_string('default_topic_of_interest_url', 'theme_mooveuv');
+        $default = get_string('default_url', 'theme_mooveuv');
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
     }
@@ -380,7 +380,7 @@ if ($ADMIN->fulltree) {
         $name = 'theme_mooveuv/software_license_url_' . $i;
         $title = get_string('software_license_url', 'theme_mooveuv', $i);
         $description = get_string('software_license_url_desc', 'theme_mooveuv', $i);
-        $default = get_string('default_software_license_url', 'theme_mooveuv');
+        $default = get_string('default_url', 'theme_mooveuv');
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
     }

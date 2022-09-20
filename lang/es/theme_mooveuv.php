@@ -95,6 +95,8 @@ $string['slidercountdesc'] = 'Selecciona cuantos slides quieres agregar <strong>
 $string['sliderimage'] = 'Imagen del Slider';
 $string['sliderimagedesc'] = 'Agrega una imagen para tu slide. El tamaño recomendado es 1500px x 540px o mayor.';
 
+$string['default_url'] = 'https://campusvirtual.univalle.edu.co/moodle';
+
 $string['customer_service_heading'] = 'Horario de atención personalizada';
 $string['customer_service_heading_desc'] = 'Escriba los horarios para atención al público.';
 $string['office_hours_per_day'] = 'Horario {$a}';
@@ -109,7 +111,6 @@ $string['quick_help_name_desc'] = 'Ingrese el nombre de la ayuda rápida {$a}';
 $string['default_quick_help_name'] = 'Nombre de la ayuda rápida {$a}';
 $string['quick_help_url'] = 'URL de la ayuda rápida {$a}';
 $string['quick_help_url_desc'] = 'Ingrese la URL de la ayuda rápida {$a}';
-$string['default_quick_help_url'] = '#';
 
 $string['topics_of_interest_heading'] = 'Artículos de interés';
 $string['topics_of_interest_heading_desc'] = 'Enlaces a artículos de interés sobre la DINTEV y el Campus Virtual.';
@@ -120,7 +121,6 @@ $string['topic_of_interest_name_desc'] = 'Ingrese el nombre del artículo de int
 $string['default_topic_of_interest_name'] = 'Nombre del artículo de interés {$a}';
 $string['topic_of_interest_url'] = 'URL del artículo de interés {$a}';
 $string['topic_of_interest_url_desc'] = 'Ingrese la URL del artículo de interés {$a}';
-$string['default_topic_of_interest_url'] = '#';
 
 $string['software_licenses_heading'] = 'Licencias de software';
 $string['software_licenses_heading_desc'] = 'Enlaces a licencias de software.';
@@ -130,7 +130,6 @@ $string['software_license_image'] = 'Imagen de la licencia de software {$a}';
 $string['software_license_image_desc'] = 'Cargue una imagen para la licencia de software {$a}.';
 $string['software_license_url'] = 'URL de la licencia de software {$a}';
 $string['software_license_url_desc'] = 'Ingrese la URL de la licencia de software {$a}';
-$string['default_software_license_url'] = '#';
 
 // Footer settings tab.
 $string['footersettings'] = 'Pie de página';

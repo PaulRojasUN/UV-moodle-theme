@@ -95,6 +95,8 @@ $string['slidercountdesc'] = 'Select how many slides you want to add <strong>the
 $string['sliderimage'] = 'Slider picture';
 $string['sliderimagedesc'] = 'Add an image for your slide. Recommended size is 1500px x 540px or higher.';
 
+$string['default_url'] = 'https://campusvirtual.univalle.edu.co/moodle';
+
 $string['customer_service_heading'] = 'Personalized service hours';
 $string['customer_service_heading_desc'] = 'Enter the personalized attention schedules.';
 $string['office_hours_per_day'] = '{$a} office hours';
@@ -109,7 +111,6 @@ $string['quick_help_name_desc'] = 'Enter the name of the quick help {$a}';
 $string['default_quick_help_name'] = 'Name of quick help {$a}';
 $string['quick_help_url'] = 'URL to quick help {$a}';
 $string['quick_help_url_desc'] = 'Enter the URL to the quick help {$a}';
-$string['default_quick_help_url'] = '#';
 
 $string['topics_of_interest_heading'] = 'Topics of interest';
 $string['topics_of_interest_heading_desc'] = 'Links to topics of interest.';
@@ -120,7 +121,6 @@ $string['topic_of_interest_name_desc'] = 'Enter the name of the topic of interes
 $string['default_topic_of_interest_name'] = 'Name of topic of interest {$a}';
 $string['topic_of_interest_url'] = 'URL to topic of interest {$a}';
 $string['topic_of_interest_url_desc'] = 'Enter the URL to the topic of interest {$a}';
-$string['default_topic_of_interest_url'] = '#';
 
 $string['software_licenses_heading'] = 'Sotware licenses';
 $string['software_licenses_heading_desc'] = 'Links to software licenses.';
@@ -130,7 +130,6 @@ $string['software_license_image'] = 'Software license image';
 $string['software_license_image_desc'] = 'Add software license image.';
 $string['software_license_url'] = 'URL to software license {$a}';
 $string['software_license_url_desc'] = 'Enter the URL to the software license {$a}';
-$string['default_software_license_url'] = '#';
 
 // Footer settings tab.
 $string['footersettings'] = 'Footer';
