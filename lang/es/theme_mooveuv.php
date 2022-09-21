@@ -205,3 +205,10 @@ $string['tuesday'] = 'Martes';
 $string['wednesday'] = 'Miércoles';
 $string['thursday'] = 'Jueves';
 $string['friday'] = 'Viernes';
+
+// Footer.
+$string['footer_title'] = 'Vicerrectoría Académica';
+$string['footer_subtitle'] = 'Dirección de Nuevas Tecnologías y Educación Virtual - DINTEV';
+$string['footer_uv_address'] = 'Edificio E18 (317) Oficina 2004 / Campus Meléndez';
+$string['footer_privacy_policy_desc'] = 'Política de privacidad';
+$string['footer_privacy_policy_url'] = 'https://campusvirtual.univalle.edu.co/moodle/info-dintev/privacidad-campus-virtual.php';
