@@ -226,7 +226,7 @@ if ($ADMIN->fulltree) {
         $page->add($setting);
     }
 
-    // Attention and support.
+    // Customer service.
     $name = 'theme_mooveuv/customer_service_heading';
     $heading = get_string('customer_service_heading', 'theme_mooveuv');
     $information = get_string('customer_service_heading_desc', 'theme_mooveuv');
@@ -305,7 +305,7 @@ if ($ADMIN->fulltree) {
         $name = 'theme_mooveuv/quick_help_url_' . $i;
         $title = get_string('quick_help_url', 'theme_mooveuv', $i);
         $description = get_string('quick_help_url_desc', 'theme_mooveuv', $i);
-        $default = get_string('default_quick_help_url', 'theme_mooveuv', $i);
+        $default = get_string('default_url', 'theme_mooveuv');
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
     }
@@ -335,14 +335,52 @@ if ($ADMIN->fulltree) {
         $name = 'theme_mooveuv/topic_of_interest_name_' . $i;
         $title = get_string('topic_of_interest_name', 'theme_mooveuv', $i);
         $description = get_string('topic_of_interest_name_desc', 'theme_mooveuv', $i);
-        $default = get_string('default_topic_of_interest_name', 'theme_mooveuv', $i);
+        $default = get_string('default_url', 'theme_mooveuv');
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
 
         $name = 'theme_mooveuv/topic_of_interest_url_' . $i;
         $title = get_string('topic_of_interest_url', 'theme_mooveuv', $i);
         $description = get_string('topic_of_interest_url_desc', 'theme_mooveuv', $i);
-        $default = get_string('default_topic_of_interest_url', 'theme_mooveuv', $i);
+        $default = get_string('default_url', 'theme_mooveuv');
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $page->add($setting);
+    }
+
+    // Software licenses.
+    $name = 'theme_mooveuv/software_licenses_heading';
+    $heading = get_string('software_licenses_heading', 'theme_mooveuv');
+    $information = get_string('software_licenses_heading_desc', 'theme_mooveuv');
+    $setting = new admin_setting_heading($name, $heading, $information);
+    $page->add($setting);
+
+    $name = 'theme_mooveuv/software_licenses_counter';
+    $title = get_string('software_licenses_counter', 'theme_mooveuv');
+    $description = get_string('software_licenses_counter_desc', 'theme_mooveuv');
+    $default = 1;
+    $options = array();
+    for ($i = 1; $i <= 10; $i++) {
+        $options[$i] = $i;
+    }
+    $setting = new admin_setting_configselect($name, $title, $description, $default, $options);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $softwarelicensescounter = get_config('theme_mooveuv', 'software_licenses_counter');
+
+    for ($i = 1; $i <= $softwarelicensescounter; $i++) {
+        $fileid = 'software_license_image_' . $i;
+        $name = 'theme_mooveuv/software_license_image_' . $i;
+        $title = get_string('software_license_image', 'theme_mooveuv', $i);
+        $description = get_string('software_license_image_desc', 'theme_mooveuv', $i);
+        $opts = array('accepted_types' => array('.png', '.jpg', '.gif', '.webp', '.tiff', '.svg'), 'maxfiles' => 1);
+        $setting = new admin_setting_configstoredfile($name, $title, $description, $fileid, 0, $opts);
+        $page->add($setting);
+
+        $name = 'theme_mooveuv/software_license_url_' . $i;
+        $title = get_string('software_license_url', 'theme_mooveuv', $i);
+        $description = get_string('software_license_url_desc', 'theme_mooveuv', $i);
+        $default = get_string('default_url', 'theme_mooveuv');
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
     }

@@ -95,10 +95,13 @@ $string['slidercountdesc'] = 'Selecciona cuantos slides quieres agregar <strong>
 $string['sliderimage'] = 'Imagen del Slider';
 $string['sliderimagedesc'] = 'Agrega una imagen para tu slide. El tamaño recomendado es 1500px x 540px o mayor.';
 
+$string['default_url'] = 'https://campusvirtual.univalle.edu.co/moodle';
+
 $string['customer_service_heading'] = 'Horario de atención personalizada';
 $string['customer_service_heading_desc'] = 'Escriba los horarios para atención al público.';
 $string['office_hours_per_day'] = 'Horario {$a}';
 $string['office_hours_per_day_desc'] = 'Horario de atención del {$a}';
+
 $string['quickhelp_heading'] = 'Ayudas rápidas ';
 $string['quickhelp_heading_desc'] = 'Enlaces a ayudas rápidas para el uso del Campus Virtual.';
 $string['help_counter'] = 'Contador de ayudas rápidas';
@@ -108,7 +111,7 @@ $string['quick_help_name_desc'] = 'Ingrese el nombre de la ayuda rápida {$a}';
 $string['default_quick_help_name'] = 'Nombre de la ayuda rápida {$a}';
 $string['quick_help_url'] = 'URL de la ayuda rápida {$a}';
 $string['quick_help_url_desc'] = 'Ingrese la URL de la ayuda rápida {$a}';
-$string['default_quick_help_url'] = '#';
+
 $string['topics_of_interest_heading'] = 'Artículos de interés';
 $string['topics_of_interest_heading_desc'] = 'Enlaces a artículos de interés sobre la DINTEV y el Campus Virtual.';
 $string['topics_of_interest_counter'] = 'Contador de artículos de interés';
@@ -118,7 +121,15 @@ $string['topic_of_interest_name_desc'] = 'Ingrese el nombre del artículo de int
 $string['default_topic_of_interest_name'] = 'Nombre del artículo de interés {$a}';
 $string['topic_of_interest_url'] = 'URL del artículo de interés {$a}';
 $string['topic_of_interest_url_desc'] = 'Ingrese la URL del artículo de interés {$a}';
-$string['default_topic_of_interest_url'] = '#';
+
+$string['software_licenses_heading'] = 'Licencias de software';
+$string['software_licenses_heading_desc'] = 'Enlaces a licencias de software.';
+$string['software_licenses_counter'] = 'Contador de licencias de software';
+$string['software_licenses_counter_desc'] = 'Seleccione la cantidad de licencias de software a enlazar en la página principal.';
+$string['software_license_image'] = 'Imagen de la licencia de software {$a}';
+$string['software_license_image_desc'] = 'Cargue una imagen para la licencia de software {$a}.';
+$string['software_license_url'] = 'URL de la licencia de software {$a}';
+$string['software_license_url_desc'] = 'Ingrese la URL de la licencia de software {$a}';
 
 // Footer settings tab.
 $string['footersettings'] = 'Pie de página';
@@ -155,6 +166,8 @@ $string['business_hours'] = 'Horarios de atención personalizado';
 $string['no_attention'] = 'No hay horario de atención.';
 $string['quick_help_title'] = 'Ayudas rápidas';
 $string['topics_of_interest_title'] = 'Artículos de interés';
+$string['institutional_licensed_software_title'] = 'Software con licenciamiento institucional';
+$string['institutional_licensed_software_subtitle'] = 'para uso de la comunidad académica Univalle';
 
 // Theme settings.
 $string['themesettings:accessibility'] = 'Accessibility';
