@@ -3,14 +3,43 @@
     // Slider.
     a.carousel-control-prev,
     a.carousel-control-next {
-        width: 4em;
+        transition: all 0.25s ease-out;
+        color: white;
+        width: 6em;
         padding-left: 1em;
         padding-right: 1em;
+        opacity: 100%;
+        outline: none;
+        border: none;
+        box-shadow: none;
     }
+
+    a.carousel-control-prev:hover,
+    a.carousel-control-next:hover {
+        box-shadow: none;
+        border: none;
+    }
+
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        width: 40px;
-        height: 40px;
+        background-image: none;
+        font-size: 1.2em;
+        font-weight: 400;
+        width: 30px;
+        height: 50px;
+
+    }
+
+    .carousel-control-next-icon:after {
+        content: '>';
+        font-size: 2em;
+        color: #2C4252;
+    }
+
+    .carousel-control-prev-icon:after {
+        content: '<';
+        font-size: 2em;
+        color: #2C4252;
     }
 
     .carousel-indicators > li {
