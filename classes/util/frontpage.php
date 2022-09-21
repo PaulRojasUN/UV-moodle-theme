@@ -101,7 +101,7 @@ class frontpage {
      * @author Iader E. Garcia Gomez <iadergg@gmail.com>
      * @since  Moodle 4.0
      */
-    public function frontpage_infosection() {
+    public function frontpage_info_section() {
 
         $templatecontext = [];
 
@@ -138,6 +138,36 @@ class frontpage {
 
             $templatecontext['topics_of_interest'][$i - 1]['name'] = $this->$topicofinterestname;
             $templatecontext['topics_of_interest'][$i - 1]['url'] = $this->$topicofinteresturl;
+        }
+
+        return $templatecontext;
+    }
+
+    /**
+     * Returns template context for the software licenses section of the frontpage.
+     *
+     * @return array $templatecontext
+     * @author Iader E. Garcia Gomez <iadergg@gmail.com>
+     * @since  Moodle 4.0
+     */
+    public function frontpage_softwarelicenses_section() {
+        $templatecontext = [];
+
+        $softwarelicensescounter = $this->software_licenses_counter;
+        $templatecontext['software_licenses'] = array();
+
+        for ($i = 1; $i <= $softwarelicensescounter; $i++) {
+            $softwarelicenseimage = "software_license_image_" . $i;
+            $softwarelicenseurl = "software_license_url_" . $i;
+
+            $templatecontext['software_licenses'][$i - 1]['image'] = $this->theme->setting_file_url($softwarelicenseimage,
+                                                                                                    $softwarelicenseimage);
+            $templatecontext['software_licenses'][$i - 1]['url'] = $this->$softwarelicenseurl;
+            $templatecontext['software_licenses'][$i - 1]['is_first'] = 0;
+
+            if ($i - 1 == 0) {
+                $templatecontext['software_licenses'][$i - 1]['is_first'] = 1;
+            }
         }
 
         return $templatecontext;

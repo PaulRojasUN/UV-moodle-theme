@@ -88,7 +88,7 @@
         </div>
 
         <!-- Information -->
-        <div id="informationsection" class="mooveuv-container-fluid">
+        <div id="informationsection" class="container-fluid">
             <div class="row" id="row-sectioninfo-cards">
                 <div class="col-4">
                     <div class="card sectioninfo-card">
@@ -194,6 +194,28 @@
                         {{{ output.course_content_footer }}}
                     </section>
                 </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row pt-5 pb-5">
+                <div class="col-6 offset-3">
+                    <h2 class="text-center">{{#str}} institutional_licensed_software_title, theme_mooveuv{{/str}}</h2>
+                    <hr>
+                    <h3 class="text-center">{{#str}} institutional_licensed_software_subtitle, theme_mooveuv{{/str}}</h3>
+                </div>
+            </div>
+            <div class="row">
+            {{#software_licenses}}
+                {{#is_first}}
+                <div class="col-2 offset-1">
+                {{/is_first}}
+                {{^is_first}}
+                <div class="col-2">
+                {{/is_first}}
+                    <a href="{{url}}" target="_blank"><img src="{{image}}" alt=""></a>
+                </div>
+            {{/software_licenses}}
             </div>
         </div>
 

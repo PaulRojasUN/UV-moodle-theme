@@ -166,6 +166,8 @@ $string['business_hours'] = 'Business hours';
 $string['no_attention'] = 'No attention';
 $string['quick_help_title'] = 'Quick help';
 $string['topics_of_interest_title'] = 'Topics of interest';
+$string['institutional_licensed_software_title'] = 'Institutional licensed software';
+$string['institutional_licensed_software_subtitle'] = 'for the use of the academic community of the Universidad del Valle';
 
 // Theme settings.
 $string['themesettings:accessibility'] = 'Accessibility';
