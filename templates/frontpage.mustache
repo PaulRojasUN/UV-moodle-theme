@@ -64,23 +64,24 @@
 
         <!-- Front page slider -->
         <div id="mooveuvslideshow" class="mooveuv-container-fluid">
-            <div id="carouselindicators" class="carousel slide" data-ride="carousel">
+            <div id="frontpage-carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     {{#slides}}
-                        <li data-target="#mooveuvslideshow" data-slide-to="{{{ key }}}" {{#active}} class="active" {{/active}}></li>
+                        <li data-target="#frontpage-carousel" data-slide-to="{{ key }}" {{#active}} class="active" {{/active}}></li>
                     {{/slides}}
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner" role="listbox">
                     {{#slides}}
-                        <div class="carousel-item {{#active}}active{{/active}}" style="width: 100%; height: 600px; background: url('{{image}}') no-repeat; background-size: cover; background-position: center;">
+                        <div class="carousel-item {{#active}}active{{/active}}">
+                            <img class="d-block img-fluid w-100" src="{{image}}" alt="">
                         </div>
                     {{/slides}}
                 </div>
-                <a class="carousel-control-prev" href="#carouselindicators" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#frontpage-carousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">{{#str}}previous{{/str}}</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselindicators" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#frontpage-carousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">{{#str}}next{{/str}}</span>
                 </a>
@@ -88,98 +89,111 @@
         </div>
 
         <!-- Information -->
-        <div id="informationsection" class="container-fluid">
-            <div class="row" id="row-sectioninfo-cards">
-                <div class="col-4">
-                    <div class="card sectioninfo-card">
-                        <div class="card-header">
-                          <h2 class="h3">{{#str}} customer_service_title, theme_mooveuv {{/str}}</h2>
+        <div id="information-section" class="container-fluid">
+            <div id="row-sectioninfo-cards" class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 justify-content-center">
+
+                <div class="card col sectioninfo-card">
+                    <div class="card-header">
+                        <h2>{{#str}} customer_service_title, theme_mooveuv {{/str}}</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="container pl-0 pr-0">
+                            {{#customer_service}}
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="mb-0">
+                                        <img src="{{{email_icon}}}" width="20" height="20"></img> {{mail}}
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        <img src="{{{phone_icon}}}" width="20" height="20"></img> {{mobile}}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <p id="business-hours" class="font-weight-bold pt-4 pb-3">
+                                        <img src="{{{clock_icon}}}" width="20" height="20"></img> {{#str}} business_hours, theme_mooveuv {{/str}}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container">
+
+                                <div class="row">
+                                    <div class="col-3 pr-0">
+                                        <p class="font-weight-bold">{{#str}} monday, theme_mooveuv {{/str}}</p>
+                                    </div>
+                                    <div class="col-9">
+                                        {{monday_office_hours}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 pr-0">
+                                        <p class="font-weight-bold">{{#str}} tuesday, theme_mooveuv {{/str}}</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p>{{tuesday_office_hours}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 pr-0">
+                                        <p class="font-weight-bold">{{#str}} wednesday, theme_mooveuv {{/str}}</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p>{{wednesday_office_hours}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 pr-0">
+                                        <p class="font-weight-bold">{{#str}} thursday, theme_mooveuv {{/str}}</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p>{{thursday_office_hours}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 pr-0">
+                                        <p class="font-weight-bold">{{#str}} friday, theme_mooveuv {{/str}}</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p>{{friday_office_hours}}</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            {{/customer_service}}
                         </div>
-                        <div class="card-body">
-
-                        {{#customer_service}}
-
-                          <p><img src="{{{email_icon}}}" width="20" height="20"></img>{{mail}}</p>
-                          <p><img src="{{{phone_icon}}}" width="20" height="20"></img>{{mobile}}</p>
-
-                          <p id="personalized_attention_schedule"><img src="{{{clock_icon}}}" width="20" height="20"></img>{{#str}} business_hours, theme_mooveuv {{/str}}</p>
-
-                          <div class="container">
-                            <div class="row">
-                                <div class="col-4">
-                                    <p><b>{{#str}} monday, theme_mooveuv {{/str}}</b></p>
-                                </div>
-                                <div class="col-8">
-                                    {{monday_office_hours}}
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <p><b>{{#str}} tuesday, theme_mooveuv {{/str}}</b></p>
-                                </div>
-                                <div class="col-8">
-                                    <p>{{tuesday_office_hours}}</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <p><b>{{#str}} wednesday, theme_mooveuv {{/str}}</b></p>
-                                </div>
-                                <div class="col-8">
-                                    <p>{{wednesday_office_hours}}</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <p><b>{{#str}} thursday, theme_mooveuv {{/str}}</b></p>
-                                </div>
-                                <div class="col-8">
-                                    <p>{{thursday_office_hours}}</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <p><b>{{#str}} friday, theme_mooveuv {{/str}}</b></p>
-                                </div>
-                                <div class="col-8">
-                                    <p>{{friday_office_hours}}</p>
-                                </div>
-                            </div>
-                          </div>
-
-                        {{/customer_service}}
-                        </div>
-                      </div>
+                    </div>
                 </div>
 
-                <div class="col-4">
-                    <div class="card sectioninfo-card">
-                        <div class="card-header">
-                          <h2 class="h3">{{#str}} quick_help_title, theme_mooveuv {{/str}}</h2>
-                        </div>
-                        <div class="card-body">
+                <div class="card col sectioninfo-card">
+                    <div class="card-header">
+                        <h2>{{#str}} quick_help_title, theme_mooveuv {{/str}}</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
                             {{#quick_help}}
-                            <ul>
-                                <li><a href="{{url}}" target="_blank">{{name}}</a></li>
-                            </ul>
+                            <li><a href="{{url}}" target="_blank">{{name}}</a></li>
                             {{/quick_help}}
-                        </div>
-                      </div>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="col-4">
-                    <div class="card sectioninfo-card">
-                        <div class="card-header">
-                          <h2 class="h3">{{#str}} topics_of_interest_title, theme_mooveuv {{/str}}</h2>
-                        </div>
-                        <div class="card-body">
+                <div class="card col sectioninfo-card">
+                    <div class="card-header">
+                        <h2>{{#str}} topics_of_interest_title, theme_mooveuv {{/str}}</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
                             {{#topics_of_interest}}
-                            <ul>
-                                <li><a href="{{url}}" target="_blank">{{name}}</a></li>
-                            </ul>
+                            <li><a href="{{url}}" target="_blank">{{name}}</a></li>
                             {{/topics_of_interest}}
-                        </div>
-                      </div>
+                    </div>
                 </div>
             </div>
 
