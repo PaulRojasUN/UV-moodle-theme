@@ -131,6 +131,15 @@ $string['software_license_image_desc'] = 'Cargue una imagen para la licencia de 
 $string['software_license_url'] = 'URL de la licencia de software {$a}';
 $string['software_license_url_desc'] = 'Ingrese la URL de la licencia de software {$a}';
 
+$string['open_courses'] = 'Cursos abiertos';
+$string['open_courses_heading_desc'] = 'Configuraciones para la sección de recursos abiertos';
+$string['open_courses_title'] = 'Título para la sección de cursos abiertos';
+$string['open_courses_title_desc'] = 'Ingrese el título para la sección de cursos abiertos';
+$string['open_courses_subtitle'] = 'Subtítulo para la sección de cursos abiertos';
+$string['open_courses_subtitle_desc'] = 'Ingrese el subtítulo para la sección de cursos abiertos';
+$string['open_courses_category'] = 'Categoría para mostrar en la sección de cursos abiertos';
+$string['open_courses_category_desc'] = 'Seleccione la categoría de cursos a mostrar';
+
 // Footer settings tab.
 $string['footersettings'] = 'Pie de página';
 $string['website'] = 'URL del sitio web';
