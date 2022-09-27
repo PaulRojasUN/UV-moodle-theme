@@ -392,8 +392,6 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_heading($name, $heading, $information);
     $page->add($setting);
 
-    $settings->add($page);
-
     $name = 'theme_mooveuv/open_courses_title';
     $title = get_string('open_courses_title', 'theme_mooveuv');
     $description = get_string('open_courses_title_desc', 'theme_mooveuv');
@@ -414,6 +412,8 @@ if ($ADMIN->fulltree) {
     $default = 1;
     $setting = new admin_settings_coursecat_select($name, $title, $description, $default);
     $page->add($setting);
+
+    $settings->add($page);
 
     /*
     * --------------------
