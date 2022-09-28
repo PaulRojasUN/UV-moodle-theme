@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
+        <h2 class="text-center mb-0">{{{ open_courses_title }}}</h2>
+        <hr>
+        <h3 class="text-center">{{ open_courses_subtitle }}</h3>
+    </div>
+</div>
+
+<div class="row justify-content-center pt-5">
+    {{#courses}}
+        <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="{{{id}}}">
+            <a href="{{config.wwwroot}}/course/view.php?id={{{id}}}" tabindex="-1">
+                <div class="card-img dashboard-card-img" style="background-image: url({{{image}}});">
+                    <span class="sr-only">{{#str}}aria:courseimage, core_course{{/str}} {{{fullname}}}</span>
+                    <div class="course-category">
+                        {{{category}}}
+                    </div>
+                </div>
+            </a>
+            <div class="card-body course-info-container">
+                <div class="d-flex align-items-start">
+                    <div class="w-100">
+                        <a href="{{config.wwwroot}}/course/view.php?id={{{id}}}" class="aalink coursename mr-2 mb-1">
+                            {{{fullname}}}
+                        </a>
+                    </div>
+                </div>
+
+                <div class="customfields">
+                    {{{customfields}}}
+                </div>
+
+                <div class="course-summary">
+                    {{{summary}}}
+                </div>
+            </div>
+        </div>
+    {{/courses}}
+</div>
+

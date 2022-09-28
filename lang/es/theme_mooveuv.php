@@ -32,14 +32,14 @@ $string['choosereadme'] = 'Moove UV es un tema personalizado y creado para el Ca
 
 $string['currentinparentheses'] = '(current)';
 $string['region-side-pre'] = 'Right';
-$string['prev_section'] = 'Previous section';
-$string['next_section'] = 'Next section';
-$string['themedevelopedby'] = 'This theme was developed by';
-$string['access'] = 'Access';
-$string['prev_activity'] = 'Previous activity';
-$string['next_activity'] = 'Next activity';
-$string['donthaveanaccount'] = 'Don\'t have an account?';
-$string['signinwith'] = 'Sign in with';
+$string['prev_section'] = 'Sección anterior';
+$string['next_section'] = 'Próxima sección';
+$string['themedevelopedby'] = 'Este tema fue desarrollado por';
+$string['access'] = 'Acceder';
+$string['prev_activity'] = 'Actividad anterior';
+$string['next_activity'] = 'Próxima actividad';
+$string['donthaveanaccount'] = '¿Aún no tiene una cuenta?';
+$string['signinwith'] = 'Ingresar con';
 
 // General settings tab.
 $string['generalsettings'] = 'General';
