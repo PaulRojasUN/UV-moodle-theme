@@ -385,6 +385,34 @@ if ($ADMIN->fulltree) {
         $page->add($setting);
     }
 
+    // Open courses.
+    $name = 'theme_mooveuv/open_courses_heading';
+    $heading = get_string('open_courses', 'theme_mooveuv');
+    $information = get_string('open_courses_heading_desc', 'theme_mooveuv');
+    $setting = new admin_setting_heading($name, $heading, $information);
+    $page->add($setting);
+
+    $name = 'theme_mooveuv/open_courses_title';
+    $title = get_string('open_courses_title', 'theme_mooveuv');
+    $description = get_string('open_courses_title_desc', 'theme_mooveuv');
+    $default = get_string('open_courses', 'theme_mooveuv');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $page->add($setting);
+
+    $name = 'theme_mooveuv/open_courses_subtitle';
+    $title = get_string('open_courses_subtitle', 'theme_mooveuv');
+    $description = get_string('open_courses_subtitle_desc', 'theme_mooveuv');
+    $default = get_string('open_courses', 'theme_mooveuv');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $page->add($setting);
+
+    $name = 'theme_mooveuv/open_courses_category';
+    $title = get_string('open_courses_category', 'theme_mooveuv');
+    $description = get_string('open_courses_category_desc', 'theme_mooveuv');
+    $default = 1;
+    $setting = new admin_settings_coursecat_select($name, $title, $description, $default);
+    $page->add($setting);
+
     $settings->add($page);
 
     /*

@@ -131,6 +131,15 @@ $string['software_license_image_desc'] = 'Add software license image.';
 $string['software_license_url'] = 'URL to software license {$a}';
 $string['software_license_url_desc'] = 'Enter the URL to the software license {$a}';
 
+$string['open_courses'] = 'Open courses';
+$string['open_courses_heading_desc'] = 'Settings for open courses';
+$string['open_courses_title'] = 'Open courses title';
+$string['open_courses_title_desc'] = 'Enter open courses title';
+$string['open_courses_subtitle'] = 'Open courses subtitle';
+$string['open_courses_subtitle_desc'] = 'Enter open courses subtitle';
+$string['open_courses_category'] = 'Open courses category';
+$string['open_courses_category_desc'] = 'Select open courses category';
+
 // Footer settings tab.
 $string['footersettings'] = 'Footer';
 $string['website'] = 'Website URL';

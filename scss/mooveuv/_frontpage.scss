@@ -1,5 +1,9 @@
 #page-site-index {
 
+    .mooveuv-frontpage {
+        background-color: #F9F9F9;
+    }
+
     // Slider.
     a.carousel-control-prev,
     a.carousel-control-next {
@@ -49,6 +53,17 @@
         background-color: #F9F9F9;
     }
 
+    // Sections.
+    .frontpage-section {
+        background-color: #F9F9F9;
+        padding-left: 5em;
+        padding-right: 5em;
+
+        hr {
+            margin: 0px;
+        }
+    }
+
     // Info section.
     #row-sectioninfo-cards {
         padding-top: 3em;
@@ -63,7 +78,7 @@
         display: flex;
         border: 1px;
         box-shadow: none;
-
+        background-color: #F9F9F9;
     }
 
     .sectioninfo-card .card-header {
@@ -84,8 +99,8 @@
 
     .sectioninfo-card .card-body {
         padding-top: 3em;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 3em;
+        padding-right: 3em;
         border-top: 0px solid #E1E4E7;
         border-left: 1px solid #E1E4E7;
         border-bottom: 1px solid #E1E4E7;
@@ -107,6 +122,20 @@
         li::marker {
             font-weight: 600;
         }
+    }
+
+    // Open courses section.
+    #frontpage-available-course-list > h2 {
+        display: none;
+    }
+
+    #open-courses-section > div {
+        padding-left : 0px;
+        padding-right: 0px;
+    }
+
+    #open-courses-section {
+        background-color: #F9F9F9;
     }
 }
 

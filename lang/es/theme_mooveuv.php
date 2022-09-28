@@ -32,14 +32,14 @@ $string['choosereadme'] = 'Moove UV es un tema personalizado y creado para el Ca
 
 $string['currentinparentheses'] = '(current)';
 $string['region-side-pre'] = 'Right';
-$string['prev_section'] = 'Previous section';
-$string['next_section'] = 'Next section';
-$string['themedevelopedby'] = 'This theme was developed by';
-$string['access'] = 'Access';
-$string['prev_activity'] = 'Previous activity';
-$string['next_activity'] = 'Next activity';
-$string['donthaveanaccount'] = 'Don\'t have an account?';
-$string['signinwith'] = 'Sign in with';
+$string['prev_section'] = 'Sección anterior';
+$string['next_section'] = 'Próxima sección';
+$string['themedevelopedby'] = 'Este tema fue desarrollado por';
+$string['access'] = 'Acceder';
+$string['prev_activity'] = 'Actividad anterior';
+$string['next_activity'] = 'Próxima actividad';
+$string['donthaveanaccount'] = '¿Aún no tiene una cuenta?';
+$string['signinwith'] = 'Ingresar con';
 
 // General settings tab.
 $string['generalsettings'] = 'General';
@@ -130,6 +130,15 @@ $string['software_license_image'] = 'Imagen de la licencia de software {$a}';
 $string['software_license_image_desc'] = 'Cargue una imagen para la licencia de software {$a}.';
 $string['software_license_url'] = 'URL de la licencia de software {$a}';
 $string['software_license_url_desc'] = 'Ingrese la URL de la licencia de software {$a}';
+
+$string['open_courses'] = 'Cursos abiertos';
+$string['open_courses_heading_desc'] = 'Configuraciones para la sección de recursos abiertos';
+$string['open_courses_title'] = 'Título para la sección de cursos abiertos';
+$string['open_courses_title_desc'] = 'Ingrese el título para la sección de cursos abiertos';
+$string['open_courses_subtitle'] = 'Subtítulo para la sección de cursos abiertos';
+$string['open_courses_subtitle_desc'] = 'Ingrese el subtítulo para la sección de cursos abiertos';
+$string['open_courses_category'] = 'Categoría para mostrar en la sección de cursos abiertos';
+$string['open_courses_category_desc'] = 'Seleccione la categoría de cursos a mostrar';
 
 // Footer settings tab.
 $string['footersettings'] = 'Pie de página';

@@ -60,9 +60,9 @@
 
     {{> theme_moove/navbar }}
 
-    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers drag-container bg-white">
+    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers drag-container mooveuv-frontpage">
 
-        <!-- Front page slider -->
+        {{! Front page slider }}
         <div id="mooveuvslideshow" class="mooveuv-container-fluid">
             <div id="frontpage-carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -88,8 +88,8 @@
             </div>
         </div>
 
-        <!-- Information -->
-        <div id="information-section" class="container-fluid">
+        {{! Information }}
+        <div id="information-section" class="container-fluid frontpage-section">
             <div id="row-sectioninfo-cards" class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 justify-content-center">
 
                 <div class="card col sectioninfo-card">
@@ -196,25 +196,17 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <div id="topofscroll">
-            <div id="page-content" class="d-print-block main-inner">
-                <div id="region-main-box">
-                    <section id="region-main" aria-label="{{#str}}content{{/str}}">
-                        {{{ output.course_content_header }}}
-                        {{{ output.main_content }}}
-                        {{{ output.course_content_footer }}}
-                    </section>
-                </div>
-            </div>
+        {{! Open courses }}
+        <div id="open-courses-section" class="container-fluid frontpage-section">
+            {{{ output.main_content }}}
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid frontpage-section">
             <div class="row pt-5 pb-5">
                 <div class="col-6 offset-3">
-                    <h2 class="text-center">{{#str}} institutional_licensed_software_title, theme_mooveuv{{/str}}</h2>
+                    <h2 class="text-center mb-0">{{#str}} institutional_licensed_software_title, theme_mooveuv{{/str}}</h2>
                     <hr>
                     <h3 class="text-center">{{#str}} institutional_licensed_software_subtitle, theme_mooveuv{{/str}}</h3>
                 </div>
