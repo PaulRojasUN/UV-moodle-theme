@@ -139,6 +139,8 @@ function theme_mooveuv_get_pre_scss($theme) {
  * @param bool $forcedownload
  * @param array $options
  * @return mixed
+ * @author Iader E. Garcia Gomez <iadergg@gmail.com>
+ * @since  Moodle 4.0
  */
 function theme_mooveuv_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     $theme = theme_config::load('mooveuv');
