@@ -10,7 +10,7 @@
     {{#courses}}
         <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="{{{id}}}">
             <a href="{{config.wwwroot}}/course/view.php?id={{{id}}}" tabindex="-1">
-                <div class="card-img dashboard-card-img" style="background-image: url({{{image}}});">
+                <div class="card-img dashboard-card-img" style="background-image: url({{{image}}}); background-repeat: no-repeat; background-size: cover">
                     <span class="sr-only">{{#str}}aria:courseimage, core_course{{/str}} {{{fullname}}}</span>
                     <div class="course-category">
                         {{{category}}}
@@ -37,4 +37,6 @@
         </div>
     {{/courses}}
 </div>
+
+
 
