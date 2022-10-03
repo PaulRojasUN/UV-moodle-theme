@@ -66,8 +66,6 @@ class course_renderer extends core_course_renderer {
                             'open_courses_subtitle' => get_config('theme_mooveuv', 'open_courses_subtitle'),
                             'courses' => []];
 
-        $coursecathelper = new coursecat_helper();
-
         foreach ($courses as $course) {
 
             if ($course instanceof stdClass) {
