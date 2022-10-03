@@ -77,7 +77,7 @@ class course_renderer extends core_course_renderer {
             $courseutil = new course($course);
 
             array_push($templatecontext['courses'], ['id' => $course->id,
-                                                     'fullname' => $coursecathelper->get_course_formatted_name($course),
+                                                     'fullname' => $course->fullname,
                                                      'courseurl' => new moodle_url('/course/view.php', array('id' => $course->id )),
                                                      'image' => $courseutil->get_summary_image(),
                                                      'category' => $courseutil->get_category()]);
