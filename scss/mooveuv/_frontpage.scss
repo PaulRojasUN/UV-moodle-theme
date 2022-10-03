@@ -139,11 +139,13 @@
     }
 }
 
-.notloggedin {
+#page-site-index.notloggedin {
     #page-wrapper > nav > div.primary-navigation {
         display: none;
     }
+}
 
+.notloggedin {
     .login > a{
         color: white;
     }
