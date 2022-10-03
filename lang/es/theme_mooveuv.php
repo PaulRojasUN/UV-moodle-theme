@@ -76,7 +76,7 @@ $string['googleanalytics'] = 'Código Google Analytics V4';
 $string['googleanalyticsdesc'] = 'Por favor ingresa tu código de Google Analytics V4 para habilitar análisis en tu sitio web. El formato del código debería ser [G-XXXXXXXXXX]';
 
 // Frontpage settings tab.
-$string['frontpagesettings'] = 'Portada';
+$string['frontpagesettings'] = 'Página de inicio';
 $string['displaymarketingboxes'] = 'Show front page marketing boxes';
 $string['displaymarketingboxesdesc'] = 'If you want to see the boxes, select yes <strong>then click SAVE</strong> to load the input fields.';
 $string['marketingsectionheading'] = 'Marketing section heading title';

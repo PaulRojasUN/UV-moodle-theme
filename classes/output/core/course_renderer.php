@@ -24,7 +24,7 @@
  * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_moove\output\core;
+namespace theme_mooveuv\output\core;
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -66,8 +66,6 @@ class course_renderer extends core_course_renderer {
                             'open_courses_subtitle' => get_config('theme_mooveuv', 'open_courses_subtitle'),
                             'courses' => []];
 
-        $coursecathelper = new coursecat_helper();
-
         foreach ($courses as $course) {
 
             if ($course instanceof stdClass) {
@@ -77,7 +75,7 @@ class course_renderer extends core_course_renderer {
             $courseutil = new course($course);
 
             array_push($templatecontext['courses'], ['id' => $course->id,
-                                                     'fullname' => $coursecathelper->get_course_formatted_name($course),
+                                                     'fullname' => $course->fullname,
                                                      'courseurl' => new moodle_url('/course/view.php', array('id' => $course->id )),
                                                      'image' => $courseutil->get_summary_image(),
                                                      'category' => $courseutil->get_category()]);
