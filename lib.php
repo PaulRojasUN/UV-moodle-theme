@@ -59,8 +59,11 @@ function theme_mooveuv_get_main_scss_content($theme) {
     $moovevariables = file_get_contents($CFG->dirroot . '/theme/moove/scss/moove/_variables.scss');
     $moove = file_get_contents($CFG->dirroot . '/theme/moove/scss/default.scss');
 
+    // MooveUV scss.
+    $mooveuv = file_get_contents($CFG->dirroot . '/theme/mooveuv/scss/default.scss');
+
     // Combine them together.
-    $allscss = $moovevariables . "\n" . $scss . "\n" . $moove;
+    $allscss = $moovevariables . "\n" . $scss . "\n" . $moove . "\n" . $mooveuv;
 
     return $allscss;
 }
@@ -104,6 +107,7 @@ function theme_mooveuv_get_pre_scss($theme) {
     // Prepend variables first.
     foreach ($configurable as $configkey => $targets) {
         $value = isset($theme->settings->{$configkey}) ? $theme->settings->{$configkey} : null;
+
         if (empty($value)) {
             continue;
         }
@@ -135,6 +139,8 @@ function theme_mooveuv_get_pre_scss($theme) {
  * @param bool $forcedownload
  * @param array $options
  * @return mixed
+ * @author Iader E. Garcia Gomez <iadergg@gmail.com>
+ * @since  Moodle 4.0
  */
 function theme_mooveuv_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     $theme = theme_config::load('mooveuv');

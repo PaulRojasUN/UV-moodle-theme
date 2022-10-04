@@ -32,14 +32,14 @@ $string['choosereadme'] = 'Moove UV es un tema personalizado y creado para el Ca
 
 $string['currentinparentheses'] = '(current)';
 $string['region-side-pre'] = 'Right';
-$string['prev_section'] = 'Previous section';
-$string['next_section'] = 'Next section';
-$string['themedevelopedby'] = 'This theme was developed by';
-$string['access'] = 'Access';
-$string['prev_activity'] = 'Previous activity';
-$string['next_activity'] = 'Next activity';
-$string['donthaveanaccount'] = 'Don\'t have an account?';
-$string['signinwith'] = 'Sign in with';
+$string['prev_section'] = 'Sección anterior';
+$string['next_section'] = 'Próxima sección';
+$string['themedevelopedby'] = 'Este tema fue desarrollado por';
+$string['access'] = 'Acceder';
+$string['prev_activity'] = 'Actividad anterior';
+$string['next_activity'] = 'Próxima actividad';
+$string['donthaveanaccount'] = '¿Aún no tiene una cuenta?';
+$string['signinwith'] = 'Ingresar con';
 
 // General settings tab.
 $string['generalsettings'] = 'General';
@@ -76,7 +76,7 @@ $string['googleanalytics'] = 'Código Google Analytics V4';
 $string['googleanalyticsdesc'] = 'Por favor ingresa tu código de Google Analytics V4 para habilitar análisis en tu sitio web. El formato del código debería ser [G-XXXXXXXXXX]';
 
 // Frontpage settings tab.
-$string['frontpagesettings'] = 'Portada';
+$string['frontpagesettings'] = 'Página de inicio';
 $string['displaymarketingboxes'] = 'Show front page marketing boxes';
 $string['displaymarketingboxesdesc'] = 'If you want to see the boxes, select yes <strong>then click SAVE</strong> to load the input fields.';
 $string['marketingsectionheading'] = 'Marketing section heading title';
@@ -95,22 +95,50 @@ $string['slidercountdesc'] = 'Selecciona cuantos slides quieres agregar <strong>
 $string['sliderimage'] = 'Imagen del Slider';
 $string['sliderimagedesc'] = 'Agrega una imagen para tu slide. El tamaño recomendado es 1500px x 540px o mayor.';
 
-$string['numbersfrontpage'] = 'Muestra los números del sitio en la portada';
-$string['numbersfrontpagedesc'] = 'Si está habilitado, muestra el número de usuarios activos, cursos y actividades en la portada.';
-$string['numbersfrontpagecontent'] = 'Numbers section content';
-$string['numbersfrontpagecontentdesc'] = 'You can add any text to the left side of the numbers section';
-$string['numbersfrontpagecontentdefault'] = '<h2>Trusted by 25,000+ happy customers.</h2>
-                    <p>With lots of unique blocks, you can easily build <br class="d-none d-sm-block d-md-none d-xl-block">
-                        a page without coding. Build your next website <br class="d-none d-sm-block d-md-none d-xl-block">
-                        within few minutes.</p>';
-$string['numbersusers'] = 'Active users accessing our amazing resources';
-$string['numberscourses'] = 'Courses made for your that you can trust!';
+$string['default_url'] = 'https://campusvirtual.univalle.edu.co/moodle';
 
-$string['faq'] = 'FAQ';
-$string['faqcount'] = 'FAQ questions';
-$string['faqcountdesc'] = 'Select how many questions you want to add <strong>then click SAVE</strong> to load the input fields.<br>If you don\'t want a FAQ, just select 0.';
-$string['faqquestion'] = 'FAQ question {$a}';
-$string['faqanswer'] = 'FAQ answer {$a}';
+$string['customer_service_heading'] = 'Horario de atención personalizada';
+$string['customer_service_heading_desc'] = 'Escriba los horarios para atención al público.';
+$string['office_hours_per_day'] = 'Horario {$a}';
+$string['office_hours_per_day_desc'] = 'Horario de atención del {$a}';
+
+$string['quickhelp_heading'] = 'Ayudas rápidas ';
+$string['quickhelp_heading_desc'] = 'Enlaces a ayudas rápidas para el uso del Campus Virtual.';
+$string['help_counter'] = 'Contador de ayudas rápidas';
+$string['help_counter_desc'] = 'Seleccione la cantidad de ayudas rápidas a enlazar en la página principal.';
+$string['quick_help_name'] = 'Nombre de la ayuda rápida {$a}';
+$string['quick_help_name_desc'] = 'Ingrese el nombre de la ayuda rápida {$a}';
+$string['default_quick_help_name'] = 'Nombre de la ayuda rápida {$a}';
+$string['quick_help_url'] = 'URL de la ayuda rápida {$a}';
+$string['quick_help_url_desc'] = 'Ingrese la URL de la ayuda rápida {$a}';
+
+$string['topics_of_interest_heading'] = 'Artículos de interés';
+$string['topics_of_interest_heading_desc'] = 'Enlaces a artículos de interés sobre la DINTEV y el Campus Virtual.';
+$string['topics_of_interest_counter'] = 'Contador de artículos de interés';
+$string['topics_of_interest_counter_desc'] = 'Seleccione la cantidad de artículos de interés a enlazar en la página principal.';
+$string['topic_of_interest_name'] = 'Nombre del artículo de interés {$a}';
+$string['topic_of_interest_name_desc'] = 'Ingrese el nombre del artículo de interes {$a}';
+$string['default_topic_of_interest_name'] = 'Nombre del artículo de interés {$a}';
+$string['topic_of_interest_url'] = 'URL del artículo de interés {$a}';
+$string['topic_of_interest_url_desc'] = 'Ingrese la URL del artículo de interés {$a}';
+
+$string['software_licenses_heading'] = 'Licencias de software';
+$string['software_licenses_heading_desc'] = 'Enlaces a licencias de software.';
+$string['software_licenses_counter'] = 'Contador de licencias de software';
+$string['software_licenses_counter_desc'] = 'Seleccione la cantidad de licencias de software a enlazar en la página principal.';
+$string['software_license_image'] = 'Imagen de la licencia de software {$a}';
+$string['software_license_image_desc'] = 'Cargue una imagen para la licencia de software {$a}.';
+$string['software_license_url'] = 'URL de la licencia de software {$a}';
+$string['software_license_url_desc'] = 'Ingrese la URL de la licencia de software {$a}';
+
+$string['open_courses'] = 'Cursos abiertos';
+$string['open_courses_heading_desc'] = 'Configuraciones para la sección de recursos abiertos';
+$string['open_courses_title'] = 'Título para la sección de cursos abiertos';
+$string['open_courses_title_desc'] = 'Ingrese el título para la sección de cursos abiertos';
+$string['open_courses_subtitle'] = 'Subtítulo para la sección de cursos abiertos';
+$string['open_courses_subtitle_desc'] = 'Ingrese el subtítulo para la sección de cursos abiertos';
+$string['open_courses_category'] = 'Categoría para mostrar en la sección de cursos abiertos';
+$string['open_courses_category_desc'] = 'Seleccione la categoría de cursos a mostrar';
 
 // Footer settings tab.
 $string['footersettings'] = 'Pie de página';
@@ -137,11 +165,18 @@ $string['telegramdesc'] = 'Ingresa tu contacto de Telegram o link del grupo.';
 $string['contactus'] = 'Contact us';
 $string['followus'] = 'Follow us';
 
-// Mypublic page.
+// Frontpage.
 $string['aboutme'] = 'About me';
 $string['personalinformation'] = 'Personal information';
 $string['addcontact'] = 'Add contact';
 $string['removecontact'] = 'Remove contact';
+$string['customer_service_title'] = 'Atención y soporte';
+$string['business_hours'] = 'Horarios de atención personalizada';
+$string['no_attention'] = 'No hay horario de atención.';
+$string['quick_help_title'] = 'Ayudas rápidas';
+$string['topics_of_interest_title'] = 'Artículos de interés';
+$string['institutional_licensed_software_title'] = 'Software con licenciamiento institucional';
+$string['institutional_licensed_software_subtitle'] = 'para uso de la comunidad académica Univalle';
 
 // Theme settings.
 $string['themesettings:accessibility'] = 'Accessibility';
@@ -172,3 +207,17 @@ $string['privacy:accessibilitystyles_fontsizeclass'] = 'The current preference f
 $string['privacy:accessibilitystyles_sitecolorclass'] = 'The current preference for the site color is: {$a}.';
 $string['privacy:thememoovesettings_fonttype'] = 'The current preference for the font type is: {$a}.';
 $string['privacy:thememoovesettings_enableaccessibilitytoolbar'] = 'The current preference for enable accessibility toolbar is to show it.';
+
+// Days of the week.
+$string['monday'] = 'Lunes';
+$string['tuesday'] = 'Martes';
+$string['wednesday'] = 'Miércoles';
+$string['thursday'] = 'Jueves';
+$string['friday'] = 'Viernes';
+
+// Footer.
+$string['footer_title'] = 'Vicerrectoría Académica';
+$string['footer_subtitle'] = 'Dirección de Nuevas Tecnologías y Educación Virtual - DINTEV';
+$string['footer_uv_address'] = 'Edificio E18 (317) Oficina 2004 / Campus Meléndez';
+$string['footer_privacy_policy_desc'] = 'Política de privacidad';
+$string['footer_privacy_policy_url'] = 'https://campusvirtual.univalle.edu.co/moodle/info-dintev/privacidad-campus-virtual.php';

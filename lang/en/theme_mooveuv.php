@@ -95,22 +95,50 @@ $string['slidercountdesc'] = 'Select how many slides you want to add <strong>the
 $string['sliderimage'] = 'Slider picture';
 $string['sliderimagedesc'] = 'Add an image for your slide. Recommended size is 1500px x 540px or higher.';
 
-$string['numbersfrontpage'] = 'Show site numberss';
-$string['numbersfrontpagedesc'] = 'If enabled, display the number of active users and courses in the frontpage.';
-$string['numbersfrontpagecontent'] = 'Numbers section content';
-$string['numbersfrontpagecontentdesc'] = 'You can add any text to the left side of the numbers section';
-$string['numbersfrontpagecontentdefault'] = '<h2>Trusted by 25,000+ happy customers.</h2>
-                    <p>With lots of unique blocks, you can easily build <br class="d-none d-sm-block d-md-none d-xl-block">
-                        a page without coding. Build your next website <br class="d-none d-sm-block d-md-none d-xl-block">
-                        within few minutes.</p>';
-$string['numbersusers'] = 'Active users accessing our amazing resources';
-$string['numberscourses'] = 'Courses made for your that you can trust!';
+$string['default_url'] = 'https://campusvirtual.univalle.edu.co/moodle';
 
-$string['faq'] = 'FAQ';
-$string['faqcount'] = 'FAQ questions';
-$string['faqcountdesc'] = 'Select how many questions you want to add <strong>then click SAVE</strong> to load the input fields.<br>If you don\'t want a FAQ, just select 0.';
-$string['faqquestion'] = 'FAQ question {$a}';
-$string['faqanswer'] = 'FAQ answer {$a}';
+$string['customer_service_heading'] = 'Personalized service hours';
+$string['customer_service_heading_desc'] = 'Enter the personalized attention schedules.';
+$string['office_hours_per_day'] = '{$a} office hours';
+$string['office_hours_per_day_desc'] = 'Hours of attention for {$a}';
+
+$string['quickhelp_heading'] = 'Quick help';
+$string['quickhelp_heading_desc'] = 'Links to quick help.';
+$string['help_counter'] = 'Quick help counter';
+$string['help_counter_desc'] = 'Select the number of help that will be linked on the frontpage.';
+$string['quick_help_name'] = 'Name of quick help {$a}';
+$string['quick_help_name_desc'] = 'Enter the name of the quick help {$a}';
+$string['default_quick_help_name'] = 'Name of quick help {$a}';
+$string['quick_help_url'] = 'URL to quick help {$a}';
+$string['quick_help_url_desc'] = 'Enter the URL to the quick help {$a}';
+
+$string['topics_of_interest_heading'] = 'Topics of interest';
+$string['topics_of_interest_heading_desc'] = 'Links to topics of interest.';
+$string['topics_of_interest_counter'] = 'Topics of interest counter';
+$string['topics_of_interest_counter_desc'] = 'Select the number of topics that will be linked on the frontpage.';
+$string['topic_of_interest_name'] = 'Name of topic of interest {$a}';
+$string['topic_of_interest_name_desc'] = 'Enter the name of the topic of interest {$a}';
+$string['default_topic_of_interest_name'] = 'Name of topic of interest {$a}';
+$string['topic_of_interest_url'] = 'URL to topic of interest {$a}';
+$string['topic_of_interest_url_desc'] = 'Enter the URL to the topic of interest {$a}';
+
+$string['software_licenses_heading'] = 'Sotware licenses';
+$string['software_licenses_heading_desc'] = 'Links to software licenses.';
+$string['software_licenses_counter'] = 'Software licenses counter';
+$string['software_licenses_counter_desc'] = 'Select the number of software licenses that will be linked on the frontpage.';
+$string['software_license_image'] = 'Software license image';
+$string['software_license_image_desc'] = 'Add software license image.';
+$string['software_license_url'] = 'URL to software license {$a}';
+$string['software_license_url_desc'] = 'Enter the URL to the software license {$a}';
+
+$string['open_courses'] = 'Open courses';
+$string['open_courses_heading_desc'] = 'Settings for open courses';
+$string['open_courses_title'] = 'Open courses title';
+$string['open_courses_title_desc'] = 'Enter open courses title';
+$string['open_courses_subtitle'] = 'Open courses subtitle';
+$string['open_courses_subtitle_desc'] = 'Enter open courses subtitle';
+$string['open_courses_category'] = 'Open courses category';
+$string['open_courses_category_desc'] = 'Select open courses category';
 
 // Footer settings tab.
 $string['footersettings'] = 'Footer';
@@ -137,11 +165,18 @@ $string['telegramdesc'] = 'Enter your Telegram contact or group link.';
 $string['contactus'] = 'Contact us';
 $string['followus'] = 'Follow us';
 
-// Mypublic page.
+// Frontpage.
 $string['aboutme'] = 'About me';
 $string['personalinformation'] = 'Personal information';
 $string['addcontact'] = 'Add contact';
 $string['removecontact'] = 'Remove contact';
+$string['customer_service_title'] = 'Customer service';
+$string['business_hours'] = 'Business hours';
+$string['no_attention'] = 'No attention';
+$string['quick_help_title'] = 'Quick help';
+$string['topics_of_interest_title'] = 'Topics of interest';
+$string['institutional_licensed_software_title'] = 'Institutional licensed software';
+$string['institutional_licensed_software_subtitle'] = 'for the use of the academic community of the Universidad del Valle';
 
 // Theme settings.
 $string['themesettings:accessibility'] = 'Accessibility';
@@ -172,3 +207,17 @@ $string['privacy:accessibilitystyles_fontsizeclass'] = 'The current preference f
 $string['privacy:accessibilitystyles_sitecolorclass'] = 'The current preference for the site color is: {$a}.';
 $string['privacy:thememoovesettings_fonttype'] = 'The current preference for the font type is: {$a}.';
 $string['privacy:thememoovesettings_enableaccessibilitytoolbar'] = 'The current preference for enable accessibility toolbar is to show it.';
+
+// Days of the week.
+$string['monday'] = 'Monday';
+$string['tuesday'] = 'Tuesday';
+$string['wednesday'] = 'Wednesday';
+$string['thursday'] = 'Thursday';
+$string['friday'] = 'Friday';
+
+// Footer.
+$string['footer_title'] = 'Vicerrectoría Académica';
+$string['footer_subtitle'] = 'Dirección de Nuevas Tecnologías y Educación Virtual - DINTEV';
+$string['footer_uv_address'] = 'Edificio E18 (317) Oficina 2004 / Campus Meléndez';
+$string['footer_privacy_policy_desc'] = 'Privacy policy';
+$string['footer_privacy_policy_url'] = 'https://campusvirtual.univalle.edu.co/moodle/info-dintev/privacidad-campus-virtual.php';

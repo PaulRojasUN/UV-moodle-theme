@@ -35,6 +35,16 @@ $THEME->scss = function($theme) {
     return theme_mooveuv_get_main_scss_content($theme);
 };
 
+$THEME->layouts = [
+    // The site home page.
+    'frontpage' => array(
+        'file' => 'frontpage.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+        'options' => array('nonavbar' => true),
+    )
+];
+
 $THEME->parents = ['moove', 'boost'];
 $THEME->enable_dock = false;
 $THEME->extrascsscallback = 'theme_mooveuv_get_extra_scss';
@@ -46,6 +56,7 @@ $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 $THEME->iconsystem = \core\output\icon_system::FONTAWESOME;
 $THEME->haseditswitch = true;
 $THEME->usescourseindex = true;
+
 // By default, all Moodle theme do not need their titles displayed.
 $THEME->activityheaderconfig = [
     'notitle' => true
