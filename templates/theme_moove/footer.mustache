@@ -21,59 +21,57 @@
 }}
 
 <div class="footer-cv">
-    <div class="flex-container">
-        <div class="flex-item-footer-left">
-            <div><h4>{{#str}} footer_title, theme_mooveuv {{/str}}</h4></div>
-            <div><h5>{{#str}} footer_subtitle, theme_mooveuv {{/str}}</h5></div>
-            {{#website}} <div><a href="{{ website }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{{ website }}}</a></div> {{/website}}
-            {{#mobile}} <div><i class="fa fa-phone"></i> {{{ mobile }}}</div> {{/mobile}}
-            {{#mail}} <div><a href="mailto:{{ mail }}" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> {{{ mail }}}</a></div> {{/mail}}
-            <div><i class="fa fa-building" aria-hidden="true"></i> {{#str}} footer_uv_address, theme_mooveuv {{/str}}</div>
-        </div>
-        <div class="flex-container-footer-right">
-            <div class="flex-item-policy-privacy">
-                <a href="{{#str}} footer_privacy_policy_url, theme_mooveuv {{/str}}" target="_blank" class="privacypolicy">
-                {{#str}} footer_privacy_policy_desc, theme_mooveuv {{/str}}
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="privacy-policies col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <a href="{{#str}} footer_privacy_policy_url, theme_mooveuv {{/str}}" target="_blank">
+                    {{#str}} footer_privacy_policy_desc, theme_mooveuv {{/str}}
                 </a>
             </div>
-            <div class="flex-container-social-media">
-                {{#youtube}}
-                    <div class="flex-item-social-media">
-                        <a href="{{{youtube}}}" target="_blank" class="youtube">
-                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                {{/youtube}}
-                {{#facebook}}
-                    <div class="flex-item-social-media">
-                        <a href="{{{facebook}}}" target="_blank" class="facebook">
-                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                {{/facebook}}
-                {{#twitter}}
-                    <div class="flex-item-social-media">
-                        <a href="{{{twitter}}}" target="_blank" class="twitter">
-                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                {{/twitter}}
-                {{#instagram}}
-                    <div class="flex-item-social-media">
-                        <a href="{{{instagram}}}" target="_blank" class="instagram">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                {{/instagram}}
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div><h4>{{#str}} footer_title, theme_mooveuv {{/str}}</h4></div>
+                <div><h5>{{#str}} footer_subtitle, theme_mooveuv {{/str}}</h5></div>
+                {{#website}} <div><a href="{{ website }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{{ website }}}</a></div> {{/website}}
+                {{#mobile}} <div><i class="fa fa-phone"></i> {{{ mobile }}}</div> {{/mobile}}
+                {{#mail}} <div><a href="mailto:{{ mail }}" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> {{{ mail }}}</a></div> {{/mail}}
+                <div><i class="fa fa-building" aria-hidden="true"></i> {{#str}} footer_uv_address, theme_mooveuv {{/str}}</div>
             </div>
         </div>
+
+        <div class="row justify-content-end">
+            {{#youtube}}
+                <div class="social-media-icons">
+                    <a href="{{{youtube}}}" target="_blank">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                </div>
+            {{/youtube}}
+            {{#facebook}}
+                <div class="social-media-icons">
+                    <a href="{{{facebook}}}" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            {{/facebook}}
+            {{#twitter}}
+                <div class="social-media-icons">
+                    <a href="{{{twitter}}}" target="_blank">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            {{/twitter}}
+            {{#instagram}}
+                <div class="social-media-icons">
+                    <a href="{{{instagram}}}" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            {{/instagram}}
+        </div>
+
     </div>
 </div>
-
-{{{ output.standard_end_of_body_html }}}
-
-{{#js}}
-    require(['theme_boost/footer-popover'], function(FooterPopover) {
-        FooterPopover.init();
-    });
-{{/js}}
