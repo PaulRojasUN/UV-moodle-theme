@@ -221,3 +221,6 @@ $string['footer_subtitle'] = 'Dirección de Nuevas Tecnologías y Educación Vir
 $string['footer_uv_address'] = 'Edificio E18 (317) Oficina 2004 / Campus Meléndez';
 $string['footer_privacy_policy_desc'] = 'Privacy policy';
 $string['footer_privacy_policy_url'] = 'https://campusvirtual.univalle.edu.co/moodle/info-dintev/privacidad-campus-virtual.php';
+
+// User profile (mypublic template).
+$string['user_profile_details'] = 'Details';

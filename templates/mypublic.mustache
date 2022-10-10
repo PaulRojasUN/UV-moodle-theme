@@ -1,0 +1,166 @@
+{{!
+    This file is part of Moodle - https://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_mooveuv/mypublic
+
+    User profile template.
+
+    Example context (json): {}
+}}
+
+{{> theme_moove/head }}
+
+    <body {{{ bodyattributes }}}>
+
+        {{> theme_moove/accessibilitybar }}
+
+        {{> core/local/toast/wrapper}}
+
+        <div id="page-wrapper" class="d-print-block">
+
+            {{{ output.standard_top_of_body_html }}}
+
+            {{> theme_moove/navbar }}
+
+            <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers drag-container">
+                <div id="topofscroll" class="main-inner">
+                    <div id="page-content" class="d-print-block">
+                        <div id="region-main-box">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card card-body card-profile">
+                                        <div class="userpicture">
+                                            <img src="{{{userpicture}}}" alt="{{{userfullname}}}">
+                                        </div>
+
+                                        <h3>{{{userfullname}}}</h3>
+
+                                        <div class="headerbuttons">
+                                            {{#headerbuttons}}
+                                                <a role="button" href="{{{url}}}" class="{{{class}}}"
+                                                    {{#linkattributes}}
+                                                    id="{{{id}}}"
+                                                    data-userid="{{{data-userid}}}"
+                                                    data-is-contact="{{{data-is-contact}}}"
+                                                    data-currentuserid="{{{data-currentuserid}}}"
+                                                    {{/linkattributes}}
+                                                >
+                                                    <i class="{{{icon}}}" title="{{{title}}}" aria-label="{{{title}}}"></i>
+                                                    {{{title}}}
+                                                </a>
+                                            {{/headerbuttons}}
+                                        </div>
+
+                                        {{#editprofileurl}}
+                                            <a href="{{{editprofileurl}}}" class="btn btn-sm btn-primary btn-block my-2"><i class="fa fa-edit"></i> {{#str}}editmyprofile{{/str}}</a>
+                                        {{/editprofileurl}}
+
+                                        <div class="userinfo my-2">
+                                            {{#userdescription}}
+                                                <hr>
+
+                                                <h6>{{#str}}aboutme, theme_moove{{/str}}</h6>
+
+                                                <div class="userdescription">{{{userdescription}}}</div>
+
+                                                <hr>
+                                            {{/userdescription}}
+                                            {{#usercanviewprofile}}
+                                                <h6>{{#str}}personalinformation, theme_moove{{/str}}</h6>
+                                                <ul>
+                                                    {{#useremail}}
+                                                        <li>
+                                                            <dl>
+                                                                <dt>{{#str}}email{{/str}}:</dt>
+                                                                <dd>
+                                                                    <a href="mailto:{{{useremail}}}">{{{useremail}}}</a>
+                                                                </dd>
+                                                            </dl>
+                                                        </li>
+                                                    {{/useremail}}
+                                                    {{#usercountry}}
+                                                        <li>
+                                                            <dl>
+                                                                <dt>{{#str}}country{{/str}}:</dt>
+                                                                <dd>{{{usercountry}}}</dd>
+                                                            </dl>
+                                                        </li>
+                                                    {{/usercountry}}
+                                                    {{#usercity}}
+                                                        <li>
+                                                            <dl>
+                                                                <dt>{{#str}}city{{/str}}:</dt>
+                                                                <dd>{{{usercity}}}</dd>
+                                                            </dl>
+                                                        </li>
+                                                    {{/usercity}}
+                                                </ul>
+                                            {{/usercanviewprofile}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="user-courses-tab" data-toggle="tab" href="#user-courses" role="tab" aria-controls="user-courses" aria-selected="true">{{#str}}courses{{/str}}</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="user-details-tab" data-toggle="tab" href="#user-details" role="tab" aria-controls="user-details" aria-selected="false">{{#str}}user_profile_details, theme_mooveuv{{/str}}</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content mt-2" id="mypublic-tab">
+                                        <div class="tab-pane fade show active pt-1" id="user-courses" role="tabpanel" aria-labelledby="user-courses-tab">
+                                            <div role="main">
+                                                <div class="userprofile">
+                                                    <div class="profile_tree">
+                                                        <section class="node_category card d-inline-block w-100 mb-3">
+                                                            <div class="card-body">
+                                                                {{{ blockcourselistuv }}}
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade pt-1" id="user-details" role="tabpanel" aria-labelledby="user-details-tab">
+                                            <section id="region-main" aria-label="{{#str}}content{{/str}}">
+                                                {{{ output.main_content }}}
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{> theme_moove/footer }}
+
+            </div>
+
+            {{{ output.standard_after_main_region_html }}}
+
+        </div>
+    </body>
+</html>
+
+{{#js}}
+    M.util.js_pending('theme_boost/loader');
+    require(['theme_boost/loader'], function(Loader) {
+        M.util.js_complete('theme_boost/loader');
+    });
+{{/js}}
