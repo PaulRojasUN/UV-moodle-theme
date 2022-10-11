@@ -100,7 +100,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_mooveuv/brandcolor';
     $title = get_string('brandcolor', 'theme_mooveuv');
     $description = get_string('brandcolor_desc', 'theme_mooveuv');
-    $default = '#0f47ad';
+    $default = '#CD1F32';
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -110,7 +110,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_mooveuv/secondarymenucolor';
     $title = get_string('secondarymenucolor', 'theme_mooveuv');
     $description = get_string('secondarymenucolor_desc', 'theme_mooveuv');
-    $default = '#0f47ad';
+    $default = '#434A5A';
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -135,7 +135,8 @@ if ($ADMIN->fulltree) {
     $name = 'theme_mooveuv/fontsite';
     $title = get_string('fontsite', 'theme_mooveuv');
     $description = get_string('fontsite_desc', 'theme_mooveuv');
-    $setting = new admin_setting_configselect($name, $title, $description, 'Roboto', $fontsarr);
+    $default = 'Poppins';
+    $setting = new admin_setting_configselect($name, $title, $description, $default, $fontsarr);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
