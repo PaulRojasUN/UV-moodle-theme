@@ -110,7 +110,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_mooveuv/secondarymenucolor';
     $title = get_string('secondarymenucolor', 'theme_mooveuv');
     $description = get_string('secondarymenucolor_desc', 'theme_mooveuv');
-    $default = '#434A5A';
+    $default = '#58595B';
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
