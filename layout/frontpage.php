@@ -122,4 +122,7 @@ $templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_slid
 $templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_info_section());
 $templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_softwarelicenses_section());
 
+$logintoken = \core\session\manager::get_login_token();
+$PAGE->requires->js_call_amd('theme_mooveuv/modal_login', 'init', array($logintoken));
+
 echo $OUTPUT->render_from_template('theme_mooveuv/frontpage', $templatecontext);
