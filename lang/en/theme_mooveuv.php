@@ -224,3 +224,13 @@ $string['footer_privacy_policy_url'] = 'https://campusvirtual.univalle.edu.co/mo
 
 // User profile (mypublic template).
 $string['user_profile_details'] = 'Details';
+
+// Dashboard.
+$string['dashboard_admin_disk_usage'] = 'Disk usage (moodledata)';
+$string['dashboard_admin_disk_usage_not_calculated'] = 'Not calculated yet';
+$string['dashboard_admin_total_users'] = 'Active / Suspended users';
+$string['dashboard_admin_total_courses'] = 'Total courses';
+$string['dashboard_admin_online_users'] = 'Online users (last 5 min)';
+
+// Tasks.
+$string['task_calculate_moodledata_disk_usage'] = 'Task to calculate the moodledata directory disk usage';
