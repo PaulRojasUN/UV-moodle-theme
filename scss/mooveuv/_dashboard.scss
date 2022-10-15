@@ -1,7 +1,4 @@
 .mydashboard-admin {
-    h3, p, i {
-        color: white;
-    }
     .bg-1 {
         background-color: #4C3A51;
     }
@@ -16,6 +13,41 @@
     }
     i {
         font-size: 25px;
+    }
+}
+
+.mydashboard-regular-user {
+    a {
+        text-decoration-color: white;
+    }
+    .card {
+        background-color: #2C4252;
+        background-position-x: right;
+        background-position-y: bottom;
+        background-size: 40px;
+        background-repeat: no-repeat;
+    }
+    .card.bg-1 {
+        background-image: url([[pix:theme_mooveuv|icon/library]]);
+    }
+    .card.bg-2 {
+        background-image: url([[pix:theme_mooveuv|icon/email]]);
+    }
+    .card.bg-3 {
+        background-image: url([[pix:theme_mooveuv|icon/regulations]]);
+    }
+    .card.bg-4 {
+        background-image: url([[pix:theme_mooveuv|icon/techtoolbox]]);
+    }
+    .card.bg-5 {
+        background-image: url([[pix:theme_mooveuv|icon/affairdivision]]);
+    }
+}
+
+.mydashboard-admin,
+.mydashboard-regular-user {
+    h3, p, i {
+        color: white;
     }
     .info-box {
         white-space: nowrap;

@@ -231,6 +231,11 @@ $string['dashboard_admin_disk_usage_not_calculated'] = 'Not calculated yet';
 $string['dashboard_admin_total_users'] = 'Active / Suspended users';
 $string['dashboard_admin_total_courses'] = 'Total courses';
 $string['dashboard_admin_online_users'] = 'Online users (last 5 min)';
+$string['dashboard_regularuser_library'] = 'Library';
+$string['dashboard_regularuser_email'] = 'E-Mail';
+$string['dashboard_regularuser_regulations'] = 'Regulations';
+$string['dashboard_regularuser_techtoolbox'] = 'Tech Toolbox';
+$string['dashboard_regularuser_affairdivision'] = 'Affair Division';
 
 // Tasks.
 $string['task_calculate_moodledata_disk_usage'] = 'Task to calculate the moodledata directory disk usage';
