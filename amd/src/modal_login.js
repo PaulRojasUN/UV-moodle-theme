@@ -1,14 +1,22 @@
-define(['jquery', 'core/templates', 'core/modal_factory'], function($, Templates, ModalFactory) {
+/*
+ * @module     theme_mooveuv/modal_login
+ * @author     2022 Iader E. Garcia Gomez <iadergg@gmail.com>
+ * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
-    return {
-        init: function(logintoken) {
-            var trigger = $('#login');
+import $ from 'jquery';
+import * as Templates from 'core/templates';
+import * as ModalFactory from 'core/modal_factory';
 
-            ModalFactory.create({
-                title: 'Test title',
-                body: Templates.render('theme_mooveuv/modal_login', {'logintoken': logintoken}),
-                footer: 'Footer'
-            }, trigger);
-        }
-    };
-});
+export const init = (logintoken, logourl, loginurl) => {
+    var trigger = $('#login');
+
+    ModalFactory.create({
+        title: Templates.render('theme_mooveuv/modal_login_header', {'logourl': logourl}),
+        body: Templates.render('theme_mooveuv/modal_login_body', {'logintoken': logintoken, 'loginurl': loginurl}),
+    }, trigger)
+    .done(function(modal) {
+
+    });
+};

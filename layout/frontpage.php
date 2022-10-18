@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+global $CFG;
+
 require_once($CFG->libdir . '/behat/lib.php');
 require_once($CFG->dirroot . '/course/lib.php');
 
@@ -122,7 +124,14 @@ $templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_slid
 $templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_info_section());
 $templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_softwarelicenses_section());
 
+// Modal login.
 $logintoken = \core\session\manager::get_login_token();
-$PAGE->requires->js_call_amd('theme_mooveuv/modal_login', 'init', array($logintoken));
+
+$theme = theme_config::load('moove');
+$logourl = $theme->setting_file_url('logo', 'logo');
+
+$loginurl = $CFG->wwwroot . '/login/index.php';
+
+$PAGE->requires->js_call_amd('theme_mooveuv/modal_login', 'init', array($logintoken, $logourl, $loginurl));
 
 echo $OUTPUT->render_from_template('theme_mooveuv/frontpage', $templatecontext);
