@@ -146,6 +146,26 @@
     .licensed-software-image {
         padding: 2em;
     }
+
+    // Modal login.
+    #login {
+        color: white;
+        cursor: pointer;
+    }
+
+    #logo-login {
+        width: 80%;
+    }
+
+    .modal-header {
+        background-color: #CD1F32;
+        border: none;
+        padding: 0px;
+
+        button {
+            display: none;
+        }
+    }
 }
 
 #page-site-index.notloggedin {
