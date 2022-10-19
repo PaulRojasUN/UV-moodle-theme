@@ -9,14 +9,13 @@ import $ from 'jquery';
 import * as Templates from 'core/templates';
 import * as ModalFactory from 'core/modal_factory';
 
-export const init = (logintoken, logourl, loginurl) => {
+export const init = (logintoken, logourl, loginurl, forgotpasswordurl) => {
     var trigger = $('#login');
 
     ModalFactory.create({
         title: Templates.render('theme_mooveuv/modal_login_header', {'logourl': logourl}),
-        body: Templates.render('theme_mooveuv/modal_login_body', {'logintoken': logintoken, 'loginurl': loginurl}),
-    }, trigger)
-    .done(function(modal) {
-
-    });
+        body: Templates.render('theme_mooveuv/modal_login_body', {'logintoken': logintoken,
+                                                                  'loginurl': loginurl,
+                                                                  'forgotpasswordurl': forgotpasswordurl}),
+    }, trigger);
 };

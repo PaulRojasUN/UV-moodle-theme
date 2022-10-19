@@ -150,11 +150,18 @@
     // Modal login.
     #login {
         color: white;
+        font-weight: 600;
+        font-size: 1.2em;
         cursor: pointer;
     }
 
     #logo-login {
         width: 80%;
+    }
+
+    .modal-dialog {
+        margin-top: 10%;
+
     }
 
     .modal-header {
@@ -163,7 +170,7 @@
         padding: 0px;
 
         button {
-            display: none;
+            color: white;
         }
     }
 }

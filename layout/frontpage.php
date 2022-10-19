@@ -131,7 +131,8 @@ $theme = theme_config::load('moove');
 $logourl = $theme->setting_file_url('logo', 'logo');
 
 $loginurl = $CFG->wwwroot . '/login/index.php';
+$forgotpasswordurl = $CFG->wwwroot . '/login/forgot_password.php';
 
-$PAGE->requires->js_call_amd('theme_mooveuv/modal_login', 'init', array($logintoken, $logourl, $loginurl));
+$PAGE->requires->js_call_amd('theme_mooveuv/modal_login', 'init', array($logintoken, $logourl, $loginurl, $forgotpasswordurl));
 
 echo $OUTPUT->render_from_template('theme_mooveuv/frontpage', $templatecontext);
