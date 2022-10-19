@@ -173,6 +173,18 @@
             color: white;
         }
     }
+
+    .navbar.fixed-top {
+
+        // Language.
+        #lang-menu-toggle {
+            display: none;
+        }
+
+        .langbutton {
+            display: none;
+        }
+    }
 }
 
 #page-site-index.notloggedin {
