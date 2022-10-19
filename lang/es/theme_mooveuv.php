@@ -94,6 +94,8 @@ $string['slidercount'] = 'Contador de Slider';
 $string['slidercountdesc'] = 'Selecciona cuantos slides quieres agregar <strong>luego click en GUARDAR</strong> para cargar los campos de entrada.';
 $string['sliderimage'] = 'Imagen del Slider';
 $string['sliderimagedesc'] = 'Agrega una imagen para tu slide. El tamaño recomendado es 1500px x 540px o mayor.';
+$string['sliderurl'] = 'URL del slide';
+$string['sliderurldesc'] = 'Añada una URL para la imagen del slider';
 
 $string['default_url'] = 'https://campusvirtual.univalle.edu.co/moodle';
 
