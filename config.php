@@ -42,7 +42,14 @@ $THEME->layouts = [
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
         'options' => array('nonavbar' => true),
-    )
+    ),
+    // My dashboard page.
+    'mydashboard' => array(
+        'file' => 'mydashboard.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+        'options' => array('nonavbar' => true, 'langmenu' => true),
+    ),
 ];
 
 $THEME->parents = ['moove', 'boost'];
