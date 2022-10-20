@@ -86,11 +86,13 @@ class frontpage {
         for ($i = 1, $j = 0; $i <= $templatecontext['slidercount']; $i++, $j++) {
             $sliderimage = "sliderimage{$i}";
             $sliderurl = "sliderurl{$i}";
+            $imagealt = "imagealt{$i}";
 
             $templatecontext['slides'][$j]['key'] = $j;
             $templatecontext['slides'][$j]['active'] = $i === 1;
             $templatecontext['slides'][$j]['image'] = $this->$sliderimage ?: $defaultimage->out();
             $templatecontext['slides'][$j]['sliderurl'] = $this->$sliderurl;
+            $templatecontext['slides'][$j]['alt'] = $this->$imagealt;
         }
 
         return $templatecontext;
