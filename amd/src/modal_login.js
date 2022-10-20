@@ -17,5 +17,18 @@ export const init = (logintoken, logourl, loginurl, forgotpasswordurl) => {
         body: Templates.render('theme_mooveuv/modal_login_body', {'logintoken': logintoken,
                                                                   'loginurl': loginurl,
                                                                   'forgotpasswordurl': forgotpasswordurl}),
-    }, trigger);
+    }, trigger)
+    .then(function(modal) {
+        $(document).on('click', function(ev) {
+
+            if (ev.target == $('.modal')[0]) {
+                modal.hide();
+            }
+        });
+
+        return modal;
+    })
+    .catch(function(e) {
+        window.console.log(e);
+    });
 };
