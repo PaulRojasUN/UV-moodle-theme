@@ -94,6 +94,10 @@ $string['slidercount'] = 'Slider count';
 $string['slidercountdesc'] = 'Select how many slides you want to add <strong>then click SAVE</strong> to load the input fields.';
 $string['sliderimage'] = 'Slider picture';
 $string['sliderimagedesc'] = 'Add an image for your slide. Recommended size is 1500px x 540px or higher.';
+$string['sliderurl'] = 'Slider URL';
+$string['sliderurldesc'] = 'Add an URL for your slide.';
+$string['imagealt'] = 'Image alt';
+$string['imagealtdesc'] = 'Add an alt label for your slide.';
 
 $string['default_url'] = 'https://campusvirtual.univalle.edu.co/moodle';
 

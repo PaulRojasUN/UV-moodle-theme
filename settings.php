@@ -225,6 +225,20 @@ if ($ADMIN->fulltree) {
         $opts = array('accepted_types' => array('.png', '.jpg', '.gif', '.webp', '.tiff', '.svg'), 'maxfiles' => 1);
         $setting = new admin_setting_configstoredfile($name, $title, $description, $fileid, 0, $opts);
         $page->add($setting);
+
+        $name = 'theme_mooveuv/sliderurl' . $sliderindex;
+        $title = get_string('sliderurl', 'theme_mooveuv');
+        $description = get_string('sliderurldesc', 'theme_mooveuv');
+        $default = '#';
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $page->add($setting);
+
+        $name = 'theme_mooveuv/imagealt' . $sliderindex;
+        $title = get_string('imagealt', 'theme_mooveuv');
+        $description = get_string('imagealtdesc', 'theme_mooveuv');
+        $default = '';
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $page->add($setting);
     }
 
     // Customer service.
@@ -412,95 +426,6 @@ if ($ADMIN->fulltree) {
     $description = get_string('open_courses_category_desc', 'theme_mooveuv');
     $default = 1;
     $setting = new admin_settings_coursecat_select($name, $title, $description, $default);
-    $page->add($setting);
-
-    $settings->add($page);
-
-    /*
-    * --------------------
-    * Footer settings tab
-    * --------------------
-    */
-    $page = new admin_settingpage('theme_mooveuv_footer', get_string('footersettings', 'theme_mooveuv'));
-
-    // Website.
-    $name = 'theme_mooveuv/website';
-    $title = get_string('website', 'theme_mooveuv');
-    $description = get_string('websitedesc', 'theme_mooveuv');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $page->add($setting);
-
-    // Mobile.
-    $name = 'theme_mooveuv/mobile';
-    $title = get_string('mobile', 'theme_mooveuv');
-    $description = get_string('mobiledesc', 'theme_mooveuv');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $page->add($setting);
-
-    // Mail.
-    $name = 'theme_mooveuv/mail';
-    $title = get_string('mail', 'theme_mooveuv');
-    $description = get_string('maildesc', 'theme_mooveuv');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $page->add($setting);
-
-    // Facebook url setting.
-    $name = 'theme_mooveuv/facebook';
-    $title = get_string('facebook', 'theme_mooveuv');
-    $description = get_string('facebookdesc', 'theme_mooveuv');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $page->add($setting);
-
-    // Twitter url setting.
-    $name = 'theme_mooveuv/twitter';
-    $title = get_string('twitter', 'theme_mooveuv');
-    $description = get_string('twitterdesc', 'theme_mooveuv');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $page->add($setting);
-
-    // Linkdin url setting.
-    $name = 'theme_mooveuv/linkedin';
-    $title = get_string('linkedin', 'theme_mooveuv');
-    $description = get_string('linkedindesc', 'theme_mooveuv');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $page->add($setting);
-
-    // Youtube url setting.
-    $name = 'theme_mooveuv/youtube';
-    $title = get_string('youtube', 'theme_mooveuv');
-    $description = get_string('youtubedesc', 'theme_mooveuv');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $page->add($setting);
-
-    // Instagram url setting.
-    $name = 'theme_mooveuv/instagram';
-    $title = get_string('instagram', 'theme_mooveuv');
-    $description = get_string('instagramdesc', 'theme_mooveuv');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $page->add($setting);
-
-    // Whatsapp url setting.
-    $name = 'theme_mooveuv/whatsapp';
-    $title = get_string('whatsapp', 'theme_mooveuv');
-    $description = get_string('whatsappdesc', 'theme_mooveuv');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $page->add($setting);
-
-    // Telegram url setting.
-    $name = 'theme_mooveuv/telegram';
-    $title = get_string('telegram', 'theme_mooveuv');
-    $description = get_string('telegramdesc', 'theme_mooveuv');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
     $page->add($setting);
 
     $settings->add($page);

@@ -21,13 +21,31 @@
         }
     }
 
-    // Language.
-    #lang-menu-toggle {
-        display: none;
-    }
+    #usernavigation {
+        .icon {
+            color: white;
+        }
 
-    .langbutton {
-        display: none;
+        form {
+            label,
+            label.text-primary {
+                color: white !important;
+            }
+        }
+
+        #user-menu-toggle {
+            color: white;
+        }
+
+        .custom-control-input {
+
+            &:checked ~ .custom-control-label::before {
+              color: white !important;
+              border-color: gray !important;
+              @include gradient-bg(gray);
+              @include box-shadow(gray);
+            }
+        }
     }
 }
 

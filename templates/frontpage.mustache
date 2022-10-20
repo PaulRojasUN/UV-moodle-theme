@@ -72,9 +72,11 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     {{#slides}}
-                        <div class="carousel-item {{#active}}active{{/active}}">
-                            <img class="d-block img-fluid w-100" src="{{image}}" alt="">
-                        </div>
+                    <div class="carousel-item {{#active}}active{{/active}}">
+                        <a href="{{ sliderurl }}" target="_blank">
+                            <img class="d-block img-fluid w-100" src="{{ image }}" alt="{{ alt }}">
+                        </a>
+                    </div>
                     {{/slides}}
                 </div>
                 <a class="carousel-control-prev" href="#frontpage-carousel" role="button" data-slide="prev">
