@@ -96,6 +96,8 @@ $string['sliderimage'] = 'Imagen del Slider';
 $string['sliderimagedesc'] = 'Agrega una imagen para tu slide. El tamaño recomendado es 1500px x 540px o mayor.';
 $string['sliderurl'] = 'URL del slide';
 $string['sliderurldesc'] = 'Añada una URL para la imagen del slider';
+$string['imagealt'] = 'Etiqueta alt';
+$string['imagealtdesc'] = 'Añada una etiqueta alt para la imagen del slider';
 
 $string['default_url'] = 'https://campusvirtual.univalle.edu.co/moodle';
 

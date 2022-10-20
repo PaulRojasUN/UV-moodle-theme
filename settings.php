@@ -232,6 +232,13 @@ if ($ADMIN->fulltree) {
         $default = '#';
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $page->add($setting);
+
+        $name = 'theme_mooveuv/imagealt' . $sliderindex;
+        $title = get_string('imagealt', 'theme_mooveuv');
+        $description = get_string('imagealtdesc', 'theme_mooveuv');
+        $default = '';
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $page->add($setting);
     }
 
     // Customer service.
