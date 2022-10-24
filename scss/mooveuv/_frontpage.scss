@@ -1,7 +1,7 @@
 #page-site-index {
 
     .mooveuv-frontpage {
-        background-color: #F9F9F9;
+        background-color: #f9f9f9;
     }
 
     // Slider.
@@ -37,25 +37,25 @@
     .carousel-control-next-icon:after {
         content: '>';
         font-size: 2em;
-        color: #2C4252;
+        color: $heading-secondary-color;
     }
 
     .carousel-control-prev-icon:after {
         content: '<';
         font-size: 2em;
-        color: #2C4252;
+        color: $heading-secondary-color;
     }
 
     .carousel-indicators > li {
         border-radius: 100%;
         width: 1em;
         height: 1em;
-        background-color: #F9F9F9;
+        background-color: #f9f9f9;
     }
 
     // Sections.
     .frontpage-section {
-        background-color: #F9F9F9;
+        background-color: #f9f9f9;
         padding-left: 5em;
         padding-right: 5em;
 
@@ -78,14 +78,14 @@
         display: flex;
         border: 1px;
         box-shadow: none;
-        background-color: #F9F9F9;
+        background-color: #f9f9f9;
     }
 
     .sectioninfo-card .card-header {
-        background-color: #E1E4E7;
+        background-color: #e1e4e7;
         padding: 1em;
         border: 1px solid;
-        border-color: #E1E4E7;
+        border-color: #e1e4e7;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
     }
@@ -93,7 +93,7 @@
     .card-header > h2 {
         text-align: center;
         font-weight: 500;
-        color: #2C4252;
+        color: $heading-secondary-color;
         margin-bottom: 0px;
     }
 
@@ -107,7 +107,7 @@
         border-right: 1px solid #E1E4E7;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         color: #000000;
 
         a {
@@ -135,7 +135,7 @@
     }
 
     #open-courses-section {
-        background-color: #F9F9F9;
+        background-color: #f9f9f9;
     }
 
     // Institutional licensed software.
