@@ -26,8 +26,6 @@
 
 namespace theme_mooveuv\output\core;
 
-defined('MOODLE_INTERNAL') || die();
-
 use core_course_renderer;
 use core_course_category;
 use moodle_url;

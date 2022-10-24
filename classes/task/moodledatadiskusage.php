@@ -25,8 +25,6 @@
 
 namespace theme_mooveuv\task;
 
-defined('MOODLE_INTERNAL') || die();
-
 use cache;
 
 /**
