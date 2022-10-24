@@ -41,7 +41,15 @@ class frontpage {
         'sliderimage1',
         'sliderimage2',
         'sliderimage3',
-        'sliderimage4'
+        'sliderimage4',
+        'sliderimage5',
+        'sliderimage6',
+        'sliderimage7',
+        'sliderimage8',
+        'sliderimage9',
+        'sliderimage10',
+        'sliderimage11',
+        'sliderimage12'
     ];
 
     /**
