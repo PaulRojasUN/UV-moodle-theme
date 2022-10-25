@@ -58,7 +58,7 @@ class myoverview {
      */
     private function get_course_image($courseid, $courseurl, $coursefullname) {
 
-        global $CFG;
+        global $OUTPUT;
 
         $courseimageurl = \cache::make('core', 'course_image')->get($courseid);
 
@@ -68,7 +68,7 @@ class myoverview {
                                                                     'alt' => $coursefullname,
                                                                     'class' => 'card-img-top w-100')));
         } else {
-            $courseimageurl = $CFG->wwwroot . '/theme/mooveuv/pix/default_course_image.jpg';
+            $courseimageurl = $OUTPUT->get_generated_image_for_id($courseid);
             $courseimage = \html_writer::link($courseurl, \html_writer::empty_tag('img', array(
                                                                     'src' => $courseimageurl,
                                                                     'alt' => $coursefullname,
