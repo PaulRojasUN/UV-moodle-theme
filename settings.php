@@ -100,7 +100,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_mooveuv/brandcolor';
     $title = get_string('brandcolor', 'theme_mooveuv');
     $description = get_string('brandcolor_desc', 'theme_mooveuv');
-    $default = '#CD1F32';
+    $default = '#cd1f32';
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -110,7 +110,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_mooveuv/secondarymenucolor';
     $title = get_string('secondarymenucolor', 'theme_mooveuv');
     $description = get_string('secondarymenucolor_desc', 'theme_mooveuv');
-    $default = '#58595B';
+    $default = '#6a6c6d';
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);

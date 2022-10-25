@@ -102,7 +102,7 @@ $themesettings = new \theme_moove\util\settings();
 
 $templatecontext = array_merge($templatecontext, $themesettings->footer());
 
-$blockcourselistuvrenderer = new block_courselistuv_renderer(new moodle_page(), null);
+$blockcourselistuvrenderer = new block_courselistuv_renderer($PAGE, null);
 $templatecontext['blockcourselistuv'] = $blockcourselistuvrenderer->get_html($userid);
 
 echo $OUTPUT->render_from_template('theme_mooveuv/mypublic', $templatecontext);

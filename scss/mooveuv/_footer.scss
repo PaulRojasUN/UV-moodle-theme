@@ -1,25 +1,21 @@
 .footer-cv {
-    background-color: #CD1F32;
+    background-color: $brand-primary;
     h4, h5, a, div {
         color: white;
     }
-}
-
-.footer-cv .container-fluid {
-    max-width: 100%;
-}
-
-.footer-cv .privacy-policies {
-    text-align: right;
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
-
-.footer-cv .social-media-icons {
-    padding-left: 15px;
-    font-size: 2.5em;
-}
-
-.footer-cv .row.justify-content-end {
-    margin-right: 0px;
+    .container-fluid {
+        max-width: 100%;
+    }
+    .privacy-policies {
+        text-align: right;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .social-media-icons {
+        padding-left: 15px;
+        font-size: 2.5em;
+    }
+    .row.justify-content-end {
+        margin-right: 0px;
+    }
 }

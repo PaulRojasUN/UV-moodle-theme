@@ -222,7 +222,7 @@ $string['friday'] = 'Friday';
 // Footer.
 $string['footer_title'] = 'Vicerrectoría Académica';
 $string['footer_subtitle'] = 'Dirección de Nuevas Tecnologías y Educación Virtual - DINTEV';
-$string['footer_uv_address'] = 'Edificio E18 (317) Oficina 2004 / Campus Meléndez';
+$string['footer_uv_address'] = 'Edificio E18 Oficina 2004 / Campus Meléndez';
 $string['footer_privacy_policy_desc'] = 'Privacy policy';
 $string['footer_privacy_policy_url'] = 'https://campusvirtual.univalle.edu.co/moodle/info-dintev/privacidad-campus-virtual.php';
 
@@ -243,3 +243,12 @@ $string['dashboard_regularuser_affairdivision'] = 'Affair Division';
 
 // Tasks.
 $string['task_calculate_moodledata_disk_usage'] = 'Task to calculate the moodledata directory disk usage';
+$string['cachedef_moodledatadiskusage'] = 'Stores moodledata directory disk usage for admin users in the dashboard';
+
+// Mycourses: myoverview block.
+$string['current_semester'] = 'Current semester';
+$string['past_semesters'] = 'Past semesters';
+$string['non_regular'] = 'Non-regular';
+$string['no_courses_current_semester'] = 'You have no courses enrolled in the current semester.';
+$string['no_courses_past_semesters'] = 'You have no courses enrolled in past semesters.';
+$string['no_courses_non_regular'] = 'You have no non-regular courses enrolled.';
