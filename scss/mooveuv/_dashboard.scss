@@ -1,15 +1,15 @@
 .mydashboard-admin {
     .bg-1 {
-        background-color: #4C3A51;
+        background-color: #4c3a51;
     }
     .bg-2 {
         background-color: #774360;
     }
     .bg-3 {
-        background-color: #B25068;
+        background-color: #b25068;
     }
     .bg-4 {
-        background-color: #E7AB79;
+        background-color: #e7ab79;
     }
     i {
         font-size: 25px;
@@ -21,7 +21,7 @@
         text-decoration-color: white;
     }
     .card {
-        background-color: #2C4252;
+        background-color: $heading-secondary-color;
         background-position-x: right;
         background-position-y: bottom;
         background-size: 40px;

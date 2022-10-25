@@ -41,14 +41,14 @@ class block_myoverview_renderer extends \block_myoverview\output\renderer {
      */
     public function render_main(main $main) {
 
-        global $USER, $CFG;
+        global $CFG, $USER;
 
         $templatecontext = [];
         $templatecontext['wwwroot'] = $CFG->wwwroot;
         $templatecontext['viewurl'] = $CFG->wwwroot . "/course/view.php?id=";
         if (has_capability('moodle/site:configview', \context_system::instance())) {
             $templatecontext['is_admin'] = true;
-            $blockcourselistuvrenderer = new \block_courselistuv_renderer(new \moodle_page(), null);
+            $blockcourselistuvrenderer = new \block_courselistuv_renderer($this->page, null);
             $templatecontext['blockcourselistuv'] = $blockcourselistuvrenderer->get_html($USER->id);
         }
         // Get user courses.
