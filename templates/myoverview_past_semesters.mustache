@@ -44,5 +44,10 @@
                 </ul>
             </div>
         {{/past_semesters}}
+        {{^past_semesters}}
+            <div>
+                <p>{{#str}} no_courses_past_semesters, theme_mooveuv {{/str}}</p>
+            </div>
+        {{/past_semesters}}
     {{/regular_courses}}
 </div>

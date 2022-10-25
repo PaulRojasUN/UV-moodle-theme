@@ -244,7 +244,11 @@ $string['dashboard_regularuser_affairdivision'] = 'Bienestar Universitario';
 // Tasks.
 $string['task_calculate_moodledata_disk_usage'] = 'Tarea que calcula el tamaño del directorio del moodledata';
 
-// Mycourses block.
+// Mycourses: myoverview block.
 $string['current_semester'] = 'Semestre actual';
 $string['past_semesters'] = 'Semestres anteriores';
 $string['non_regular'] = 'No regulares';
+$string['no_courses'] = 'No tienes cursos matriculados.';
+$string['no_courses_current_semester'] = 'No tienes cursos matriculados en el semestre actual.';
+$string['no_courses_past_semesters'] = 'No tienes cursos matriculados en semestres anteriores.';
+$string['no_courses_non_regular'] = 'No tienes cursos no regulares matriculados.';
