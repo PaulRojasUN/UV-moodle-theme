@@ -8,6 +8,9 @@
     }
     h6 {
         font-weight: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     #past-semesters,
     #courselistuv-admin,
@@ -16,5 +19,12 @@
     }
     .no-courses-enrolled-past-semester {
         margin-left: -15px;
+    }
+    .nav-pills {
+        background-color: inherit;
+        .nav-link.active {
+            background-color: $brand-primary !important;
+            box-shadow: 0 0 0 0.2rem rgba(205, 31, 50, 0.75) !important;
+        }
     }
 }
