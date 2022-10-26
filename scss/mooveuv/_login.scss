@@ -6,21 +6,16 @@
         font-size: 1.2em;
         cursor: pointer;
     }
-
     #logo-login {
         width: 80%;
     }
-
     .modal-dialog {
         margin-top: 10%;
-
     }
-
     .modal-header {
         background-color: $brand-primary;
         border: none;
         padding: 0px;
-
         button {
             display: none;
         }
@@ -29,7 +24,6 @@
 
 #cookies-notice-title {
     color: $heading-secondary-color;
-
     a {
         color: $heading-secondary-color;
     }

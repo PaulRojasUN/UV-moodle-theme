@@ -1,3 +1,12 @@
 #mypublic-tab .courses-list {
     padding-left: 16px !important;
 }
+
+#myTab.nav-tabs {
+    background-color: inherit;
+    .nav-link.active {
+        background-color: inherit;
+        box-shadow: 0 0 0 0.2rem rgba(205, 31, 50, 0.75);
+        color: #495057;
+    }
+}
