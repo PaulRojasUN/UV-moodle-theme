@@ -3,6 +3,12 @@
     h4, h5, a, div {
         color: white;
     }
+    a:focus {
+        background-color: transparent;
+        box-shadow: none;
+        color: white;
+        outline: none;
+    }
     .container-fluid {
         max-width: 100%;
     }

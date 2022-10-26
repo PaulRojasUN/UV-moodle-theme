@@ -2,17 +2,14 @@
     border: none;
     height: 70px;
     background-color: $brand-primary !important;
-
     .primary-navigation {
         .navigation {
             height: 70px;
-
             .nav-link {
                 height: 70px;
                 border: none;
                 border-radius: 0;
                 color: white;
-
                 &.active {
                     font-weight: 700;
                     border-bottom: 2px solid #fff;
@@ -20,25 +17,20 @@
             }
         }
     }
-
     #usernavigation {
         .icon {
             color: white;
         }
-
         form {
             label,
             label.text-primary {
                 color: white !important;
             }
         }
-
         #user-menu-toggle {
             color: white;
         }
-
         .custom-control-input {
-
             &:checked ~ .custom-control-label::before {
               color: white !important;
               border-color: gray !important;
