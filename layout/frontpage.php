@@ -139,3 +139,4 @@ $PAGE->requires->js_call_amd('theme_mooveuv/modal_login',
                              array($logintoken, $logourl, $loginurl, $forgotpasswordurl, $canloginasguest));
 
 echo $OUTPUT->render_from_template('theme_mooveuv/frontpage', $templatecontext);
+
