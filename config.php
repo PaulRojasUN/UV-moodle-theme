@@ -50,6 +50,13 @@ $THEME->layouts = [
         'defaultregion' => 'side-pre',
         'options' => array('nonavbar' => true, 'langmenu' => true),
     ),
+    // Main course page.
+    'course' => array(
+        'file' => 'course.php',
+        'regions' => array('side-pre', 'content'),
+        'defaultregion' => 'side-pre',
+        'options' => array('langmenu' => true),
+    )
 ];
 
 $THEME->parents = ['moove', 'boost'];
