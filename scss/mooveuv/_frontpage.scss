@@ -122,6 +122,11 @@
         }
     }
 
+    .div-business-days {
+        padding-left: 0.3em;
+        padding-right: 0em;
+    }
+
     // Open courses section.
     #frontpage-available-course-list > h2 {
         display: none;
@@ -150,7 +155,13 @@
         #lang-menu-toggle {
             display: none;
         }
+
         .langbutton {
+            display: none;
+        }
+
+        // Mobile.
+        button {
             display: none;
         }
     }
@@ -160,6 +171,12 @@
 
         p {
             font-size: 0.9em;
+        }
+
+        .navbar.fixed-top {
+            button {
+                display: none !important;
+            }
         }
 
         #information-section {
