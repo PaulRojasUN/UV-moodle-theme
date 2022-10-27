@@ -50,6 +50,10 @@ $THEME->layouts = [
         'defaultregion' => 'side-pre',
         'options' => array('nonavbar' => true, 'langmenu' => true),
     ),
+    'login' => array(
+        'file' => 'login.php',
+        'regions' => array()
+    )
 ];
 
 $THEME->parents = ['moove', 'boost'];
