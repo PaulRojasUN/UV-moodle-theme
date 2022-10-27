@@ -174,18 +174,8 @@
         }
 
         .navbar.fixed-top {
-            // Mobile.
             button {
                 display: none !important;
-            }
-
-            .navbar-brand {
-                display: block !important;
-                margin-left: 0.5em !important;
-
-                .logo {
-                    margin-top: 0.5em;
-                }
             }
         }
 

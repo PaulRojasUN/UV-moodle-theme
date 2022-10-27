@@ -45,3 +45,41 @@
 .moremenu .navbar-nav .nav-link:focus {
     color: $brand-primary !important;
 }
+
+// Responsive design.
+@media (max-width: 576px) {
+    .navbar.fixed-top {
+
+        button span {
+            color: white !important;
+        }
+
+        .navbar-brand {
+            display: flex !important;
+            margin-left: 0.5em !important;
+
+            .logo {
+                width: 100%;
+            }
+        }
+    }
+
+    #page-login-index,
+    #page-login-forgot_password {
+
+        button span {
+            display: none !important;
+        }
+
+        .navbar-brand {
+            display: flex !important;
+            margin-left: 0.5em !important;
+            width: 100%;
+            justify-content: center;
+
+            .logo {
+                width: auto;
+            }
+        }
+    }
+}
