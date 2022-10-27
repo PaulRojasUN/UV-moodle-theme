@@ -78,6 +78,8 @@
         border: 1px;
         box-shadow: none;
         background-color: #f9f9f9;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     .sectioninfo-card .card-header {
@@ -150,6 +152,67 @@
         }
         .langbutton {
             display: none;
+        }
+    }
+
+    // Responsive design.
+    @media (max-width: 576px) {
+
+        p {
+            font-size: 0.9em;
+        }
+
+        #information-section {
+            padding: 1em;
+            margin: 0.5em;
+            height: auto;
+        }
+
+        #row-sectioninfo-cards {
+            padding-top: 1em;
+            padding-bottom: 0em;
+        }
+
+        .sectioninfo-card {
+            margin-bottom: 2em;
+            padding-left: 0em;
+            padding-right: 0em;
+
+            .card-body {
+                padding: 2em 1em 1em 2em;
+            }
+        }
+
+        .div-business-days {
+            padding-left: 0.3em;
+            padding-right: 0em;
+        }
+
+        #ul-quick-help {
+            li {
+                font-size: 0.9em;
+                margin-top: 0.8em;
+            };
+        }
+
+        #ul-topics-of-interest {
+            li {
+                font-size: 0.9em;
+                margin-top: 0.8em;
+            }
+        }
+
+        #open-courses-section {
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-top: 0em;
+        }
+
+        #institutional-licensed-software-section {
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-top: 0em;
+            margin-bottom: 2em;
         }
     }
 }
