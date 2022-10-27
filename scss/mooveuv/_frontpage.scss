@@ -155,7 +155,13 @@
         #lang-menu-toggle {
             display: none;
         }
+
         .langbutton {
+            display: none;
+        }
+
+        // Mobile.
+        button {
             display: none;
         }
     }
@@ -165,6 +171,22 @@
 
         p {
             font-size: 0.9em;
+        }
+
+        .navbar.fixed-top {
+            // Mobile.
+            button {
+                display: none !important;
+            }
+
+            .navbar-brand {
+                display: block !important;
+                margin-left: 0.5em !important;
+
+                .logo {
+                    margin-top: 0.5em;
+                }
+            }
         }
 
         #information-section {
