@@ -34,3 +34,19 @@
         text-align: justify;
     }
 }
+
+#logoimage {
+    content: url([[pix:theme_mooveuv|logouv]]);
+    height: 160px;
+}
+
+#page-login-index #page,
+#page-login-forgot_password #page {
+    flex-direction: row;
+    margin-top: 80px !important;
+}
+
+#page-login-forgot_password .login-container{
+    max-width: 550px;
+    border-radius: 0.5rem;
+}
