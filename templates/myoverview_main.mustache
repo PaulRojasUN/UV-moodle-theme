@@ -15,9 +15,9 @@
     along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 }}
 {{!
-    @template myoverview_regular_user
+    @template myoverview_main
 
-    This template renders the content for regular user in myoverview block.
+    This template renders the main content for myoverview block.
 
     Example context (json):
     {}
@@ -51,8 +51,8 @@
             {{#regular_courses}}
                 <div class="row">
                     {{#current_semester}}
-                        <div class="col-12 col-sm-6 col-xl-4">
-                            <div class="card mb-3 courses-view-course-item">
+                        <div class="col-12 col-sm-6 col-xl-4 mb-3">
+                            <div class="card h-100">
                                 {{{courseimage}}}
                                 <div class="card-body course-info-container" id="course-info-container-{{courseid}}">
                                     <h6><a href="{{viewurl}}{{courseid}}">{{{coursefullname}}}</a></h6>
@@ -80,8 +80,8 @@
         <div class="tab-pane fade" id="non-regular">
             <div class="row">
                 {{#non_regular_courses}}
-                    <div class="col-12 col-sm-6 col-xl-4">
-                        <div class="card mb-3 courses-view-course-item">
+                    <div class="col-12 col-sm-6 col-xl-4 mb-3">
+                        <div class="card h-100">
                             {{{courseimage}}}
                             <div class="card-body course-info-container" id="course-info-container-{{courseid}}">
                                 <h6><a href="{{viewurl}}{{courseid}}">{{{coursefullname}}}</a></h6>

@@ -137,6 +137,14 @@
                 <a href="{{forgotpasswordurl}}">{{#str}}forgotaccount{{/str}}</a>
             </div>
         </form>
+        {{#canloginasguest}}
+            <form action="{{loginurl}}" method="post" id="guestlogin">
+                <input type="hidden" name="logintoken" value="{{logintoken}}">
+                <input type="hidden" name="username" value="guest" />
+                <input type="hidden" name="password" value="guest" />
+                <button class="btn btn-secondary btn-block" type="submit">{{#str}}loginguest{{/str}}</button>
+            </form>
+        {{/canloginasguest}}
         <div class="d-flex mt-2">
             {{#languagemenu}}
                 <div class="login-languagemenu">
