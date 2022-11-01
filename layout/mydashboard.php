@@ -104,7 +104,7 @@ $headercontent = $header->export_for_template($renderer);
 
 $bodyattributes = $OUTPUT->body_attributes($extraclasses);
 
-$isadmin = has_capability('moodle/site:configview', context_system::instance());
+$isadmin = has_capability('moodle/site:config', context_system::instance());
 
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
