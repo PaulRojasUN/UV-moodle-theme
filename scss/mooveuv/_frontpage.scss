@@ -167,11 +167,13 @@
     }
 
     // Responsive design.
-    @media (max-width: 576px) {
-
-        p {
-            font-size: 0.9em;
-        }
+    // Boostrap breakpoints.
+    // xs < 576px
+    // sm >= 576px
+    // md >= 768px
+    // lg >= 992px
+    // xl >= 1200px
+    @include media-breakpoint-between(xs, md) {
 
         .navbar.fixed-top {
             button {
@@ -188,6 +190,7 @@
         #row-sectioninfo-cards {
             padding-top: 1em;
             padding-bottom: 0em;
+            margin: 20px;
         }
 
         .sectioninfo-card {
@@ -230,6 +233,18 @@
             padding-right: 1em;
             padding-top: 0em;
             margin-bottom: 2em;
+        }
+    }
+
+    @include media-breakpoint-only(xs) {
+        p {
+            font-size: 0.9em;
+        }
+    }
+
+    @include media-breakpoint-only(sm) {
+        p {
+            font-size: 1em;
         }
     }
 }
