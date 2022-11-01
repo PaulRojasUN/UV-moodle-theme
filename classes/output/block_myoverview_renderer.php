@@ -44,15 +44,6 @@ class block_myoverview_renderer extends \block_myoverview\output\renderer {
         global $CFG, $USER;
 
         $templatecontext = [];
-
-        // Myoverview block content for admin and manager users.
-        if (has_capability('moodle/site:configview', \context_system::instance())) {
-            $blockcourselistuvrenderer = new \block_courselistuv_renderer($this->page, null);
-            $templatecontext['blockcourselistuv'] = $blockcourselistuvrenderer->get_html($USER->id);
-            return $this->render_from_template('theme_mooveuv/myoverview_admin', $templatecontext);
-        }
-
-        // Myoverview block content for regular users.
         $templatecontext['wwwroot'] = $CFG->wwwroot;
         $templatecontext['viewurl'] = $CFG->wwwroot . "/course/view.php?id=";
         // Get user courses.
@@ -65,6 +56,6 @@ class block_myoverview_renderer extends \block_myoverview\output\renderer {
         $myoverviewutil->set_course_images_from_list_of_courses($templatecontext['regular_courses']['current_semester']);
         $myoverviewutil->set_course_images_from_list_of_courses($templatecontext['non_regular_courses']);
 
-        return $this->render_from_template('theme_mooveuv/myoverview_regular_user', $templatecontext);
+        return $this->render_from_template('theme_mooveuv/myoverview_main', $templatecontext);
     }
 }
