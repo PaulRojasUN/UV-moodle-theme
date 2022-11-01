@@ -132,11 +132,10 @@ $logourl = $theme->setting_file_url('logo', 'logo');
 
 $loginurl = $CFG->wwwroot . '/login/index.php';
 $forgotpasswordurl = $CFG->wwwroot . '/login/forgot_password.php';
-$canloginasguest = $CFG->guestloginbutton;
+$canloginasguest = $CFG->guestloginbutton ? 1 : 0;
 
 $PAGE->requires->js_call_amd('theme_mooveuv/modal_login',
                              'init',
                              array($logintoken, $logourl, $loginurl, $forgotpasswordurl, $canloginasguest));
 
 echo $OUTPUT->render_from_template('theme_mooveuv/frontpage', $templatecontext);
-
