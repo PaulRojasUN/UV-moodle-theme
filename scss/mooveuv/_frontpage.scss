@@ -139,6 +139,7 @@
 
     #open-courses-section {
         background-color: #f9f9f9;
+        height: 0px;
     }
 
     // Institutional licensed software.
@@ -167,11 +168,13 @@
     }
 
     // Responsive design.
-    @media (max-width: 768px) {
-
-        p {
-            font-size: 0.9em;
-        }
+    // Boostrap breakpoints.
+    // xs < 576px
+    // sm >= 576px
+    // md >= 768px
+    // lg >= 992px
+    // xl >= 1200px
+    @include media-breakpoint-between(xs, md) {
 
         .navbar.fixed-top {
             button {
@@ -181,7 +184,7 @@
 
         #information-section {
             padding: 1em;
-            margin: 0.5em;
+            margin: 0.5em, 0.3em, 0.5em , 0.3em;
             height: auto;
         }
 
@@ -230,6 +233,31 @@
             padding-right: 1em;
             padding-top: 0em;
             margin-bottom: 2em;
+        }
+    }
+
+    @include media-breakpoint-only(xs) {
+        p {
+            font-size: 0.9em;
+        }
+
+        .sectioninfo-card {
+            padding-left: 0em;
+            padding-right: 0em;
+
+            .card-body {
+                padding: 1em 0.3em 1em 0.3em;
+            }
+        }
+
+        #row-sectioninfo-cards {
+            margin: 1em;
+        }
+    }
+
+    @include media-breakpoint-only(sm) {
+        p {
+            font-size: 1em;
         }
     }
 }

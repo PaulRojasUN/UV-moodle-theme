@@ -47,13 +47,20 @@
 }
 
 // Responsive design.
-@media (max-width: 768px) {
+// Boostrap breakpoints.
+// xs < 576px
+// sm >= 576px
+// md >= 768px
+// lg >= 992px
+// xl >= 1200px
+@include media-breakpoint-between(xs, md) {
     .navbar.fixed-top {
         .navbar-brand {
             display: flex !important;
             margin-left: 0.5em !important;
+            justify-content: center;
             .logo {
-                width: 100%;
+                width: auto;
             }
         }
     }
@@ -70,6 +77,21 @@
             justify-content: center;
             .logo {
                 width: auto;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-only(xs) {
+    .navbar.fixed-top {
+        .navbar-brand {
+            display: flex !important;
+            margin-left: 0.5em !important;
+            justify-content: center;
+            width: 100%;
+            .logo {
+                width: auto;
+                content: url([[pix:theme_mooveuv|logouv_responsive]]);
             }
         }
     }
