@@ -144,6 +144,11 @@ $string['open_courses_subtitle_desc'] = 'Enter open courses subtitle';
 $string['open_courses_category'] = 'Open courses category';
 $string['open_courses_category_desc'] = 'Select open courses category';
 
+// Language strings for elections settings tab.
+$string['language_strings_for_elections'] = 'Language strings for elections';
+$string['questionnaire_identifiers'] = 'Identificadores de los cuestionarios';
+$string['questionnaire_identifiers_desc'] = 'Ingrese los identificadores de los cuestionarios separados por comas';
+
 // Footer settings tab.
 $string['footersettings'] = 'Footer';
 $string['website'] = 'Website URL';

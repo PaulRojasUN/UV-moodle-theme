@@ -429,4 +429,23 @@ if ($ADMIN->fulltree) {
     $page->add($setting);
 
     $settings->add($page);
+
+    /*
+    * -------------------------------------------
+    * Language strings for elections settings tab
+    * -------------------------------------------
+    */
+    $page = new admin_settingpage('theme_mooveuv_language_strings_for_elections',
+                                  get_string('language_strings_for_elections', 'theme_mooveuv'));
+
+    // Questionnaire identifiers.
+    $name = 'theme_mooveuv/questionnaire_identifiers';
+    $title = get_string('questionnaire_identifiers', 'theme_mooveuv');
+    $description = get_string('questionnaire_identifiers_desc', 'theme_mooveuv');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $page->add($setting);
+
+    // Must add the page after definiting all the settings!
+    $settings->add($page);
 }
