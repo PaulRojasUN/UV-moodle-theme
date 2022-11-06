@@ -72,9 +72,11 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     {{#slides}}
-                        <div class="carousel-item {{#active}}active{{/active}}">
-                            <img class="d-block img-fluid w-100" src="{{image}}" alt="">
-                        </div>
+                    <div class="carousel-item {{#active}}active{{/active}}">
+                        <a href="{{ sliderurl }}" target="_blank">
+                            <img class="d-block img-fluid w-100" src="{{ image }}" alt="{{ alt }}">
+                        </a>
+                    </div>
                     {{/slides}}
                 </div>
                 <a class="carousel-control-prev" href="#frontpage-carousel" role="button" data-slide="prev">
@@ -89,10 +91,10 @@
         </div>
 
         {{! Information }}
-        <div id="information-section" class="container-fluid frontpage-section">
-            <div id="row-sectioninfo-cards" class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 justify-content-center">
+        <div id="information-section" class="container-fluid frontpage-section justify-content-center">
+            <div id="row-sectioninfo-cards" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
 
-                <div class="card col sectioninfo-card">
+                <div class="card sectioninfo-card">
                     <div class="card-header">
                         <h2>{{#str}} customer_service_title, theme_mooveuv {{/str}}</h2>
                     </div>
@@ -106,7 +108,7 @@
                                     </p>
                                 </div>
                                 <div class="col-12">
-                                    <p>
+                                    <p class="mt-3">
                                         <img src="{{{phone_icon}}}" width="20" height="20"></img> {{mobile}}
                                     </p>
                                 </div>
@@ -123,42 +125,42 @@
                             <div class="container">
 
                                 <div class="row">
-                                    <div class="col-3 pr-0">
+                                    <div class="col-3 col-xl-4 div-business-days">
                                         <p class="font-weight-bold">{{#str}} monday, theme_mooveuv {{/str}}</p>
                                     </div>
-                                    <div class="col-9">
-                                        {{monday_office_hours}}
+                                    <div class="col-9 col-xl-8 div-business-hours">
+                                        <p>{{monday_office_hours}}</p>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-3 pr-0">
+                                    <div class="col-3 col-xl-4 div-business-days">
                                         <p class="font-weight-bold">{{#str}} tuesday, theme_mooveuv {{/str}}</p>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-9 col-xl-8 div-business-hours">
                                         <p>{{tuesday_office_hours}}</p>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-3 pr-0">
+                                    <div class="col-3 col-xl-4 div-business-days">
                                         <p class="font-weight-bold">{{#str}} wednesday, theme_mooveuv {{/str}}</p>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-9 col-xl-8 div-business-hours">
                                         <p>{{wednesday_office_hours}}</p>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-3 pr-0">
+                                    <div class="col-3 col-xl-4 div-business-days">
                                         <p class="font-weight-bold">{{#str}} thursday, theme_mooveuv {{/str}}</p>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-9 col-xl-8 div-business-hours">
                                         <p>{{thursday_office_hours}}</p>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-3 pr-0">
+                                    <div class="col-3 col-xl-4 div-business-days">
                                         <p class="font-weight-bold">{{#str}} friday, theme_mooveuv {{/str}}</p>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-9 col-xl-8 div-business-hours">
                                         <p>{{friday_office_hours}}</p>
                                     </div>
                                 </div>
@@ -171,12 +173,12 @@
                     </div>
                 </div>
 
-                <div class="card col sectioninfo-card">
+                <div class="card sectioninfo-card">
                     <div class="card-header">
                         <h2>{{#str}} quick_help_title, theme_mooveuv {{/str}}</h2>
                     </div>
-                    <div class="card-body">
-                        <ul>
+                    <div class="card-body quick-help-card-body">
+                        <ul id="ul-quick-help">
                             {{#quick_help}}
                             <li><a href="{{url}}" target="_blank">{{name}}</a></li>
                             {{/quick_help}}
@@ -184,12 +186,12 @@
                     </div>
                 </div>
 
-                <div class="card col sectioninfo-card">
+                <div class="card sectioninfo-card ">
                     <div class="card-header">
                         <h2>{{#str}} topics_of_interest_title, theme_mooveuv {{/str}}</h2>
                     </div>
-                    <div class="card-body">
-                        <ul>
+                    <div class="card-body topics-of-interest-card-body">
+                        <ul id="ul-topics-of-interest">
                             {{#topics_of_interest}}
                             <li><a href="{{url}}" target="_blank">{{name}}</a></li>
                             {{/topics_of_interest}}

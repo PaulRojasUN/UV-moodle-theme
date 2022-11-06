@@ -1,14 +1,13 @@
-// Import all scss mooveuv files.
 h2 {
     font-size: 1.5em;
     font-weight: 600;
-    color: #2C4252;
+    color: $heading-secondary-color;
 }
 
 h3 {
     font-size: 1.2em;
     font-weight: 400;
-    color: #6A6C6C;
+    color: #6a6c6c;
 }
 
 .mooveuv-container-fluid,

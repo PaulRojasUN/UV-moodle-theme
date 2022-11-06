@@ -1,0 +1,54 @@
+<div class="container">
+    <form class="signup-form" action="{{loginurl}}" method="post" id="login-form">
+        <input type="hidden" name="logintoken" value="{{logintoken}}">
+        <div class="login-form-username form-group mt-5">
+            <label for="username" class="sr-only">{{#str}} username {{/str}}</label>
+
+            <input type="text" name="username" id="username" {{!
+                !}}class="form-control form-control-lg" {{!
+                !}}value="{{username}}" {{!
+                !}}placeholder="{{#cleanstr}}username{{/cleanstr}}" {{!
+                !}}autocomplete="username">
+
+        </div>
+        <div class="login-form-password form-group mt-5">
+            <label for="password" class="sr-only">{{#str}} password {{/str}}</label>
+            <input type="password" name="password" id="password" value="" {{!
+                !}}class="form-control form-control-lg" {{!
+                !}}placeholder="{{#cleanstr}}password{{/cleanstr}}" {{!
+                !}}autocomplete="current-password">
+        </div>
+        <div class="login-form-forgotpassword form-group text-center mt-5">
+            <a href="{{forgotpasswordurl}}">{{#str}}forgotaccount{{/str}}</a>
+        </div>
+        <div class="login-form-submit form-group text-center mt-3">
+            <button class="btn btn-primary btn-lg" type="submit" id="loginbtn">{{#str}}login{{/str}}</button>
+        </div>
+    </form>
+
+    {{#canloginasguest}}
+        <div class="login-divider"></div>
+        <form action="{{loginurl}}" method="post" id="guestlogin">
+            <input type="hidden" name="logintoken" value="{{logintoken}}">
+            <input type="hidden" name="username" value="guest" />
+            <input type="hidden" name="password" value="guest" />
+            <div class="text-center">
+                <button class="btn btn-secondary" type="submit">{{#str}}loginguest{{/str}}</button>
+            </div>
+        </form>
+    {{/canloginasguest}}
+
+    <div class="row mt-5 mb-5" id="cookies-notice-title">
+        <div class="col-12 text-center">
+            <i class="fa fa-question-circle"></i>
+            <a data-toggle="collapse" href="#cookies-help" role="button" aria-expanded="false" aria-controls="cookies-notice">{{#str}}cookiesnotice{{/str}}</a>
+        </div>
+    </div>
+
+    <div class="collapse mt-5" id="cookies-help">
+        <div class="col-12">
+            <p class="text-justify">{{#str}} cookiesenabled, core {{/str}}</p>
+            {{#str}} cookiesenabled_help, core {{/str}}
+        </div>
+    </div>
+</div>

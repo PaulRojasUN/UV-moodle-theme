@@ -1,0 +1,56 @@
+#page-site-index {
+    // Modal login.
+    #login {
+        color: white;
+        font-weight: 600;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    #logo-login {
+        width: 80%;
+    }
+    .modal-dialog {
+        margin-top: 10%;
+    }
+    .modal-header {
+        background-color: $brand-primary;
+        border: none;
+        padding: 0px;
+        button {
+            display: none;
+        }
+    }
+}
+
+#cookies-notice-title {
+    color: $heading-secondary-color;
+    a {
+        color: $heading-secondary-color;
+    }
+}
+
+#cookies-help {
+    p {
+        text-align: justify;
+    }
+}
+
+#logoimage {
+    content: url([[pix:theme_mooveuv|logouv]]);
+    height: 160px;
+}
+
+#page-login-index #page,
+#page-login-forgot_password #page {
+    flex-direction: row;
+    margin-top: 80px !important;
+}
+
+#page-login-forgot_password .login-container{
+    max-width: 550px;
+    border-radius: 0.5rem;
+}
+
+#id_searchbyemail {
+    display: none;
+}

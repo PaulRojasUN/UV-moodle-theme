@@ -94,6 +94,10 @@ $string['slidercount'] = 'Contador de Slider';
 $string['slidercountdesc'] = 'Selecciona cuantos slides quieres agregar <strong>luego click en GUARDAR</strong> para cargar los campos de entrada.';
 $string['sliderimage'] = 'Imagen del Slider';
 $string['sliderimagedesc'] = 'Agrega una imagen para tu slide. El tamaño recomendado es 1500px x 540px o mayor.';
+$string['sliderurl'] = 'URL del slide';
+$string['sliderurldesc'] = 'Añada una URL para la imagen del slider';
+$string['imagealt'] = 'Etiqueta alt';
+$string['imagealtdesc'] = 'Añada una etiqueta alt para la imagen del slider';
 
 $string['default_url'] = 'https://campusvirtual.univalle.edu.co/moodle';
 
@@ -218,6 +222,33 @@ $string['friday'] = 'Viernes';
 // Footer.
 $string['footer_title'] = 'Vicerrectoría Académica';
 $string['footer_subtitle'] = 'Dirección de Nuevas Tecnologías y Educación Virtual - DINTEV';
-$string['footer_uv_address'] = 'Edificio E18 (317) Oficina 2004 / Campus Meléndez';
+$string['footer_uv_address'] = 'Edificio E18 Oficina 2004 / Campus Meléndez';
 $string['footer_privacy_policy_desc'] = 'Política de privacidad';
 $string['footer_privacy_policy_url'] = 'https://campusvirtual.univalle.edu.co/moodle/info-dintev/privacidad-campus-virtual.php';
+
+// User profile (mypublic template).
+$string['user_profile_details'] = 'Detalles';
+
+// Dashboard.
+$string['dashboard_admin_disk_usage'] = 'Tamaño del moodledata';
+$string['dashboard_admin_disk_usage_not_calculated'] = 'Aún no se ha calculado';
+$string['dashboard_admin_total_users'] = 'Usuarios Activos / Suspendidos';
+$string['dashboard_admin_total_courses'] = 'Total de cursos';
+$string['dashboard_admin_online_users'] = 'Usuarios en línea (hace 5 min)';
+$string['dashboard_regularuser_library'] = 'Biblioteca';
+$string['dashboard_regularuser_email'] = 'Correo Institucional';
+$string['dashboard_regularuser_regulations'] = 'Reglamento Estudiantil';
+$string['dashboard_regularuser_techtoolbox'] = 'Caja de Herramientas';
+$string['dashboard_regularuser_affairdivision'] = 'Bienestar Universitario';
+
+// Tasks.
+$string['task_calculate_moodledata_disk_usage'] = 'Tarea que calcula el tamaño del directorio del moodledata';
+
+// Mycourses: myoverview block.
+$string['current_semester'] = 'Semestre actual';
+$string['past_semesters'] = 'Semestres anteriores';
+$string['non_regular'] = 'No regulares';
+$string['no_courses'] = 'No tienes cursos matriculados.';
+$string['no_courses_current_semester'] = 'No tienes cursos matriculados en el semestre actual.';
+$string['no_courses_past_semesters'] = 'No tienes cursos matriculados en semestres anteriores.';
+$string['no_courses_non_regular'] = 'No tienes cursos no regulares matriculados.';

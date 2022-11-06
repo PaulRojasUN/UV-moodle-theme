@@ -94,6 +94,10 @@ $string['slidercount'] = 'Slider count';
 $string['slidercountdesc'] = 'Select how many slides you want to add <strong>then click SAVE</strong> to load the input fields.';
 $string['sliderimage'] = 'Slider picture';
 $string['sliderimagedesc'] = 'Add an image for your slide. Recommended size is 1500px x 540px or higher.';
+$string['sliderurl'] = 'Slider URL';
+$string['sliderurldesc'] = 'Add an URL for your slide.';
+$string['imagealt'] = 'Image alt';
+$string['imagealtdesc'] = 'Add an alt label for your slide.';
 
 $string['default_url'] = 'https://campusvirtual.univalle.edu.co/moodle';
 
@@ -218,6 +222,33 @@ $string['friday'] = 'Friday';
 // Footer.
 $string['footer_title'] = 'Vicerrectoría Académica';
 $string['footer_subtitle'] = 'Dirección de Nuevas Tecnologías y Educación Virtual - DINTEV';
-$string['footer_uv_address'] = 'Edificio E18 (317) Oficina 2004 / Campus Meléndez';
+$string['footer_uv_address'] = 'Edificio E18 Oficina 2004 / Campus Meléndez';
 $string['footer_privacy_policy_desc'] = 'Privacy policy';
 $string['footer_privacy_policy_url'] = 'https://campusvirtual.univalle.edu.co/moodle/info-dintev/privacidad-campus-virtual.php';
+
+// User profile (mypublic template).
+$string['user_profile_details'] = 'Details';
+
+// Dashboard.
+$string['dashboard_admin_disk_usage'] = 'Disk usage (moodledata)';
+$string['dashboard_admin_disk_usage_not_calculated'] = 'Not calculated yet';
+$string['dashboard_admin_total_users'] = 'Active / Suspended users';
+$string['dashboard_admin_total_courses'] = 'Total courses';
+$string['dashboard_admin_online_users'] = 'Online users (last 5 min)';
+$string['dashboard_regularuser_library'] = 'Library';
+$string['dashboard_regularuser_email'] = 'E-Mail';
+$string['dashboard_regularuser_regulations'] = 'Regulations';
+$string['dashboard_regularuser_techtoolbox'] = 'Tech Toolbox';
+$string['dashboard_regularuser_affairdivision'] = 'Affair Division';
+
+// Tasks.
+$string['task_calculate_moodledata_disk_usage'] = 'Task to calculate the moodledata directory disk usage';
+$string['cachedef_moodledatadiskusage'] = 'Stores moodledata directory disk usage for admin users in the dashboard';
+
+// Mycourses: myoverview block.
+$string['current_semester'] = 'Current semester';
+$string['past_semesters'] = 'Past semesters';
+$string['non_regular'] = 'Non-regular';
+$string['no_courses_current_semester'] = 'You have no courses enrolled in the current semester.';
+$string['no_courses_past_semesters'] = 'You have no courses enrolled in past semesters.';
+$string['no_courses_non_regular'] = 'You have no non-regular courses enrolled.';

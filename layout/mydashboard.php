@@ -15,17 +15,17 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Frontpage layout for the moove theme.
+ * A drawer based layout for the moove theme.
  *
  * @package    theme_mooveuv
- * @author     2022 Iader E. Garcia Gomez <iadergg@gmail.com>
+ * @author     Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
  * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-global $CFG;
+use theme_mooveuv\util\dashboard;
 
 require_once($CFG->libdir . '/behat/lib.php');
 require_once($CFG->dirroot . '/course/lib.php');
@@ -45,6 +45,10 @@ if (isloggedin()) {
     $blockdraweropen = false;
 }
 
+if (defined('BEHAT_SITE_RUNNING')) {
+    $blockdraweropen = true;
+}
+
 $extraclasses = ['uses-drawers'];
 if ($courseindexopen) {
     $extraclasses[] = 'drawer-open-index';
@@ -55,7 +59,15 @@ $hasblocks = (strpos($blockshtml, 'data-block=') !== false || !empty($addblockbu
 if (!$hasblocks) {
     $blockdraweropen = false;
 }
-$courseindex = core_course_drawer();
+
+$themesettings = new \theme_moove\util\settings();
+
+if (!$themesettings->enablecourseindex) {
+    $courseindex = '';
+} else {
+    $courseindex = core_course_drawer();
+}
+
 if (!$courseindex) {
     $courseindexopen = false;
 }
@@ -92,6 +104,8 @@ $headercontent = $header->export_for_template($renderer);
 
 $bodyattributes = $OUTPUT->body_attributes($extraclasses);
 
+$isadmin = has_capability('moodle/site:config', context_system::instance());
+
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
@@ -111,31 +125,28 @@ $templatecontext = [
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
     'overflow' => $overflow,
     'headercontent' => $headercontent,
-    'addblockbutton' => $addblockbutton
+    'addblockbutton' => $addblockbutton,
+    'enablecourseindex' => $themesettings->enablecourseindex,
+    'isadmin' => $isadmin
 ];
-
-$themesettings = new \theme_moove\util\settings();
-$themefrontpage = new \theme_mooveuv\util\frontpage();
 
 $templatecontext = array_merge($templatecontext, $themesettings->footer());
 
-// TO-DO: Diff loggin or does not logged.
-$templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_slideshow());
-$templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_info_section());
-$templatecontext = array_merge($templatecontext, $themefrontpage->frontpage_softwarelicenses_section());
+if ($isadmin) {
 
-// Modal login.
-$logintoken = \core\session\manager::get_login_token();
+    $dashboardutil = new dashboard();
 
-$theme = theme_config::load('moove');
-$logourl = $theme->setting_file_url('logo', 'logo');
+    $moodledatadiskusage = $dashboardutil->get_total_moodledata_disk_usage();
+    $totalactiveusers = $dashboardutil->get_total_active_users();
+    $totalsuspendedusers = $dashboardutil->get_total_suspended_users();
+    $totalcourses = $dashboardutil->get_total_courses();
+    $totalonlineusers = $dashboardutil->get_total_online_users();
 
-$loginurl = $CFG->wwwroot . '/login/index.php';
-$forgotpasswordurl = $CFG->wwwroot . '/login/forgot_password.php';
-$canloginasguest = $CFG->guestloginbutton ? 1 : 0;
+    $templatecontext['moodledatadiskusage'] = $moodledatadiskusage;
+    $templatecontext['totalactiveusers'] = $totalactiveusers;
+    $templatecontext['totalsuspendedusers'] = $totalsuspendedusers;
+    $templatecontext['totalcourses'] = $totalcourses;
+    $templatecontext['totalonlineusers'] = $totalonlineusers;
+}
 
-$PAGE->requires->js_call_amd('theme_mooveuv/modal_login',
-                             'init',
-                             array($logintoken, $logourl, $loginurl, $forgotpasswordurl, $canloginasguest));
-
-echo $OUTPUT->render_from_template('theme_mooveuv/frontpage', $templatecontext);
+echo $OUTPUT->render_from_template('theme_mooveuv/mydashboard', $templatecontext);

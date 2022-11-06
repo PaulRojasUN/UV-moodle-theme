@@ -15,25 +15,24 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Plugin version and other meta-data are defined here.
- * Note: the block courselistuv itself is not needed, but some overridden views in the
- *       theme (e.g. user profile) use its function that renders the list of courses.
+ * Defines the theme tasks.
  *
  * @package    theme_mooveuv
- * @since      Moodle 4.0
- * @author     Iader E. García Gómez <iadergg@gmail.com>
+ * @author     Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
  * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2022101302;
-$plugin->release = 'alpha1';
-$plugin->requires = 2022041900;
-$plugin->component = 'theme_mooveuv';
-$plugin->dependencies = [
-    'theme_boost' => 2022041900,
-    'theme_moove' => 2022041200,
-    'block_courselistuv' => 2022081300
-];
+$tasks = array(
+    array(
+        'classname' => 'theme_mooveuv\task\moodledatadiskusage',
+        'blocking' => 1,
+        'minute' => '0',
+        'hour' => '5',
+        'day' => '*',
+        'month' => '*',
+        'dayofweek' => '*'
+    )
+);

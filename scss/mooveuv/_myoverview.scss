@@ -1,0 +1,26 @@
+.block-myoverview-uv {
+    .card-img-top.w-100 {
+        height: 12vw;
+        object-fit: cover;
+    }
+    .card {
+        box-shadow: 0 5px 20px rgba(0,0,0,.15);
+    }
+    h6 {
+        font-weight: normal;
+    }
+    #past-semesters,
+    .no-courses-enrolled {
+        margin-left: 50px;
+    }
+    .no-courses-enrolled-past-semester {
+        margin-left: -15px;
+    }
+    .nav-pills {
+        background-color: inherit;
+        .nav-link.active {
+            background-color: $brand-primary !important;
+            box-shadow: 0 0 0 0.2rem rgba(205, 31, 50, 0.75) !important;
+        }
+    }
+}
