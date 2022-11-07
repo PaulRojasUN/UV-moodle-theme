@@ -105,6 +105,10 @@ $string['customer_service_heading'] = 'Horario de atención personalizada';
 $string['customer_service_heading_desc'] = 'Escriba los horarios para atención al público.';
 $string['office_hours_per_day'] = 'Horario {$a}';
 $string['office_hours_per_day_desc'] = 'Horario de atención del {$a}';
+$string['about_customer_service'] = 'Acerca de la atención al público';
+$string['about_customer_service_desc'] = 'Habilitar texto acerca de la atención al público';
+$string['about_customer_service_text'] = 'Texto acerca de la atención al público';
+$string['about_customer_service_text_desc'] = 'Escriba el texto acerca de la atención al público';
 
 $string['quickhelp_heading'] = 'Ayudas rápidas ';
 $string['quickhelp_heading_desc'] = 'Enlaces a ayudas rápidas para el uso del Campus Virtual.';

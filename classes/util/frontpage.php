@@ -127,6 +127,8 @@ class frontpage {
         $templatecontext['customer_service']['wednesday_office_hours'] = $this->wednesday_office_hours;
         $templatecontext['customer_service']['thursday_office_hours'] = $this->thursday_office_hours;
         $templatecontext['customer_service']['friday_office_hours'] = $this->friday_office_hours;
+        $templatecontext['customer_service']['enable_text_about_customer_service'] = $this->about_customer_service;
+        $templatecontext['customer_service']['text_about_customer_service'] = $this->about_customer_service_text;
 
         // Quick help.
         $helpcounter = $this->help_counter;
