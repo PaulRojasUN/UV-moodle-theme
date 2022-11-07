@@ -105,6 +105,10 @@ $string['customer_service_heading'] = 'Personalized service hours';
 $string['customer_service_heading_desc'] = 'Enter the personalized attention schedules.';
 $string['office_hours_per_day'] = '{$a} office hours';
 $string['office_hours_per_day_desc'] = 'Hours of attention for {$a}';
+$string['about_customer_service'] = 'About customer service';
+$string['about_customer_service_desc'] = 'Enable text about customer service.';
+$string['about_customer_service_text'] = 'About customer service text';
+$string['about_customer_service_text_desc'] = 'Text about customer service.';
 
 $string['quickhelp_heading'] = 'Quick help';
 $string['quickhelp_heading_desc'] = 'Links to quick help.';
@@ -143,6 +147,11 @@ $string['open_courses_subtitle'] = 'Open courses subtitle';
 $string['open_courses_subtitle_desc'] = 'Enter open courses subtitle';
 $string['open_courses_category'] = 'Open courses category';
 $string['open_courses_category_desc'] = 'Select open courses category';
+
+// Language strings for elections settings tab.
+$string['language_strings_for_elections'] = 'Language strings for elections';
+$string['questionnaire_identifiers'] = 'Identificadores de los cuestionarios';
+$string['questionnaire_identifiers_desc'] = 'Ingrese los identificadores de los cuestionarios separados por comas';
 
 // Footer settings tab.
 $string['footersettings'] = 'Footer';

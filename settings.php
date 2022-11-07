@@ -288,6 +288,22 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
+    $name = 'theme_mooveuv/about_customer_service';
+    $title = get_string('about_customer_service', 'theme_mooveuv');
+    $description = get_string('about_customer_service_desc', 'theme_mooveuv');
+    $default = '0';
+    $setting = new admin_setting_configcheckbox($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_mooveuv/about_customer_service_text';
+    $title = get_string('about_customer_service_text', 'theme_mooveuv');
+    $description = get_string('about_customer_service_text_desc', 'theme_mooveuv');
+    $default = '';
+    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
     // Quick help.
     $name = 'theme_mooveuv/quickhelp_heading';
     $heading = get_string('quickhelp_heading', 'theme_mooveuv');
@@ -428,5 +444,24 @@ if ($ADMIN->fulltree) {
     $setting = new admin_settings_coursecat_select($name, $title, $description, $default);
     $page->add($setting);
 
+    $settings->add($page);
+
+    /*
+    * -------------------------------------------
+    * Language strings for elections settings tab
+    * -------------------------------------------
+    */
+    $page = new admin_settingpage('theme_mooveuv_language_strings_for_elections',
+                                  get_string('language_strings_for_elections', 'theme_mooveuv'));
+
+    // Questionnaire identifiers.
+    $name = 'theme_mooveuv/questionnaire_identifiers';
+    $title = get_string('questionnaire_identifiers', 'theme_mooveuv');
+    $description = get_string('questionnaire_identifiers_desc', 'theme_mooveuv');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $page->add($setting);
+
+    // Must add the page after definiting all the settings!
     $settings->add($page);
 }
