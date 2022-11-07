@@ -115,7 +115,10 @@
                             </div>
 
                             {{#enable_text_about_customer_service}}
-                                {{text_about_customer_service}}
+                                {{#text_about_customer_service}}
+                                    {{text_about_customer_service}}
+                                {{/text_about_customer_service}}
+
                             {{/enable_text_about_customer_service}}
                             {{^enable_text_about_customer_service}}
                             <div class="row">
