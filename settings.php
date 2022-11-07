@@ -288,6 +288,22 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
+    $name = 'theme_mooveuv/about_customer_service';
+    $title = get_string('about_customer_service', 'theme_mooveuv');
+    $description = get_string('about_customer_service_desc', 'theme_mooveuv');
+    $default = '0';
+    $setting = new admin_setting_configcheckbox($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_mooveuv/about_customer_service_text';
+    $title = get_string('about_customer_service_text', 'theme_mooveuv');
+    $description = get_string('about_customer_service_text_desc', 'theme_mooveuv');
+    $default = '';
+    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
     // Quick help.
     $name = 'theme_mooveuv/quickhelp_heading';
     $heading = get_string('quickhelp_heading', 'theme_mooveuv');
