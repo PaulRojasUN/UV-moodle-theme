@@ -105,6 +105,10 @@ $string['customer_service_heading'] = 'Personalized service hours';
 $string['customer_service_heading_desc'] = 'Enter the personalized attention schedules.';
 $string['office_hours_per_day'] = '{$a} office hours';
 $string['office_hours_per_day_desc'] = 'Hours of attention for {$a}';
+$string['about_customer_service'] = 'About customer service';
+$string['about_customer_service_desc'] = 'Enable text about customer service.';
+$string['about_customer_service_text'] = 'About customer service text';
+$string['about_customer_service_text_desc'] = 'Text about customer service.';
 
 $string['quickhelp_heading'] = 'Quick help';
 $string['quickhelp_heading_desc'] = 'Links to quick help.';
