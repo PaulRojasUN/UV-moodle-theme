@@ -114,6 +114,13 @@
                                 </div>
                             </div>
 
+                            {{#enable_text_about_customer_service}}
+                                {{#text_about_customer_service}}
+                                    {{text_about_customer_service}}
+                                {{/text_about_customer_service}}
+
+                            {{/enable_text_about_customer_service}}
+                            {{^enable_text_about_customer_service}}
                             <div class="row">
                                 <div class="col-12">
                                     <p id="business-hours" class="font-weight-bold pt-4 pb-3">
@@ -166,7 +173,7 @@
                                 </div>
 
                             </div>
-
+                            {{/enable_text_about_customer_service}}
 
                             {{/customer_service}}
                         </div>

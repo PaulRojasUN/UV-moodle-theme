@@ -105,6 +105,10 @@ $string['customer_service_heading'] = 'Horario de atención personalizada';
 $string['customer_service_heading_desc'] = 'Escriba los horarios para atención al público.';
 $string['office_hours_per_day'] = 'Horario {$a}';
 $string['office_hours_per_day_desc'] = 'Horario de atención del {$a}';
+$string['about_customer_service'] = 'Acerca de la atención al público';
+$string['about_customer_service_desc'] = 'Habilitar texto acerca de la atención al público';
+$string['about_customer_service_text'] = 'Texto acerca de la atención al público';
+$string['about_customer_service_text_desc'] = 'Escriba el texto acerca de la atención al público';
 
 $string['quickhelp_heading'] = 'Ayudas rápidas ';
 $string['quickhelp_heading_desc'] = 'Enlaces a ayudas rápidas para el uso del Campus Virtual.';
@@ -143,6 +147,11 @@ $string['open_courses_subtitle'] = 'Subtítulo para la sección de cursos abiert
 $string['open_courses_subtitle_desc'] = 'Ingrese el subtítulo para la sección de cursos abiertos';
 $string['open_courses_category'] = 'Categoría para mostrar en la sección de cursos abiertos';
 $string['open_courses_category_desc'] = 'Seleccione la categoría de cursos a mostrar';
+
+// Language strings for elections settings tab.
+$string['language_strings_for_elections'] = 'Cadenas de texto para elecciones';
+$string['questionnaire_identifiers'] = 'Identificadores de los cuestionarios';
+$string['questionnaire_identifiers_desc'] = 'Ingrese los identificadores de los cuestionarios separados por comas';
 
 // Footer settings tab.
 $string['footersettings'] = 'Pie de página';
@@ -224,7 +233,7 @@ $string['footer_title'] = 'Vicerrectoría Académica';
 $string['footer_subtitle'] = 'Dirección de Nuevas Tecnologías y Educación Virtual - DINTEV';
 $string['footer_uv_address'] = 'Edificio E18 Oficina 2004 / Campus Meléndez';
 $string['footer_privacy_policy_desc'] = 'Política de privacidad';
-$string['footer_privacy_policy_url'] = 'https://campusvirtual.univalle.edu.co/moodle/info-dintev/privacidad-campus-virtual.php';
+$string['footer_privacy_policy_url'] = 'https://campusvirtual.univalle.edu.co/moodle/local/infocvuv/privacidad-campus-virtual.php';
 
 // User profile (mypublic template).
 $string['user_profile_details'] = 'Detalles';
