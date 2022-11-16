@@ -15,14 +15,26 @@
     along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 }}
 {{!
-    Admin dashboard template.
+    @template   theme_mooveuv/mydashboard_admin
+    @author     2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
 
-    @template   theme_moove/mydashboard_admin
-    @author     Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
-    @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
-    @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+    The purpose of this template is to render the admin dashboard for mooveuv theme.
 
-    Example context (json): {}
+    Context variables required for this template:
+    * moodledatadiskusage       Moodledata directory disk usage
+    * totalactiveusers          Total number of active users
+    * totalsuspendedusers       Total number of suspended users
+    * totalcourses              Total number of courses in the platform
+    * totalonlineusers          Total number of online users (past 5 minutes)
+
+    Example context (json):
+    {
+        "moodledatadiskusage": "480 MB",
+        "totalactiveusers": "176779"
+        "totalsuspendedusers": "6"
+        "totalcourses": "22082"
+        "totalonlineusers": "45"
+    }
 }}
 
 <div class="mydashboard-admin mb-3">

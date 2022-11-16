@@ -15,11 +15,69 @@
     along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_mooveuv/mypublic
+    @template   theme_mooveuv/mypublic
+    @author     2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
 
-    User profile template.
+    Overriden mypublic template for mooveuv theme.
 
-    Example context (json): {}
+    Context variables required for this template:
+    * sitename                      Moodle site name
+    * output                        The core renderer for the page
+    * bodyattributes                Attributes for the body tag as a string of html attributes
+    * sidepreblocks                 HTML for the blocks
+    * hasblocks                     True if there are blocks on this page
+    * courseindexopen               True if the nav drawer should be open on page load
+    * regionmainsettingsmenu        HTML for the region main settings menu
+    * hasregionmainsettingsmenu     There is a region main settings menu on this page
+    * blockcourselistuv             HTML that renders the content of the courselistuv block
+
+    Example context (json):
+    {
+        "sitename": "Moodle",
+        "output": {
+            "doctype": "<!DOCTYPE html>",
+            "page_title": "Test page",
+            "favicon": "favicon.ico",
+            "main_content": "<h1>Headings make html validators happier</h1>"
+         },
+        "bodyattributes":"",
+        "sidepreblocks": "<h2>Blocks html goes here</h2>",
+        "hasblocks":true,
+        "courseindexopen": true,
+        "navdraweropen": false,
+        "blockdraweropen": true,
+        "regionmainsettingsmenu": "",
+        "hasregionmainsettingsmenu": false,
+        "addblockbutton": ""
+        "blockcourselistuv": "
+            <div id="accordion-course-list" class="parent-group">
+                <p class="course-groups" data-toggle="collapse" data-target="#current-semester-courses" aria-expanded="false" aria-controls="current-semester-courses"> <span class="fa fa-caret-right"></span> <span class="fa fa-caret-down"></span> Current semester </p>
+                <div class="collapse mb-3" id="current-semester-courses" data-parent="#accordion-course-list">
+                    <ul class="courses-list">
+                        <li> <a href="https://path/to/moodle/course/view.php?id=100"> <i class="fa fa-book fa-fw" role="img" title="Course" aria-label="Course"></i> Current Semester Course Name 1 </a> </li>
+                        <li> <a href="https://path/to/moodle/course/view.php?id=200"> <i class="fa fa-book fa-fw" role="img" title="Course" aria-label="Course"></i> Current Semester Course Name 2 </a> </li>
+                        <li> <a href="https://path/to/moodle/course/view.php?id=300"> <i class="fa fa-book fa-fw" role="img" title="Course" aria-label="Course"></i> Current Semester Course Name 3 </a> </li>
+                        <li> <a href="https://path/to/moodle/course/view.php?id=400"> <i class="fa fa-book fa-fw" role="img" title="Course" aria-label="Course"></i> Current Semester Course Name 4 </a> </li>
+                    </ul>
+                </div>
+                <p class="course-groups" data-toggle="collapse" data-target="#semester_2021_I" aria-expanded="false" aria-controls="semester_2021_I"> <span class="fa fa-caret-right"></span> <span class="fa fa-caret-down"></span> Semester 2021 I </p>
+                <div class="collapse mb-3" id="semester_2021_I" data-parent="#accordion-course-list">
+                    <ul class="courses-list">
+                        <li> <a href="https://path/to/moodle/course/view.php?id=500"> <i class="fa fa-book fa-fw" role="img" title="Course" aria-label="Course"></i> Past Semester Course Name 1 </a> </li>
+                        <li> <a href="https://path/to/moodle/course/view.php?id=600"> <i class="fa fa-book fa-fw" role="img" title="Course" aria-label="Course"></i> Past Semester Course Name 2 </a> </li>
+                        <li> <a href="https://path/to/moodle/course/view.php?id=700"> <i class="fa fa-book fa-fw" role="img" title="Course" aria-label="Course"></i> Past Semester Course Name 3 </a> </li>
+                        <li> <a href="https://path/to/moodle/course/view.php?id=800"> <i class="fa fa-book fa-fw" role="img" title="Course" aria-label="Course"></i> Past Semester Course Name 4 </a> </li>
+                    </ul>
+                </div>
+                <p class="course-groups" data-toggle="collapse" data-target="#non-regular-courses" aria-expanded="false" aria-controls="non-regular-courses"> <span class="fa fa-caret-right"></span> <span class="fa fa-caret-down"></span> Non-regular courses </p>
+                <div class="collapse" id="non-regular-courses" data-parent="#accordion-course-list">
+                    <ul class="courses-list">
+                        <li> <a href="https://path/to/moodle/course/view.php?id=900"> <i class="fa fa-book fa-fw" role="img" title="Course" aria-label="Course"></i> Non-regular Course Name 1 </a> </li>
+                    </ul>
+                </div>
+            </div>
+        "
+    }
 }}
 
 {{> theme_moove/head }}
@@ -127,7 +185,7 @@
                                             <div role="main">
                                                 <section class="node_category card d-inline-block w-100 mb-3">
                                                     <div class="card-body">
-                                                        {{{ blockcourselistuv }}}
+                                                        {{ blockcourselistuv }}
                                                     </div>
                                                 </section>
                                             </div>

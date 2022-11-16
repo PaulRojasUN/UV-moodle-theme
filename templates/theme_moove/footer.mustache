@@ -15,9 +15,30 @@
     along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_moove/footer
-    Footer template
-    Example context (json): {}
+    @template   theme_moove/footer
+    @author     2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
+
+    Overriden footer template for mooveuv theme.
+
+    Context variables required for this template:
+    * website       Website URL of DINTEV
+    * mobile        Mobile number of DINTEV
+    * mail          Support email address of Campus Virtual
+    * youtube       YouTube URL of Universidad del Valle
+    * facebook      Facebook URL of Universidad del Valle
+    * twitter       Twitter URL of Universidad del Valle
+    * instagram     Instagram URL of Universidad del Valle
+
+    Example context (json):
+    {
+        "website": "https://dintev.univalle.edu.co",
+        "mobile": "+57 2 318 2649 / 2653"
+        "mail": "campusvirtual@correounivalle.edu.co"
+        "youtube": "https://www.youtube.com/user/universidaddelvalle1"
+        "facebook": "https://www.facebook.com/universidaddelvalle"
+        "twitter": "https://twitter.com/univallecol"
+        "instagram": "https://www.instagram.com/univallecol/"
+    }
 }}
 
 <div class="footer-cv">
@@ -35,9 +56,9 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div><h4>{{#str}} footer_title, theme_mooveuv {{/str}}</h4></div>
                 <div><h5>{{#str}} footer_subtitle, theme_mooveuv {{/str}}</h5></div>
-                {{#website}} <div><a href="{{ website }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{{ website }}}</a></div> {{/website}}
-                {{#mobile}} <div><i class="fa fa-phone"></i> {{{ mobile }}}</div> {{/mobile}}
-                {{#mail}} <div><a href="mailto:{{ mail }}" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> {{{ mail }}}</a></div> {{/mail}}
+                {{#website}} <div><a href="{{website}}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{{website}}}</a></div> {{/website}}
+                {{#mobile}} <div><i class="fa fa-phone"></i> {{{mobile}}}</div> {{/mobile}}
+                {{#mail}} <div><a href="mailto:{{mail}}" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> {{{mail}}}</a></div> {{/mail}}
                 <div><i class="fa fa-building" aria-hidden="true"></i> {{#str}} footer_uv_address, theme_mooveuv {{/str}}</div>
             </div>
         </div>

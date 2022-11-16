@@ -17,11 +17,10 @@
 /**
  * Course renderer.
  *
- * @package    theme_mooveuv
- * @since      Moodle 4.0
- * @author     Iader E. García Gómez <iadergg@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Iader E. García Gómez <iadergg@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 namespace theme_mooveuv\output\core;
@@ -37,20 +36,18 @@ use theme_moove\util\course;
 /**
  * Renderers to customize the courses view in Campus Virtual.
  *
- * @package    theme_mooveuv
- * @since      Moodle 4.0
- * @author     Iader E. García Gómez <iadergg@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Iader E. García Gómez <iadergg@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class course_renderer extends core_course_renderer {
 
     /**
-     * Renderer for the available courses frontpage section
+     * Renderer for the available courses frontpage section.
      *
-     * @since  Moodle 4.0
-     * @author Iader E. García Gómez <iadergg@gmail.com>
-     * @return type|string
+     * @author  2022 Iader E. García Gómez <iadergg@gmail.com>
+     * @return  type|string
      */
     public function frontpage_available_courses() {
 
@@ -74,9 +71,9 @@ class course_renderer extends core_course_renderer {
 
             array_push($templatecontext['courses'], ['id' => $course->id,
                                                      'fullname' => $course->fullname,
+                                                     'shortname' => $course->shortname,
                                                      'courseurl' => new moodle_url('/course/view.php', array('id' => $course->id )),
-                                                     'image' => $courseutil->get_summary_image(),
-                                                     'category' => $courseutil->get_category()]);
+                                                     'image' => $courseutil->get_summary_image()]);
         }
 
         $content .= $this->render_from_template('theme_mooveuv/frontpage_opencourses', $templatecontext);

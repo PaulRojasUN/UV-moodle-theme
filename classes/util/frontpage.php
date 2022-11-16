@@ -15,11 +15,12 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Theme helper to load front page configuration.
+ * Theme helper to load frontpage configuration.
  *
- * @package    theme_mooveuv
- * @author     2022 Iader E. Garcia Gomez <iadergg@gmail.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Iader E. Garcia Gomez <iadergg@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 namespace theme_mooveuv\util;
@@ -29,10 +30,7 @@ use theme_config;
 /**
  * Helper to load front page configuration.
  *
- * @package    theme_mooveuv
- * @since      Moodle 4.0
- * @author     2022 Iader E. Garcia Gomez <iadergg@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @author  2022 Iader E. Garcia Gomez <iadergg@gmail.com>
  */
 class frontpage {
 
@@ -62,10 +60,9 @@ class frontpage {
     /**
      * Magic method to get theme settings
      *
-     * @param string $name
-     * @return false|string|null
-     * @author Iader E. Garcia Gomez <iadergg@gmail.com>
-     * @since  Moodle 4.0
+     * @param   string $name
+     * @return  false|string|null
+     * @author  2022 Iader E. Garcia Gomez <iadergg@gmail.com>
      */
     public function __get(string $name) {
         if (in_array($name, $this->files)) {
@@ -82,9 +79,8 @@ class frontpage {
     /**
      * Returns template context for the frontpage slider.
      *
-     * @return array $templatecontext
-     * @author Iader E. Garcia Gomez <iadergg@gmail.com>
-     * @since  Moodle 4.0
+     * @return  array $templatecontext
+     * @author  2022 Iader E. Garcia Gomez <iadergg@gmail.com>
      */
     public function frontpage_slideshow() {
 
@@ -109,9 +105,8 @@ class frontpage {
     /**
      * Returns template context for the information section of the frontpage.
      *
-     * @return array $templatecontext
-     * @author Iader E. Garcia Gomez <iadergg@gmail.com>
-     * @since  Moodle 4.0
+     * @return  array $templatecontext
+     * @author  2022 Iader E. Garcia Gomez <iadergg@gmail.com>
      */
     public function frontpage_info_section() {
 
@@ -160,9 +155,8 @@ class frontpage {
     /**
      * Returns template context for the software licenses section of the frontpage.
      *
-     * @return array $templatecontext
-     * @author Iader E. Garcia Gomez <iadergg@gmail.com>
-     * @since  Moodle 4.0
+     * @return  array $templatecontext
+     * @author  2022 Iader E. Garcia Gomez <iadergg@gmail.com>
      */
     public function frontpage_softwarelicenses_section() {
         $templatecontext = [];

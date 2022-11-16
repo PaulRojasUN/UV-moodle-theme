@@ -17,10 +17,10 @@
 /**
  * Calculates the disk usage.
  *
- * @package    theme_mooveuv
- * @author     Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 namespace theme_mooveuv\task;
@@ -30,17 +30,17 @@ use cache;
 /**
  * Task to calculate the moodledata directory disk usage.
  *
- * @package    theme_mooveuv
- * @author     Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class moodledatadiskusage extends \core\task\scheduled_task {
 
     /**
      * Return the task's name.
      *
-     * @return string
+     * @return  string
      */
     public function get_name() {
         return get_string('task_calculate_moodledata_disk_usage', 'theme_mooveuv');

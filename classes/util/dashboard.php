@@ -15,12 +15,12 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Library that allows to render the info boxes of the dashboard page.
+ * Theme helper to load dashboard content.
  *
- * @package    theme_mooveuv
- * @author     Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 namespace theme_mooveuv\util;
@@ -28,18 +28,18 @@ namespace theme_mooveuv\util;
 /**
  * Allows to render the info boxes of the dashboard page.
  *
- * @package    theme_mooveuv
- * @author     Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class dashboard {
 
     /**
      * Returns the total number of active users.
      *
-     * @return int
-     * @throws \dml_exception
+     * @return  int
+     * @throws  \dml_exception
      */
     public function get_total_active_users() {
         global $DB;
@@ -49,8 +49,8 @@ class dashboard {
     /**
      * Returns the total number of suspended users.
      *
-     * @return int
-     * @throws \dml_exception
+     * @return  int
+     * @throws  \dml_exception
      */
     public function get_total_suspended_users() {
         global $DB;
@@ -60,8 +60,8 @@ class dashboard {
     /**
      * Returns the total number of courses.
      *
-     * @return int
-     * @throws \dml_exception
+     * @return  int
+     * @throws  \dml_exception
      */
     public function get_total_courses() {
         global $DB;
@@ -71,8 +71,8 @@ class dashboard {
     /**
      * Returns the total number of online users in the last 5 minutes.
      *
-     * @return int
-     * @throws \dml_exception
+     * @return  int
+     * @throws  \dml_exception
      */
     public function get_total_online_users() {
         $onlineusers = new \block_online_users\fetcher(null, time(), 300, null, CONTEXT_SYSTEM, null);
@@ -82,8 +82,8 @@ class dashboard {
     /**
      * Returns the total moodledata directory disk usage.
      *
-     * @return string
-     * @throws \coding_exception
+     * @return  string
+     * @throws  \coding_exception
      */
     public function get_total_moodledata_disk_usage() {
         $cache = \cache::make('theme_mooveuv', 'moodledatadiskusage');

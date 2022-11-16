@@ -15,12 +15,94 @@
     along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 }}
 {{!
-    @template myoverview_main
+    @template   theme_mooveuv/myoverview_main
+    @author     2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
 
-    This template renders the main content for myoverview block.
+    Overriden myoverview block template for mooveuv theme.
+
+    Context variables required for this template:
+    * moodlecourseurl           Moodle course view URL by ID
+    * regular_courses           Regular courses
+        * past_semesters        Regular courses from past semesters
+        * current_semester      Regular courses from current semester
+    * non_regular_courses       Non-regular courses from current and past semesters
 
     Example context (json):
-    {}
+    {
+        "moodlecourseurl": "https://path/to/moodle/course/view.php?id=",
+        "regular_courses": [
+            "past_semesters": [
+                [
+                    'tag': 'Semester 2021 I',
+                    'key': 'semester_2021_I',
+                    'courses': [
+                        {
+                            'courseid' => '100',
+                            'coursefullname' => 'Past Semester Course Fullname 1',
+                            'courseshortname' => 'Past Semester Course Shortname 1',
+                            'coursecategory' => '140',
+                            'coursestardate' => '1612760400',
+                            'courseenddate' => '1635750000',
+                            'coursetimecreated' => '1612835211',
+                            'categorypath' => '/6/30007/140'
+                        },
+                        {
+                            'courseid' => '200',
+                            'coursefullname' => 'Past Semester Course Fullname 2',
+                            'courseshortname' => 'Past Semester Course Shortname 2',
+                            'coursecategory' => '30750',
+                            'coursestardate' => '1612760400',
+                            'courseenddate' => '0',
+                            'coursetimecreated' => '1612328953',
+                            'categorypath' => '/6/30007/30750'
+                        }
+                    ]
+                ],
+                [
+                    'tag': 'Semester 2020 II',
+                    'key': 'semester_2020_II',
+                    'courses': [
+                        {
+                            'courseid' => '300',
+                            'coursefullname' => 'Past Semester Course Fullname 3',
+                            'courseshortname' => 'Past Semester Course Shortname 3',
+                            'coursecategory' => '30106',
+                            'coursestardate' => '1596258000',
+                            'courseenddate' => '1605942000',
+                            'coursetimecreated' => '1603737873',
+                            'categorypath' => '/6/30001/30106'
+                        }
+                    ]
+                ]
+            ],
+            "current_semester": [
+                {
+                    'courseid' => '400',
+                    'coursefullname' => 'Current Semester Course Fullname 1',
+                    'courseshortname' => 'Current Semester Course Shortname 1',
+                    'coursecategory' => '30106',
+                    'coursestardate' => '1641877200',
+                    'courseenddate' => '1648710000',
+                    'coursetimecreated' => '1641571304',
+                    'categorypath' => '/6/30001/30106'
+                    'courseimage': '.../svg'
+                }
+            ]
+        ],
+        "non_regular_courses": [
+            {
+                'courseid' => '500',
+                'coursefullname' => 'Non-regular Course Fullname 1',
+                'courseshortname' => 'Non-regular Course Shortname 1',
+                'coursecategory' => '20',
+                'coursestardate' => '1533704400',
+                'courseenddate' => '0',
+                'coursetimecreated' => '1533760271',
+                'categorypath' => '/7/69/20',
+                'courseimage': '.../svg'
+            }
+        ]
+    }
 }}
 
 <div id="block-myoverview-{{uniqid}}" class="block-myoverview-uv" data-region="myoverview" role="navigation">
@@ -55,7 +137,7 @@
                             <div class="card h-100">
                                 {{{courseimage}}}
                                 <div class="card-body course-info-container" id="course-info-container-{{courseid}}">
-                                    <h6><a href="{{viewurl}}{{courseid}}">{{{coursefullname}}}</a></h6>
+                                    <h6><a href="{{moodlecourseurl}}{{courseid}}">{{{coursefullname}}}</a></h6>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +166,7 @@
                         <div class="card h-100">
                             {{{courseimage}}}
                             <div class="card-body course-info-container" id="course-info-container-{{courseid}}">
-                                <h6><a href="{{viewurl}}{{courseid}}">{{{coursefullname}}}</a></h6>
+                                <h6><a href="{{moodlecourseurl}}{{courseid}}">{{{coursefullname}}}</a></h6>
                             </div>
                         </div>
                     </div>

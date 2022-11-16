@@ -1,5 +1,5 @@
 {{!
-    This file is part of Moodle - http://moodle.org/
+    This file is part of Moodle - https://moodle.org/
 
     Moodle is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -12,33 +12,36 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+    along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_moove/loginform
+    @template   core/loginform
+    @author     2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
 
-    Moodle template for the login page.
+    Overriden loginform template for mooveuv theme.
 
     Context variables required for this template:
-    * autofocusform: Auto focus on form ?,
-    * canloginasguest - Is guest login allowed?,
-    * canloginbyemail - Is login by email allowed?,
-    * cansignup - Signup allowed?,
-    * cookieshelpicon - cookies help icon details
-    * error - Any errors in the form?,
-    * forgotpasswordurl - Forgot password url,
-    * hasidentityproviders - Flag, set to true to hide identity providers,
-    * hasinstructions - Flag, set to true to show instructions,
-    * identityproviders - List of identiy providers,
-    * instructions - Instructions,
-    * instructionsformat - Format of instructions,
-    * loginurl - Login url,
-    * signupurl - Signup url,
-    * errorformatted - Formatted error,
-    * logourl - Flag, logo url,
-    * sitename - Name of site.,
-    * logintoken - Random token to protect login request.,
-    * maintenance - Maintenance message
+    * autofocusform             Auto focus on form
+    * canloginasguest           Is guest login allowed
+    * canloginbyemail           Is login by email allowed
+    * cansignup                 Is signup allowed
+    * cookieshelpicon           Cookies help icon details
+    * error                     Any errors in the form
+    * forgotpasswordurl         Forgot password URL
+    * hasidentityproviders      Set to true to hide identity providers
+    * hasinstructions           Set to true to show login instructions
+    * identityproviders         List of identiy providers
+    * instructions              Login instructions
+    * instructionsformat        Format of instructions
+    * loginurl                  Login URL
+    * signupurl                 Signup URL
+    * username                  User name to pre-fill the form with
+    * logintoken                Random token to protect login request
+    * maintenance               Maintenance message
+    * languagemenu              Language selector menu
+    * errorformatted            Formatted error
+    * logourl                   Logo URL
+    * sitename                  Moodle site name
 
     Example context (json):
     {
@@ -65,33 +68,34 @@
                     },
                     {
                         "name": "src",
-                        "value": "http://localhost/stable_master/theme/image.php?theme=boost&component=core&image=help"
+                        "value": "https://path/to/moodle/theme/image.php?theme=boost&component=core&image=help"
                     }
                 ]
             },
             "linktext": null,
             "title": "Help with Cookies must be enabled in your browser",
-            "url": "http://localhost/stable_master/help.php?component=core&identifier=cookiesenabled&lang=en",
+            "url": "https://path/to/moodle/help.php?component=core&identifier=cookiesenabled&lang=en",
             "ltr": true
         },
         "error": "",
-        "forgotpasswordurl": "http://localhost/stable_master/login/forgot_password.php",
+        "forgotpasswordurl": "https://path/to/moodle/login/forgot_password.php",
         "hasidentityproviders": false,
         "hasinstructions": true,
         "identityproviders": [],
         "instructions": "For full access to this site, you first need to create an account.",
         "instructionsformat": "1",
-        "loginurl": "http://localhost/stable_master/login/index.php",
-        "signupurl": "http://localhost/stable_master/login/signup.php",
-        "cookieshelpiconformatted": "",
-        "errorformatted": "",
-        "logourl": false,
-        "sitename": "Beer & Chips",
-        "logintoken": "randomstring",
+        "loginurl": "https://path/to/moodle/login/index.php",
+        "signupurl": "https://path/to/moodle/login/signup.php",
+        "username" "User Name",
+        "logintoken": "3gPcjyqtHYuMBEzb8Mz2ThB1GzOCb5Dl",
         "maintenance": "For full access to this site, you need to login in as an admin.",
         "languagemenu": "Choose language"
+        "errorformatted": "",
+        "logourl": "https://path/to/moodle/pluginfile.php/1/theme_moove/logo/-1/logo.png",
+        "sitename": "Campus Virtual",
     }
 }}
+
 <div class="loginform row {{#hastwocolumns}}hastwocolumns{{/hastwocolumns}}">
     <div class="{{#hastwocolumns}}col-lg-6 col-md-12 left-column{{/hastwocolumns}}{{^hastwocolumns}}col-12{{/hastwocolumns}}">
         {{#logourl}}
