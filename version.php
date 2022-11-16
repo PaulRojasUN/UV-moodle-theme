@@ -16,14 +16,13 @@
 
 /**
  * Plugin version and other meta-data are defined here.
- * Note: the block courselistuv itself is not needed, but some overridden views in the
- *       theme (e.g. user profile) use its function that renders the list of courses.
+ * Note: the block courselistuv itself is not needed, but some overridden templates in the
+ *       theme (e.g. mypublic) uses its function to render the list of courses.
  *
- * @package    theme_mooveuv
- * @since      Moodle 4.0
- * @author     Iader E. García Gómez <iadergg@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Iader E. García Gómez <iadergg@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();

@@ -26,26 +26,25 @@ require_once($CFG->dirroot . '/blocks/courselistuv/renderer.php');
 /**
  * Override myoverview block renderer class.
  *
- * @package    theme_mooveuv
- * @author     Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class block_myoverview_renderer extends \block_myoverview\output\renderer {
 
     /**
      * Return the main content for the block overview.
      *
-     * @param main $main The main renderable
-     * @return string HTML string
+     * @param   main $main The main renderable
+     * @return  string HTML string
      */
     public function render_main(main $main) {
 
         global $CFG, $USER;
 
         $templatecontext = [];
-        $templatecontext['wwwroot'] = $CFG->wwwroot;
-        $templatecontext['viewurl'] = $CFG->wwwroot . "/course/view.php?id=";
+        $templatecontext['moodlecourseurl'] = $CFG->wwwroot . "/course/view.php?id=";
         // Get user courses.
         $usercoursemanager = new user_course_manager($USER->id);
         $usercourses = $usercoursemanager->get_courses();

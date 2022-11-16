@@ -15,12 +15,13 @@
     along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 }}
 {{!
-    Regular user dashboard template.
+    @template   theme_mooveuv/mydashboard_regular_user
+    @author     2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
 
-    @template   theme_moove/mydashboard_regular_user
-    @author     Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
-    @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
-    @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+    The purpose of this template is to render the regular user dashboard for mooveuv theme.
+
+    Context variables required for this template:
+    * none
 
     Example context (json): {}
 }}
@@ -29,7 +30,7 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12 col-md-5 col-lg-4 col-xl-2 p-2">
-                <a href="http://biblioteca.univalle.edu.co/" target="_blank">
+                <a href="https://biblioteca.univalle.edu.co/" target="_blank">
                     <div class="card bg-1">
                         <div class="card-body">
                             <p>{{#str}} dashboard_regularuser_library, theme_mooveuv {{/str}}</p>
@@ -38,7 +39,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-5 col-lg-4 col-xl-2 p-2">
-                <a href="http://www.univalle.edu.co/index.php/correo-electronico-institucional" target="_blank">
+                <a href="https://www.univalle.edu.co/index.php/correo-electronico-institucional" target="_blank">
                     <div class="card bg-2">
                         <div class="card-body">
                             <p>{{#str}} dashboard_regularuser_email, theme_mooveuv {{/str}}</p>
@@ -47,7 +48,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-5 col-lg-4 col-xl-2 p-2">
-                <a href="http://registro.univalle.edu.co/normativas" target="_blank">
+                <a href="https://registro.univalle.edu.co/normativas" target="_blank">
                     <div class="card bg-3">
                         <div class="card-body">
                             <p>{{#str}} dashboard_regularuser_regulations, theme_mooveuv {{/str}}</p>
@@ -56,7 +57,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-5 col-lg-4 col-xl-2 p-2">
-                <a href="http://svtie.univalle.edu.co/" target="_blank">
+                <a href="https://svtie.univalle.edu.co/" target="_blank">
                     <div class="card bg-4">
                         <div class="card-body">
                             <p>{{#str}} dashboard_regularuser_techtoolbox, theme_mooveuv {{/str}}</p>
@@ -65,7 +66,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-5 col-lg-4 col-xl-2 p-2">
-                <a href="http://vicebienestar.univalle.edu.co/" target="_blank">
+                <a href="https://vicebienestar.univalle.edu.co/" target="_blank">
                     <div class="card bg-5">
                         <div class="card-body">
                             <p>{{#str}} dashboard_regularuser_affairdivision, theme_mooveuv {{/str}}</p>
