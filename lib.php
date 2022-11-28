@@ -15,20 +15,19 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Theme Moove UV Lib file.
+ * Moove UV theme lib.
  *
- * @package    theme_mooveuv
- * @since      Moodle 4.0
- * @author     Iader E. García Gómez <iadergg@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Iader E. García Gómez <iadergg@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 /**
  * Returns the main SCSS content.
  *
- * @param theme_config $theme The theme config object.
- * @return string
+ * @param   theme_config $theme The theme config object.
+ * @return  string
  */
 function theme_mooveuv_get_main_scss_content($theme) {
     global $CFG;
@@ -69,8 +68,8 @@ function theme_mooveuv_get_main_scss_content($theme) {
 /**
  * Inject additional SCSS.
  *
- * @param theme_config $theme The theme config object.
- * @return string
+ * @param   theme_config $theme The theme config object.
+ * @return  string
  */
 function theme_mooveuv_get_extra_scss($theme) {
     $content = '';
@@ -90,8 +89,8 @@ function theme_mooveuv_get_extra_scss($theme) {
 /**
  * Get SCSS to prepend.
  *
- * @param theme_config $theme The theme config object.
- * @return string
+ * @param   theme_config $theme The theme config object.
+ * @return  string
  */
 function theme_mooveuv_get_pre_scss($theme) {
     $scss = '';
@@ -129,16 +128,15 @@ function theme_mooveuv_get_pre_scss($theme) {
 /**
  * Serves any files associated with the theme settings.
  *
- * @param stdClass $course
- * @param stdClass $cm
- * @param context $context
- * @param string $filearea
- * @param array $args
- * @param bool $forcedownload
- * @param array $options
- * @return mixed
- * @author Iader E. Garcia Gomez <iadergg@gmail.com>
- * @since  Moodle 4.0
+ * @param   stdClass $course
+ * @param   stdClass $cm
+ * @param   context $context
+ * @param   string $filearea
+ * @param   array $args
+ * @param   bool $forcedownload
+ * @param   array $options
+ * @return  mixed
+ * @author  2022 Iader E. Garcia Gomez <iadergg@gmail.com>
  */
 function theme_mooveuv_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     $theme = theme_config::load('mooveuv');

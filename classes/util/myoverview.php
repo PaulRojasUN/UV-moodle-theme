@@ -15,23 +15,20 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Theme helper to load data for myoverview block.
+ * Theme helper to load myoverview block content.
  *
- * @package    theme_mooveuv
- * @author     Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 namespace theme_mooveuv\util;
 
 /**
- * Helper to load data for myoverview block.
+ * Allows to render myoverview block content.
  *
- * @package    theme_mooveuv
- * @since      Moodle 4.0
- * @author     2022 Iader E. Garcia Gomez <iadergg@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @author  2022 Iader E. Garcia Gomez <iadergg@gmail.com>
  */
 class myoverview {
 
@@ -52,9 +49,9 @@ class myoverview {
     /**
      * Returns a course image.
      *
-     * @param int $courseid
-     * @param string $courseurl
-     * @param string $coursefullname
+     * @param   int $courseid
+     * @param   string $courseurl
+     * @param   string $coursefullname
      */
     private function get_course_image($courseid, $courseurl, $coursefullname) {
 

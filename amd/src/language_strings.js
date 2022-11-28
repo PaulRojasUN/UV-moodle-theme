@@ -1,8 +1,8 @@
 /*
- * @module     theme_mooveuv/modal_login
- * @author     2022 Iader E. Garcia Gomez <iadergg@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @module      theme_mooveuv/modal_login
+ * @author      2022 Iader E. Garcia Gomez <iadergg@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 import $ from 'jquery';

@@ -17,11 +17,10 @@
 /**
  * Lang strings 'en'.
  *
- * @package    theme_mooveuv
- * @since      Moodle 4.0
- * @author     Iader E. García Gómez <iadergg@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_mooveuv
+ * @author      2022 Iader E. García Gómez <iadergg@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -162,11 +161,11 @@ $string['mobiledesc'] = 'Enter Mobile No. Ex: +5598912341234';
 $string['mail'] = 'E-Mail';
 $string['maildesc'] = 'Company support e-mail';
 $string['facebook'] = 'Facebook URL';
-$string['facebookdesc'] = 'Enter the URL of your Facebook. (i.e http://www.facebook.com/myinstitution)';
+$string['facebookdesc'] = 'Enter the URL of your Facebook. (i.e https://www.facebook.com/myinstitution)';
 $string['twitter'] = 'Twitter URL';
-$string['twitterdesc'] = 'Enter the URL of your twitter. (i.e http://www.twitter.com/myinstitution)';
+$string['twitterdesc'] = 'Enter the URL of your twitter. (i.e https://www.twitter.com/myinstitution)';
 $string['linkedin'] = 'Linkedin URL';
-$string['linkedindesc'] = 'Enter the URL of your Linkedin. (i.e http://www.linkedin.com/myinstitution)';
+$string['linkedindesc'] = 'Enter the URL of your Linkedin. (i.e https://www.linkedin.com/myinstitution)';
 $string['youtube'] = 'Youtube URL';
 $string['youtubedesc'] = 'Enter the URL of your Youtube. (i.e https://www.youtube.com/user/myinstitution)';
 $string['instagram'] = 'Instagram URL';
