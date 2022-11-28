@@ -5,6 +5,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+import ajax from 'core/ajax';
+
 export const init = () => {
 
     var url = document.location.href;
@@ -19,9 +21,23 @@ export const init = () => {
             var tmp = GET[i].split('=');
             get[tmp[0]] = unescape(decodeURI(tmp[1]));
         }
+
+        const courseid = get.id;
+
+        const result = ajax.call([{
+            methodname: 'theme_mooveuv_get_course',
+            args: {
+                courseid: courseid,
+            }
+        }])[0];
+
+        result.then((response) => {
+            const result = JSON.parse(response.result);
+            const messageTextArea = document.getElementById('bulk-message');
+            messageTextArea.value = '\n  \nEste mensaje ha sido enviado desde el curso ' + result.fullname + '.';
+            return result.fullname;
+        }).catch((e) => {
+            window.console.log(e);
+        });
     }
-
-    var messageTextArea = document.getElementById('bulk-message');
-    messageTextArea.value = 'Test';
-
 };

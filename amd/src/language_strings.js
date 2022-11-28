@@ -13,17 +13,16 @@ export const init = () => {
     var urlSplit = urlLocation.split("/");
     var locationSearch = window.location.search;
 
-    var arrayQuestionnaires = ["9"];
+    var arrayQuestionnaires = ["78456123"];
+
+    var parameter = locationSearch.split("=")[1];
 
     if (urlSplit.includes('questionnaire') && urlSplit.includes('view.php')) {
-
-        var parameter = locationSearch.split("=")[1];
 
         if (arrayQuestionnaires.includes(parameter)) {
             $('.complete > a').html("Participe del proceso de votación");
         }
     } else if (urlSplit.includes('questionnaire') && (urlSplit.includes('complete.php') || urlSplit.includes('preview.php'))) {
-        var parameter = locationSearch.split("=")[1];
         if (arrayQuestionnaires.includes(parameter)) {
             $('input[name=submit]').val("Votar");
             $('.floatprinticon').hide();

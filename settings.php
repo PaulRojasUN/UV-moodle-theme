@@ -19,7 +19,7 @@
  *
  * @package    theme_mooveuv
  * @since      Moodle 4.0
- * @author     Iader E. García Gómez <iadergg@gmail.com>
+ * @author     2022 Iader E. García Gómez <iadergg@gmail.com>
  * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
  * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

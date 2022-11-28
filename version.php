@@ -28,7 +28,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2022101302;
+$plugin->version = 2022112801;
 $plugin->release = 'alpha1';
 $plugin->requires = 2022041900;
 $plugin->component = 'theme_mooveuv';
