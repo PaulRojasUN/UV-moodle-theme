@@ -119,15 +119,15 @@ $string['default_quick_help_name'] = 'Nombre de la ayuda rápida {$a}';
 $string['quick_help_url'] = 'URL de la ayuda rápida {$a}';
 $string['quick_help_url_desc'] = 'Ingrese la URL de la ayuda rápida {$a}';
 
-$string['topics_of_interest_heading'] = 'Artículos de interés';
-$string['topics_of_interest_heading_desc'] = 'Enlaces a artículos de interés sobre la DINTEV y el Campus Virtual.';
-$string['topics_of_interest_counter'] = 'Contador de artículos de interés';
-$string['topics_of_interest_counter_desc'] = 'Seleccione la cantidad de artículos de interés a enlazar en la página principal.';
-$string['topic_of_interest_name'] = 'Nombre del artículo de interés {$a}';
-$string['topic_of_interest_name_desc'] = 'Ingrese el nombre del artículo de interes {$a}';
-$string['default_topic_of_interest_name'] = 'Nombre del artículo de interés {$a}';
-$string['topic_of_interest_url'] = 'URL del artículo de interés {$a}';
-$string['topic_of_interest_url_desc'] = 'Ingrese la URL del artículo de interés {$a}';
+$string['topics_of_interest_heading'] = 'Recursos Académicos';
+$string['topics_of_interest_heading_desc'] = 'Enlaces a recursos académicos de la DINTEV y el Campus Virtual.';
+$string['topics_of_interest_counter'] = 'Contador de recursos académicos';
+$string['topics_of_interest_counter_desc'] = 'Seleccione la cantidad de recursos a enlazar en la página principal.';
+$string['topic_of_interest_name'] = 'Nombre del recurso de interés {$a}';
+$string['topic_of_interest_name_desc'] = 'Ingrese el nombre del recurso académico {$a}';
+$string['default_topic_of_interest_name'] = 'Nombre del recurso académico {$a}';
+$string['topic_of_interest_url'] = 'URL del recurso académico {$a}';
+$string['topic_of_interest_url_desc'] = 'Ingrese la URL del recurso académico {$a}';
 
 $string['software_licenses_heading'] = 'Licencias de software';
 $string['software_licenses_heading_desc'] = 'Enlaces a licencias de software.';
@@ -186,7 +186,7 @@ $string['customer_service_title'] = 'Atención y soporte';
 $string['business_hours'] = 'Horarios de atención personalizada';
 $string['no_attention'] = 'No hay horario de atención.';
 $string['quick_help_title'] = 'Ayudas rápidas';
-$string['topics_of_interest_title'] = 'Artículos de interés';
+$string['topics_of_interest_title'] = 'Recursos Académicos';
 $string['institutional_licensed_software_title'] = 'Software con licenciamiento institucional';
 $string['institutional_licensed_software_subtitle'] = 'para uso de la comunidad académica Univalle';
 

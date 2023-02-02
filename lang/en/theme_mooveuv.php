@@ -119,15 +119,15 @@ $string['default_quick_help_name'] = 'Name of quick help {$a}';
 $string['quick_help_url'] = 'URL to quick help {$a}';
 $string['quick_help_url_desc'] = 'Enter the URL to the quick help {$a}';
 
-$string['topics_of_interest_heading'] = 'Topics of interest';
-$string['topics_of_interest_heading_desc'] = 'Links to topics of interest.';
-$string['topics_of_interest_counter'] = 'Topics of interest counter';
-$string['topics_of_interest_counter_desc'] = 'Select the number of topics that will be linked on the frontpage.';
-$string['topic_of_interest_name'] = 'Name of topic of interest {$a}';
-$string['topic_of_interest_name_desc'] = 'Enter the name of the topic of interest {$a}';
-$string['default_topic_of_interest_name'] = 'Name of topic of interest {$a}';
-$string['topic_of_interest_url'] = 'URL to topic of interest {$a}';
-$string['topic_of_interest_url_desc'] = 'Enter the URL to the topic of interest {$a}';
+$string['topics_of_interest_heading'] = 'Academic resources';
+$string['topics_of_interest_heading_desc'] = 'Links to academic resources';
+$string['topics_of_interest_counter'] = 'Academic resources counter';
+$string['topics_of_interest_counter_desc'] = 'Select the number academic resources that will be linked on the frontpage.';
+$string['topic_of_interest_name'] = 'Name of the academic resource {$a}';
+$string['topic_of_interest_name_desc'] = 'Enter the name of the academic resource {$a}';
+$string['default_topic_of_interest_name'] = 'Name of academic resource {$a}';
+$string['topic_of_interest_url'] = 'URL to academic resource {$a}';
+$string['topic_of_interest_url_desc'] = 'Enter the URL to the academic resource {$a}';
 
 $string['software_licenses_heading'] = 'Sotware licenses';
 $string['software_licenses_heading_desc'] = 'Links to software licenses.';
@@ -186,7 +186,7 @@ $string['customer_service_title'] = 'Customer service';
 $string['business_hours'] = 'Business hours';
 $string['no_attention'] = 'No attention';
 $string['quick_help_title'] = 'Quick help';
-$string['topics_of_interest_title'] = 'Topics of interest';
+$string['topics_of_interest_title'] = 'Academic Resources';
 $string['institutional_licensed_software_title'] = 'Institutional licensed software';
 $string['institutional_licensed_software_subtitle'] = 'for the use of the academic community of the Universidad del Valle';
 
