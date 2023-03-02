@@ -117,11 +117,13 @@ class frontpage {
         $templatecontext['customer_service']['phone_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/phone.png');
         $templatecontext['customer_service']['email_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/email.png');
         $templatecontext['customer_service']['clock_icon'] = new \moodle_url('/theme/mooveuv/pix/icon/clock.png');
+        /*
         $templatecontext['customer_service']['monday_office_hours'] = $this->monday_office_hours;
         $templatecontext['customer_service']['tuesday_office_hours'] = $this->tuesday_office_hours;
         $templatecontext['customer_service']['wednesday_office_hours'] = $this->wednesday_office_hours;
         $templatecontext['customer_service']['thursday_office_hours'] = $this->thursday_office_hours;
         $templatecontext['customer_service']['friday_office_hours'] = $this->friday_office_hours;
+        */
         $templatecontext['customer_service']['enable_text_about_customer_service'] = $this->about_customer_service;
         $templatecontext['customer_service']['text_about_customer_service'] = $this->about_customer_service_text;
 

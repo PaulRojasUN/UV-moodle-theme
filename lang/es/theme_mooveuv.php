@@ -102,6 +102,7 @@ $string['default_url'] = 'https://campusvirtual.univalle.edu.co/moodle';
 
 $string['customer_service_heading'] = 'Horario de atención personalizada';
 $string['customer_service_heading_desc'] = 'Escriba los horarios para atención al público.';
+$string['customer_service_appointment'] = 'Atención personalizada con cita previa.';
 $string['office_hours_per_day'] = 'Horario {$a}';
 $string['office_hours_per_day_desc'] = 'Horario de atención del {$a}';
 $string['about_customer_service'] = 'Acerca de la atención al público';
